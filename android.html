@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos Android</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Jan Codina</h1>
+        <h2>Ingeniero Informático, Mención Software</h2>
+    </header>
+    <main>
+        <button class="mode-toggle" id="mode-toggle" aria-label="Cambiar a modo oscuro">Cambiar a Modo Oscuro</button>
+        <nav class="navbar_pers">
+            <ul style="display: flex;">
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="#" class="dropdown-toggle">Proyectos</a>
+                    <ul class="dropdown">
+                        <li><a href="android.html">Desarrollo Android</a></li>
+                        <li><a href="web.html">Desarrollo Web</a></li>
+                        <li><a href="python.html">Proyectos en Python</a></li>
+                        <li><a href="ia.html">Inteligencia Artificial</a></li>
+                        <li><a href="otros.html">Otros</a></li>
+                    </ul>
+                </li>
+                <!--<li><a href="contact.html">Contactar</a></li>-->
+                <li><a href="sobre-mi.html">Sobre Mí</a></li>
+            </ul>
+        </nav>
+        <section class="intro">
+            <p>A continuación, se presentan algunos de los proyectos Android en los que he trabajado, centrados en el desarrollo de aplicaciones móviles utilizando tecnologías como Java, Firebase y APIs de terceros.</p>
+            
+            <!-- Índice para navegar a los proyectos -->
+            <ul class="index">
+                <li><a href="#foodfeed">FoodFeed</a></li>
+                <li><a href="#bookpixel">BookPixel</a></li>
+                <li><a href="#appdr72">App DR72</a></li>
+            </ul>
+        </section>
+        <h1>Proyectos Android</h1>
+        <section class="FoodFeed" id="foodfeed">
+            <h2>FoodFeed</h2>
+            
+            <p><strong>Descripción del proyecto:</strong> En una asignatura universitaria, participé en un proyecto en equipo para desarrollar una aplicación Android que, a través de inteligencia artificial, permite a los usuarios identificar alimentos mediante imágenes y obtener información nutricional, como calorías, proteínas, grasas y carbohidratos, utilizando APIs de terceros.</p>
+            
+            <p><strong>Mi rol:</strong> Trabajé junto a tres compañeros en la implementación del frontend de la aplicación, utilizando <strong>Android Studio</strong> y <strong>Java</strong>. Nos encargamos de:</p>
+            
+            <ul>
+                <li>Diseñar e implementar la interfaz de usuario (UI), garantizando que fuera intuitiva y fácil de usar.</li>
+                <li>Desarrollar las distintas pantallas de la aplicación.</li>
+                <li>Integrar la app con componentes de Android, como la cámara para la toma de fotos de los alimentos.</li>
+                <li>Colaborar en la integración de la aplicación con un backend, utilizando un webserver para almacenar datos en una base de datos y realizar consultas a las APIs que utilizamos.</li>
+            </ul>
+            
+            <p><strong>Tecnologías utilizadas:</strong></p>
+            <ul>
+                <li><strong>Lenguaje:</strong> Java</li>
+                <li><strong>Plataforma:</strong> Android Studio</li>
+                <li><strong>Colaboración:</strong> Git para control de versiones y trabajo en equipo.</li>
+                <li><strong>Gestión de Tareas:</strong> Jira para la planificación y seguimiento de tareas del proyecto.</li>
+                <li><strong>API:</strong> Food Data Central API</li>
+            </ul>
+            
+            <!--<p><strong>Capturas de pantalla:</strong></p>
+            <a href="imagenes.html?project=foodfeed">Ver imágenes del proyecto FoodFeed</a>-->
+
+            <p><strong>Enlace al repositorio:</strong> El código está almacenado en un repositorio privado. Si se desea acceder al código, puedo compartirlo durante una entrevista.</p>
+            <p><strong>Equipo:</strong> Trabajo en equipo con otros 7 compañeros, divididos en 2 backend, 2 IA y 4 frontend.</p>
+        </section>
+        <section class="BookPixel" id="bookpixel">
+            <h2>BookPixel</h2>
+
+            <p><strong>Descripción del proyecto:</strong> En una asignatura universitaria, participé en un proyecto en equipo para desarrollar una aplicación Android que, mediante imagen, texto o voz, permite a los usuarios buscar información sobre libros y videojuegos, además de incluir un chatbot. El proyecto hizo uso de APIs de terceros.</p>
+
+            <p><strong>Mi rol:</strong> Trabajé junto a dos compañeros en varias tareas del desarrollo, utilizando <strong>Android Studio</strong>, <strong>Java</strong>, <strong>Node.js</strong>, <strong>Typescript</strong> y <strong>Firebase</strong>. Mis principales contribuciones fueron:</p>
+            
+            <ul>
+                <li>Diseñar e implementar las Cloud Functions en Firebase.</li>
+                <li>Desarrollar varias pantallas de la aplicación, incluyendo la pantalla principal, las de búsqueda (imagen, texto, voz), y las pantallas de resultados, información del producto, carrito y post compra, historial, la lista de deseos y ajustes para cambiar el idioma.</li>
+                <li>Añadir soporte de internacionalización (i18n) (español, inglés, alemán, portugués, italiano, catalán, francés, gallego y vasco)</li>
+                <li>Integrar componentes de Android, como la cámara y microfóno para las búsquedas por imagen y voz.</li>
+                <li>Colaborar con la integración entre la aplicación y Firestore y la conexión entre app y las Cloud Functions</li>
+                <li>Investigar, seleccionar e integrar las APIs necesarias.</li>
+            </ul>
+
+            <p><strong>Tecnologías usadas:</strong></p>
+            <ul>
+                <li><strong>Lenguajes:</strong> Java para la aplicación y Typescript para las cloud functions</li>
+                <li><strong>Plataformas:</strong> Android Studio, Firebase, Google Cloud y Visual Studio Code</li>
+                <li><strong>Colaboración:</strong> Git para control de versiones y trabajo en equipo.</li>
+                <li><strong>APIs:</strong> Google Books API, RAWG API, Google Traductor API, Google Cloud Vision, Google Cloud Speech API.</li>
+            </ul>
+            
+            <!-- Botón para abrir la modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bookpixelModal">
+                Ver Capturas de Pantalla
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="bookpixelModal" tabindex="-1" role="dialog" aria-labelledby="bookpixelModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="bookpixelModalLabel">Capturas de Pantalla - BookPixel</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="carouselbookpixel" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="BookPixel_inicio_claro.png" class="d-block w-100" alt="Pantalla inicio modo claro">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="BookPixel_inicio_oscuro.png" class="d-block w-100" alt="Pantalla inicio modo oscuro">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="BookPixel.png" class="d-block w-100" alt="Pantalla seleccionar tipo búsqueda">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="BookPixel_buscar_imagen.png" class="d-block w-100" alt="Pantalla de búsqueda por imagen">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="BookPixel_busqueda_por_texto.png" class="d-block w-100" alt="Pantalla de búsqueda por texto">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="BookPixel_busqueda_audio.png" class="d-block w-100" alt="Pantalla de búsqueda por audio">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="BookPixel_info_libro.png" class="d-block w-100" alt="Pantalla información del libro">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="BookPixel_info_videojuego.png" class="d-block w-100" alt="Pantalla información del videojuego">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="BookPixel_info_videojuego2.png" class="d-block w-100" alt="Más información del videojuego">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="BookPixel_metacritic.png" class="d-block w-100" alt="Información metacritic">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="BookPixel_rawg.png" class="d-block w-100" alt="Gráfico Valoración RAWG">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="BookPixel_rawg_2.png" class="d-block w-100" alt="Otro Gráfico Valoración RAWG">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="BookPixel_carrito.png" class="d-block w-100" alt="Carrito">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="BookPixel_historial_libros.png" class="d-block w-100" alt="Historial de Libros">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="BookPixel_historial_videojuego.png" class="d-block w-100" alt="Historial de videojuegos">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="BookPixel_cambiar_idioma.png" class="d-block w-100" alt="Cambiar idioma de la app">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="BookPixel_wishlist.png" class="d-block w-100" alt="Whishlist Videojuegos">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselbookpixel" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Anterior</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselbookpixel" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Siguiente</span>
+                                </a>
+                            </div>
+                            <div>
+                                <p><strong>Nota:</strong> Las pantallas en modo claro y oscuro son casi idénticas, solo que varía la paleta de colores, como se puede ver en la pantalla de inicio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p><strong>Enlace al repositorio:</strong> El código está almacenado en un repositorio privado. Si se desea acceder al código, puedo compartirlo durante una entrevista.</p>
+            <p><strong>Equipo:</strong> Trabajo en equipo con otros 2 compañeros.</p>
+        </section>
+        <section class="App DR72" id="appdr72">
+            <h2>App DR72</h2>
+
+            <p><strong>Descripción del proyecto:</strong> En <strong>Gometrics</strong>, participé en el desarrollo de una aplicación Android que, a través de conectividad Bluetooth, permite a los usuarios visualizar en formato gráfico y textual los valores que lee el dispositivo <strong>DR72</strong>, creado por la empresa.</p>
+
+            <p><strong>Mi rol:</strong> Trabajé principalmente de manera individual, con apoyo puntual de los desarrolladores del hardware del DR72 para la implementación de la conectividad Bluetooth. Utilicé <strong>Android Studio</strong> y <strong>Java</strong>. Mi responsabilidad principal fue desarrollar la aplicación completa, desde la interfaz de usuario hasta la comunicación con el dispositivo.</p>
+
+            <p><strong>Tecnologías usadas:</strong></p>
+            <ul>
+                <li><strong>Lenguaje:</strong> Java</li>
+                <li><strong>Plataforma:</strong> Android Studio</li>
+                <li><strong>Colaboración:</strong> Git para control de versiones.</li>
+            </ul>
+
+            <p><strong>Enlace al repositorio:</strong> El código está almacenado en un repositorio privado y no puede ser compartido.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.gometrics.appdr72">Enlace para descargar</a>
+            <p><strong>Equipo:</strong> Trabajo individual, con pequeñas colaboraciones por parte de los desarrolladores del Hardware para la parte de conectividad.</p>
+
+            <!-- Botón para abrir la modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#appdr72Modal">
+                Ver Capturas de Pantalla
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="appdr72Modal" tabindex="-1" role="dialog" aria-labelledby="appdr72ModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="appdr72ModalLabel">Capturas de Pantalla - Appdr72</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="carouselappdr72" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="appDr72_1_claro.png" class="d-block w-100" alt="Pantalla Inicio">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="appDr72_1.jpg" class="d-block w-100" alt="Buscador de dispositivos BLE">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="appDr72_1_oscuro.png" class="d-block w-100" alt="Pantalla Inicio Modo Oscuro">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="appDr72_3_oscuro.png" class="d-block w-100" alt="Pantalla consultar datos Modo Oscuro">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselappdr72" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Anterior</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselappdr72" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Siguiente</span>
+                                </a>
+                            </div>
+                            <div>
+                                <p><strong>Nota:</strong> Las pantallas en modo claro y oscuro son casi idénticas, solo que varía la paleta de colores, como se puede ver en la pantalla de inicio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="email-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span id="close-modal" class="close">&times;</span>
+                <h2>Elige cómo enviar tu correo</h2>
+                
+                <div class="email-options">
+                    <img src="gmail-icon.png" id="gmail-icon" alt="Gmail" title="Enviar con Gmail" style="cursor:pointer;">
+                    <img src="outlook-icon.png" id="outlook-icon" alt="Outlook" title="Enviar con Outlook" style="cursor:pointer;">
+                </div>
+                
+                <button id="send-mail" aria-label="Confirmar envío">Confirmar envío</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Jan Codina</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/jan-codina-garcía-31b342271" target="_blank"><i class="fab fa-linkedin" style="font-size: 20px;"></i>LinkedIn</a></li>
+            <li><a href="mailto:jan.codinagarcia@hotmail.es">Email</a></li>
+            <li><a href="#" onclick="openModal()">Contactar</a></li>
+        </ul>
+    </footer>
+
+    <script src="jscripts/themeToggle.js"></script>
+    <script src="jscripts/modalEmail.js"></script>
+</body>
+</html>

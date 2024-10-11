@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mí</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Jan Codina</h1>
+        <h2>Ingeniero Informático, Mención Software</h2>
+    </header>
+    <main>
+        <nav class="navbar_pers">
+            <ul style="display: flex;">
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="#" class="dropdown-toggle" id="proyectos-link">Proyectos</a>
+                    <ul class="dropdown">
+                        <li><a href="android.html">Desarrollo Android</a></li>
+                        <li><a href="web.html">Desarrollo Web</a></li>
+                        <li><a href="python.html">Proyectos en Python</a></li>
+                        <li><a href="ia.html">Inteligencia Artificial</a></li>
+                        <li><a href="otros.html">Otros</a></li>
+                    </ul>
+                </li>
+                <!--<li><a href="contact.html">Contactar</a></li>-->
+                <li><a href="sobre-mi.html">Sobre Mí</a></li>
+            </ul>
+        </nav>
+        <button class="mode-toggle" id="mode-toggle" aria-label="Cambiar a modo oscuro">Cambiar a Modo Oscuro</button>
+        <section class="intro">
+            <ul class="index">
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#formacion">Formación Completa</a></li>
+                <li><a href="#experiencia">Experiencia Profesional</a></li>
+            </ul>
+        </section>
+        <section class="about" id="about">
+            <h2>Sobre Mí</h2>
+            <p>Soy graduado en Ingeniería Informática por la UAB, especializado en Ingeniería del Software. Me considero una persona proactiva y apasionada por la programación, siempre enfocada en alcanzar resultados de alta calidad. Me encanta asumir nuevos retos, independientemente de la tecnología o el lenguaje, y estoy dispuesto a aprender cualquier herramienta que sea necesaria. A lo largo de mi experiencia, he desarrollado proyectos que abarcan desde aplicaciones android hasta páginas web, siempre con el objetivo de optimizar el rendimiento y la calidad del código. Mi motivación diaria es mejorar y seguir aprendiendo.</p> 
+            <p>Si te gustaría colaborar o tienes alguna pregunta, no dudes en <a href="#" onclick="openModal()">ponerte en contacto conmigo</a>!</p>
+        </section>
+        <section id="formacion">
+            <h2>Mi Formación Completa</h2>
+            <ul>
+                <li>
+                    <strong>Grado en Informática, Mención Software - UAB</strong>
+                    <p>Nota media final: 7.44</p>
+                    <p>Años de estudio: Septiembre 2019 - Julio 2024</p>
+                    <p>Durante mis estudios, he desarrollado diversas aplicaciones Android, como <a href="android.html#foodfeed">FoodFeed</a> y <a href="android.html#bookpixel">BookPixel</a>, así como programas de <a href="ia.html">inteligencia artificial</a>.</p>
+                </li>
+            </ul>
+            <h3>Idiomas</h3>
+            <ul>
+                <li>
+                    <strong>Cursos de Inglés</strong> - Cambridge School
+                    <ul>
+                        <li>Nivel <em>(Septiembre 2016 - Junio 2017)</em></li>
+                        <li>Nivel B1<em>(Septiembre 2017 - Junio 2018)</em></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Curso Virtual de Italiano</strong> - Servei de Llengües UAB, plataforma Dexway
+                    <p>Nivel A1/A2 <em>(Abril 2023 - Abril 2024)</em></p>
+                </li>
+            </ul>
+        </section>
+        <section class="experiencia" id="experiencia">
+            <h2>Experiencia Profesional</h2>
+            <ul>
+                <li>
+                    <strong>Mango</strong>
+                    <p>Puesto: </p>
+                    <ul>
+                        <li>Mozo de Almacén <em>(Julio 2022 - Septiembre 2022)</em></li>
+                    </ul>
+                    <p>Durante mi tiempo en Mango, participé en el empaquetado de productos de colgado. El trabajo consistía en tres posibles tareas:</p>
+                    <ul>
+                        <li>Empaquetar la ropa para su posterior envío.</li>
+                        <li>Comprobar que las perchas no se unieran, para evitar fallos en la cadena de transporte de la fábrica.</li>
+                        <li>Vigilar que la ropa no cayera al suelo en la cadena de transporte de la fábrica.</li>
+                    </ul>
+                    <p>Gracias a estas experiencias, aunque no fue un trabajo directamente relacionado con la informática, adquirí varias aptitudes importantes que considero valiosas, como:</p>
+                    <ul>
+                        <li><strong>Trabajo en equipo</strong>, al colaborar en cadena para el empaquetamiento de productos de colgado.</li>
+                        <li><strong>Adaptabilidad y flexibilidad</strong>, al participar en diferentes fases del proceso de empaquetado de productos.</li>
+                        <li><strong>Atención al detalle</strong>, para asegurar que no ocurrieran errores que afectaran el flujo de trabajo.</li>
+                        <li><strong>Capacidad de aprendizaje rápido</strong>, ya que aprendí rápidamente todos los procesos y protocolos necesarios para desempeñar mis funciones en el equipo</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Gometrics</strong>
+                    <p>Puestos:</p>
+                    <ul>
+                        <li>Becario IT <em>(Junio 2023 - Septiembre 2024)</em></li>
+                        <li>Ingeniero Software Junior <em>(Septiembre 2024 - )</em></li>
+                    </ul>
+                    <p>Durante mi tiempo en Gometrics, participé en diversos proyectos que abarcan diferentes plataformas, incluyendo <a href="web.html">desarrollo web</a>, <a href="android.html#appdr72">aplicaciones Android</a> y <a href="python.html#artist">aplicaciones de escritorio</a>.</p>
+                    <p>Gracias a estas experiencias, he adquirido varias aptitudes importantes, como:</p>
+                    <ul>
+                        <li><strong>Resolución de problemas</strong>, al enfrentar y resolver desafíos técnicos en proyectos complejos.</li>
+                        <li><strong>Adaptabilidad y flexibilidad</strong>, trabajando en distintos proyectos de diferentes plataformas.</li>
+                        <li><strong>Gestión del tiempo</strong>, para cumplir con los plazos y organizar múltiples tareas dentro de los proyectos.</li>
+                        <li><strong>Orientación a resultados</strong>, manteniéndome enfocado en alcanzar los objetivos y los plazos establecidos.</li>
+                        <li><strong>Pensamiento crítico</strong>, analizando problemas desde distintas perspectivas antes de tomar decisiones.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <div id="email-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span id="close-modal" class="close">&times;</span>
+                <h2>Elige cómo enviar tu correo</h2>
+                
+                <div class="email-options">
+                    <img src="gmail-icon.png" id="gmail-icon" alt="Gmail" title="Enviar con Gmail" style="cursor:pointer;">
+                    <img src="outlook-icon.png" id="outlook-icon" alt="Outlook" title="Enviar con Outlook" style="cursor:pointer;">
+                </div>
+                
+                <button id="send-mail" aria-label="Confirmar envío">Confirmar envío</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Jan Codina</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/jan-codina-garcía-31b342271" target="_blank"><i class="fab fa-linkedin" style="font-size: 20px;"></i>LinkedIn</a></li>
+            <li><a href="mailto:jan.codinagarcia@hotmail.es">Email</a></li>
+            <li><a href="#" onclick="openModal()">Contactar</a></li>
+        </ul>
+    </footer>
+
+    <script src="jscripts/themeToggle.js"></script>
+    <script src="jscripts/modalEmail.js"></script>
+</body>
+</html>

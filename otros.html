@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otros Proyectos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Jan Codina</h1>
+        <h2>Ingeniero Informático, Mención Software</h2>
+    </header>
+    <main>
+        <button class="mode-toggle" id="mode-toggle" aria-label="Cambiar a modo oscuro">Cambiar a Modo Oscuro</button>
+        <nav class="navbar_pers">
+            <ul style="display: flex;">
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="#" class="dropdown-toggle">Proyectos</a>
+                    <ul class="dropdown">
+                        <li><a href="android.html">Desarrollo Android</a></li>
+                        <li><a href="web.html">Desarrollo Web</a></li>
+                        <li><a href="python.html">Proyectos en Python</a></li>
+                        <li><a href="ia.html">Inteligencia Artificial</a></li>
+                        <li><a href="otros.html">Otros</a></li>
+                    </ul>
+                </li>
+                <!--<li><a href="contact.html">Contactar</a></li>-->
+                <li><a href="sobre-mi.html">Sobre Mí</a></li>
+            </ul>
+        </nav>
+        <section class="intro">
+            <p>A continuación, presento otros tipos de proyectos en los que he trabajado en mi tiempo libre.</p>
+            
+            <!-- Índice para navegar a los proyectos -->
+            <ul class="index">
+                <li><a href="#fm24">Skin FM24</a></li>
+            </ul>
+        </section>
+        <h1>Otros Proyectos</h1>
+        <section class="fm24" id="fm24">
+            <h2>Skin FM24</h2>
+            
+            <p><strong>Descripción del proyecto:</strong> En mi tiempo libre, juego mucho al Football Manager 2024 y decidí cambiar la skin por defecto por la de <a href="" title="Proyecto Base de la skin">OpzElite</a>. Al usar esta skin, me pareció interesante editarla un poco, ya que encontré algunos aspectos que me gustaría modificar. Además, también creé imágenes para algunos futbolistas.</p>
+            
+            <p><strong>Mi rol:</strong> Trabajé junto a un amigo en la edición de esta skin, utilizando <strong>Visual Studio Code</strong> y <strong>XML</strong>. Mi responsabilidad fue:</p>
+            <ul>
+                <li>Cambiar los colores de algunas partes por otros más intuitivos. Por ejemplo:
+                    <ul>
+                        <li>Cambiar los colores de los mensajes del buzón para diferenciar claramente los correos leídos de los no leídos.</li>
+                        <li>Cambiar los colores de las valoraciones: rojo para las valoraciones bajas diferentes tonos de verde para las mejores.</li>
+                    </ul>
+                </li>
+                <li>Añadir algunos campos en determinadas pantallas del juego. Por ejemplo:
+                    <ul>
+                        <li>Añadir las estrellas de calidad actual y de potencial en la vista previa del jugador.</li>
+                        <li>Añadir la reputación del jugador en la caja de "" en la vista general del jugador.</li>
+                    </ul>
+                </li>
+                <li>Buscar en internet imágenes de futbolistas/entrenadores, editarlas para quitar el fondo y adaptarlas a un tamaño adecuado para el juego. Aunque existen packs que ya lo hacen, decidí hacerlo por mi cuenta para incluir únicamente las imágenes de los jugadores que yo quería, debido a limitaciones de espacio en mi PC, ya que estos packs suelen ocupar bastante espacio.</li>
+                <li>Incorporar las imágenes mediante XML al juego.</li>
+            </ul>
+
+            <p><strong>Imágenes antes y después de mis modificaciones:</strong></p>
+
+            
+            <p><strong>Tecnologías utilizadas:</strong></p>
+            <ul>
+                <li><strong>Lenguaje:</strong> XML</li>
+                <li><strong>Plataforma:</strong> Visual Studio Code</li>
+                <li><strong>Colaboración:</strong> Git para control de versiones.</li>
+            </ul>
+
+            <p><strong>Enlace al repositorio:</strong> El código está almacenado en un <a href="" title="Repositorio privado del código de la skin FM24">repositorio privado</a>. Puedes solicitar acceso a él si deseas ver el código.</p>
+            <p><strong>Equipo:</strong> Trabajo en equipo con otro compañero.</p>
+        </section>
+
+        <div id="email-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span id="close-modal" class="close">&times;</span>
+                <h2>Elige cómo enviar tu correo</h2>
+                
+                <div class="email-options">
+                    <img src="gmail-icon.png" id="gmail-icon" alt="Gmail" title="Enviar con Gmail" style="cursor:pointer;">
+                    <img src="outlook-icon.png" id="outlook-icon" alt="Outlook" title="Enviar con Outlook" style="cursor:pointer;">
+                </div>
+                
+                <button id="send-mail" aria-label="Confirmar envío">Confirmar envío</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Jan Codina</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/jan-codina-garcía-31b342271" target="_blank"><i class="fab fa-linkedin" style="font-size: 20px;"></i>LinkedIn</a></li>
+            <li><a href="mailto:jan.codinagarcia@hotmail.es">Email</a></li>
+            <li><a href="#" onclick="openModal()">Contactar</a></li>
+        </ul>
+    </footer>
+
+    <script src="jscripts/themeToggle.js"></script>
+    <script src="jscripts/modalEmail.js"></script>
+</body>
+</html>

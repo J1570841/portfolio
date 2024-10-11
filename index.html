@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Jan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Jan Codina</h1>
+        <h2>Ingeniero Informático, Mención Software</h2>
+    </header>
+    <main>
+        <nav class="navbar_pers">
+            <ul style="display: flex;">
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="#" class="dropdown-toggle" id="proyectos-link">Proyectos</a>
+                    <ul class="dropdown">
+                        <li><a href="android.html">Desarrollo Android</a></li>
+                        <li><a href="web.html">Desarrollo Web</a></li>
+                        <li><a href="python.html">Proyectos en Python</a></li>
+                        <li><a href="ia.html">Inteligencia Artificial</a></li>
+                        <li><a href="otros.html">Otros</a></li>
+                    </ul>
+                </li>
+                <!--<li><a href="contact.html">Contactar</a></li>-->
+                <li><a href="sobre-mi.html">Sobre Mí</a></li>
+            </ul>
+        </nav>
+        <button class="mode-toggle" id="mode-toggle" aria-label="Cambiar a modo oscuro">Cambiar a Modo Oscuro</button>
+        <section class="about">
+            <h2>Sobre Mí</h2>
+            <p>Soy graduado en Ingeniería Informática por la UAB, especializado en Ingeniería del Software. Me considero una persona proactiva y apasionada por la programación, siempre enfocada en alcanzar resultados de alta calidad. Me encanta asumir nuevos retos, independientemente de la tecnología o el lenguaje, y estoy dispuesto a aprender cualquier herramienta que sea necesaria. A lo largo de mi experiencia, he desarrollado proyectos que abarcan desde aplicaciones android hasta páginas web, siempre con el objetivo de optimizar el rendimiento y la calidad del código. Mi motivación diaria es mejorar y seguir aprendiendo.</p>
+            <p>Si quieres más información sobre mí, visita <a href="sobre-mi.html#about">sobre mí</a>.</p>
+            <img src="" alt="Jan">
+            <div class="container">
+                <!--<a href="contact.html">Contactar</a>-->
+                <a href="#" onclick="openModal()">Contactar</a>
+                <a href="#">CV</a>
+            </div>
+
+            <!-- Modal de confirmación -->
+            <div id="email-modal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span id="close-modal" class="close" onclick="closeModal()">&times;</span>
+                    <h2>Elige cómo enviar tu correo</h2>
+                    
+                    <div class="email-options">
+                        <img src="gmail-icon.png" id="gmail-icon" alt="Gmail" title="Enviar con Gmail" style="cursor:pointer;" onclick="selectService('gmail')">
+                        <img src="outlook-icon.png" id="outlook-icon" alt="Outlook" title="Enviar con Outlook" style="cursor:pointer;" onclick="selectService('outlook')">
+                    </div>
+                    
+                    <button id="send-mail" aria-label="Confirmar envío" onclick="sendEmail()">Confirmar envío</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <div id="email" class="email-box">jan.codinagarcia@hotmail.es</div>
+                <button class="copy-btn" onclick="copyEmail()" aria-label="Copiar email">Copiar</button>
+            </div>
+            
+            <div class="success-message" id="success-message">¡Correo copiado al portapapeles!</div>
+        </section>
+
+        <section class="formacion">
+            <h2>Formación</h2>
+            <p>A lo largo de mi formación he estudiado en: </p>
+            <ul>
+                <li>UAB</li>
+                <li>Cambridge School</li>
+                <li></li>
+            </ul>
+            <p>Si quieres más información sobre mi formación, visita <a href="sobre-mi.html#formacion">mi formación completa</a>.</p>
+        </section>
+
+        <section class="habilidades">
+            <h2>Habilidades</h2>
+            <div class="habilidades-container">
+                <!-- Columna de Habilidades Técnicas -->
+                <div class="habilidades-tecnicas">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="tecnicas-grid">
+                        <!-- Columna Frontend -->
+                        <div class="columna">
+                            <h4>Frontend</h4>
+                            <div class="carta">
+                                <div class="carta_front">
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                    </ul>
+                                    <button class="button-basic">Mostrar Conocimientos Básicos</button>
+                                </div>
+                                <div class="carta_back">
+                                    <ul>
+                                        <li>TypeScript</li>
+                                    </ul>
+                                    <button class="button-basic">Mostrar Conocimientos Completos</button>
+                                </div>                                
+                            </div>
+                        </div>
+                        <!-- Columna Backend -->
+                        <div class="columna">
+                            <h4>Backend</h4>
+                            <div class="carta">
+                                <div class="carta_front">
+                                    <ul>
+                                        <li>PHP</li>
+                                        <li>SQL</li>
+                                    </ul>
+                                    <button class="button-basic">Mostrar Conocimientos Básicos</button>
+                                </div>
+                                <div class="carta_back">
+                                    <ul>
+                                        <li>Node.js</li>
+                                        <li>Firebase</li>
+                                        <li>Google Cloud</li>
+                                    </ul>
+                                    <button class="button-basic">Mostrar Conocimientos Completos</button>
+                                </div>  
+                            </div>
+                        </div>
+                        <!-- Columna Otros Lenguajes -->
+                        <div class="columna">
+                            <h4>Otros Lenguajes</h4>
+                            <div class="carta">
+                                <div class="carta_front">
+                                    <ul>
+                                        <li>Java (Android Studio)</li>
+                                        <li>Python (Aplicaciones de escritorio y IA)</li>
+                                        <li>Lua (Scripting embebido)</li>
+                                    </ul>
+                                    <button class="button-basic">Mostrar Conocimientos Básicos</button>
+                                </div>
+                                <div class="carta_back">
+                                    <ul>
+                                        <li>C (Aplicaciones embebidas)</li>
+                                        <li>Dart (Desarrollo móvil)</li>
+                                        <li>C++</li>
+                                        <!--<li>R</li>-->
+                                    </ul>
+                                    <button class="button-basic">Mostrar Conocimientos Completos</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tecnicas-grid">
+                        <!-- Columna IDEs -->
+                        <div class="columna ide-list">
+                            <h4>IDEs</h4>
+                            <ul>
+                                <li>Visual Studio Code</li>
+                                <li>Android Studio</li>
+                                <li>PyCharm</li>
+                                <li>IntelliJ</li>
+                                <li>Visual Studio</li>
+                                <li>PHPStorm</li>
+                                <!--<li>Spyder</li>-->
+                                <!--<li>RStudio</li>-->
+                            </ul>
+                        </div>
+                        <div class="columna ide-list">
+                            <h4>Herramientas</h4>
+                            <ul>
+                                <li>Jupyter Notebook</li>
+                                <li>Sublime Text</li>
+                                <li>Notepad++</li>
+                                <li>Flutter</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tecnicas-grid">
+                        <!-- Columna Versioning -->
+                        <div class="columna">
+                            <h4>Versioning</h4>
+                            <ul>
+                                <li>Git</li>
+                                <li>GitHub</li>
+                                <li>Bitbucket</li>
+                                <li>Tortoise SVN</li>
+                            </ul>
+                        </div>
+                        <div class="columna">
+                            <h4>Project Management</h4>
+                            <ul>
+                                <li>Jira</li>
+                                <li>Leantime</li>
+                                <li>Microsft Project</li>
+                            </ul>
+                        </div>
+                        <div class="columna">
+                            <h4>Database</h4>
+                            <ul>
+                                <li>MySQL</li>
+                                <li>Oracle SQL</li>
+                                <li>Mongo DB</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tecnicas-grid">
+                        <div class="columna ide-list">
+                            <h4>Otras</h4>
+                            <ul>
+                                <li>Docker
+                                    <ul>
+                                        <li>Docker Compose</li>
+                                    </ul>
+                                </li>
+                                <li>XML</li>
+                                <li>JSON</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Columna de Habilidades Blandas -->
+                <div class="habilidades-blandas">
+                    <h3>Habilidades Blandas</h3>
+                    <ul>
+                        <li class="skill-item">
+                            <span class="skill-name" aria-label="Trabajo en equipo">Trabajo en equipo
+                                <span class="tooltip-skills">Colaboro de manera eficiente con otros para alcanzar objetivos comunes.</span>
+                            </span>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name" aria-label="Adaptabilidad">Adaptabilidad
+                                <span class="tooltip-skills">Soy capaz de ajustar estrategias y métodos de trabajo en entornos cambiantes.</span>
+                            </span>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name" aria-label="Resolución de problemas">Resolución de problemas
+                                <span class="tooltip-skills">Identifico y soluciono problemas de manera efectiva y creativa.</span>
+                            </span>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name" aria-label="Gestión del tiempo">Gestión del tiempo
+                                <span class="tooltip-skills">Organizo y priorizo tareas para cumplir con plazos establecidos.</span>
+                            </span>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name" aria-label="Flexibilidad">Flexibilidad
+                                <span class="tooltip-skills">Estoy abierto a nuevas ideas y dispuesto a cambiar de enfoque cuando sea necesario.</span>
+                            </span>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name" aria-label="Capacidad de aprendizaje continuo">Capacidad de aprendizaje continuo
+                                <span class="tooltip-skills">Siempre busco aprender y mejorar, ya sea a través de cursos o experiencias.</span>
+                            </span>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name" aria-label="Capacidad de aprendizaje rápido">Capacidad de aprendizaje rápido
+                                <span class="tooltip-skills">Puedo dominar rápidamente nuevas tecnologías y conceptos.</span>
+                            </span>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name" aria-label="Atención al detalle">Atención al detalle
+                                <span class="tooltip-skills">Me aseguro de que todos los aspectos del proyecto estén correctamente ejecutados.</span>
+                            </span>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name" aria-label="Pensamiento crítico">Pensamiento crítico
+                                <span class="tooltip-skills">Evalúo y analizo información antes de tomar decisiones importantes.</span>
+                            </span>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name" aria-label="Orientación a resultados">Orientación a resultados
+                                <span class="tooltip-skills">Me enfoco en alcanzar metas y objetivos a largo plazo.</span>
+                            </span>
+                        </li>
+                        <li class="skill-item" aria-label="Resiliencia">
+                            <span class="skill-name">Resiliencia
+                                <span class="tooltip-skills">Mantengo un enfoque positivo y sigo adelante, incluso frente a desafíos.</span>
+                            </span>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name" aria-label="Curiosidad">Curiosidad
+                                <span class="tooltip-skills">Siempre tengo el deseo de explorar nuevos campos y mejorar mis habilidades.</span>
+                            </span>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name" aria-label="Capacidad para recibir críticas">Capacidad para recibir críticas
+                                <span class="tooltip-skills">Soy receptivo a la retroalimentación constructiva y la utilizo para mejorar el desempeño.</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="Proyectos Principales">
+            <h2>Proyectos Principales</h2>
+            <p>En esta sección se muestran los principales proyectos en los que he trabajado, para ver todos los proyectos visite la <a href="#" onclick="abrirProyectos()">página de proyectos</a>.</p>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Jan Codina</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/jan-codina-garcía-31b342271" target="_blank"><i class="fab fa-linkedin" style="font-size: 20px;"></i>LinkedIn</a></li>
+            <li><a href="mailto:jan.codinagarcia@hotmail.es">Email</a></li>
+            <li><a href="#" onclick="openModal()">Contactar</a></li>
+        </ul>
+    </footer>
+
+    <script src="jscripts/themeToggle.js"></script>
+    <script src="jscripts/email.js"></script>
+    <script src="jscripts/cards.js"></script>
+    <script src="jscripts/modalEmail.js"></script>
+    <script>
+        function abrirProyectos() {
+            var proyectosLink = document.getElementById("proyectos-link");
+            
+            var mouseoverEvent = new Event('mouseover');
+            proyectosLink.dispatchEvent(mouseoverEvent);
+        }
+    </script>
+</body>
+</html>
