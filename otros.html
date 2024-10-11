@@ -50,12 +50,16 @@
                     <ul>
                         <li>Cambiar los colores de los mensajes del buzón para diferenciar claramente los correos leídos de los no leídos.</li>
                         <li>Cambiar los colores de las valoraciones: rojo para las valoraciones bajas diferentes tonos de verde para las mejores.</li>
+                        <li>Cambiar los colores de riesgo general: granate para muy alto, rojo para alto y ambar para considerable.</li>
+                        <li>Cambiar los colores de los jugadores cedidos al club/fuera del club para que se diferencien más.</li>
+                        <li>Cambiar el color de los jugadores que estan en la preselección.</li>
                     </ul>
                 </li>
                 <li>Añadir algunos campos en determinadas pantallas del juego. Por ejemplo:
                     <ul>
                         <li>Añadir las estrellas de calidad actual y de potencial en la vista previa del jugador.</li>
-                        <li>Añadir la reputación del jugador en la caja de "" en la vista general del jugador.</li>
+                        <li>Añadir la reputación del jugador en la caja de "Player Traits" en la vista general del jugador.</li>
+                        <li>Añadir en vista general de ojeo la recomendación de fichar a ese jugador.</li>
                     </ul>
                 </li>
                 <li>Buscar en internet imágenes de futbolistas/entrenadores, editarlas para quitar el fondo y adaptarlas a un tamaño adecuado para el juego. Aunque existen packs que ya lo hacen, decidí hacerlo por mi cuenta para incluir únicamente las imágenes de los jugadores que yo quería, debido a limitaciones de espacio en mi PC, ya que estos packs suelen ocupar bastante espacio.</li>
@@ -78,15 +82,15 @@
 
         <div id="email-modal" class="modal" style="display: none;">
             <div class="modal-content">
-                <span id="close-modal" class="close">&times;</span>
+                <span id="close-modal" class="close" onclick="closeModal()">&times;</span>
                 <h2>Elige cómo enviar tu correo</h2>
                 
                 <div class="email-options">
-                    <img src="gmail-icon.png" id="gmail-icon" alt="Gmail" title="Enviar con Gmail" style="cursor:pointer;">
-                    <img src="outlook-icon.png" id="outlook-icon" alt="Outlook" title="Enviar con Outlook" style="cursor:pointer;">
+                    <i class="mdi mdi-gmail" style="font-size: 50px; color: #DB4437; cursor:pointer;" title="Enviar con Gmail"></i>
+                    <i class="mdi mdi-microsoft-outlook" style="font-size: 50px; color: #0078D4; cursor:pointer;" title="Enviar con Outlook"></i>
                 </div>
                 
-                <button id="send-mail" aria-label="Confirmar envío">Confirmar envío</button>
+                <button id="send-mail" aria-label="Confirmar envío" onclick="sendEmail()">Confirmar envío</button>
             </div>
         </div>
     </main>

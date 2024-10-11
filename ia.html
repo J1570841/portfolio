@@ -220,15 +220,15 @@
 
         <div id="email-modal" class="modal" style="display: none;">
             <div class="modal-content">
-                <span id="close-modal" class="close">&times;</span>
+                <span id="close-modal" class="close" onclick="closeModal()">&times;</span>
                 <h2>Elige cómo enviar tu correo</h2>
                 
                 <div class="email-options">
-                    <img src="gmail-icon.png" id="gmail-icon" alt="Gmail" title="Enviar con Gmail" style="cursor:pointer;">
-                    <img src="outlook-icon.png" id="outlook-icon" alt="Outlook" title="Enviar con Outlook" style="cursor:pointer;">
+                    <i class="mdi mdi-gmail" style="font-size: 50px; color: #DB4437; cursor:pointer;" title="Enviar con Gmail"></i>
+                    <i class="mdi mdi-microsoft-outlook" style="font-size: 50px; color: #0078D4; cursor:pointer;" title="Enviar con Outlook"></i>
                 </div>
                 
-                <button id="send-mail" aria-label="Confirmar envío">Confirmar envío</button>
+                <button id="send-mail" aria-label="Confirmar envío" onclick="sendEmail()">Confirmar envío</button>
             </div>
         </div>
     </main>
