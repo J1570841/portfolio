@@ -108,7 +108,7 @@ header {
     }
 
     /* Mostrar solo el botón de menú en pantallas pequeñas */
-    .navbar_pers .dropdown {
+    .navbar_pers .dropdown-pers {
         display: none; /* Ocultar los submenús por defecto */
     }
 
@@ -142,7 +142,7 @@ header {
 
 
 /* Estilos para el menú desplegable */
-.dropdown {
+.dropdown-pers {
     display: none; /* Ocultar por defecto */
     position: absolute; /* Para posicionar el menú */
     background-color: #f8f8f8; /* Color de fondo del menú desplegable */
@@ -152,18 +152,18 @@ header {
     margin-top: 5px; /* Espaciado superior */
 }
 
-.dropdown li {
+.dropdown-pers li {
     margin: 0; /* Sin margen */
 }
 
-.dropdown a {
+.dropdown-pers a {
     display: block; /* Hacer que ocupe todo el ancho */
     padding: 10px 16px; /* Espaciado interno */
     white-space: nowrap; /* Evitar que el texto se divida en varias líneas */
 }
 
 /* Mostrar el menú desplegable al pasar el ratón por encima */
-.navbar_pers li:hover .dropdown {
+.navbar_pers li:hover .dropdown-pers {
     display: block; /* Mostrar el menú desplegable */
 }
 
@@ -388,16 +388,16 @@ body.dark-mode .navbar_pers a:hover {
     color: #fff; /* Texto blanco en hover */
 }
 
-body.dark-mode .dropdown {
+body.dark-mode .dropdown-pers {
     background-color: #333; /* Fondo oscuro para el menú desplegable */
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2); /* Sombra clara */
 }
 
-body.dark-mode .dropdown a {
+body.dark-mode .dropdown-pers a {
     color: #e0e0e0; /* Texto claro en el menú desplegable */
 }
 
-body.dark-mode .dropdown a:hover {
+body.dark-mode .dropdown-pers a:hover {
     background-color: #444; /* Fondo más oscuro al pasar el ratón por el menú desplegable */
     color: #fff; /* Texto blanco en hover */
 }

@@ -22,7 +22,7 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li>
                     <a href="#" class="dropdown-toggle">Proyectos</a>
-                    <ul class="dropdown">
+                    <ul class="dropdown-pers">
                         <li><a href="android.html">Desarrollo Android</a></li>
                         <li><a href="web.html">Desarrollo Web</a></li>
                         <li><a href="python.html">Proyectos en Python</a></li>
@@ -46,7 +46,7 @@
         <section class="fm24" id="fm24">
             <h2>Skin FM24</h2>
             
-            <p><strong>Descripción del proyecto:</strong> En mi tiempo libre, juego mucho al Football Manager 2024 y decidí cambiar la skin por defecto por la de <a href="" title="Proyecto Base de la skin">OpzElite</a>. Al usar esta skin, me pareció interesante editarla un poco, ya que encontré algunos aspectos que me gustaría modificar. Además, también creé imágenes para algunos futbolistas.</p>
+            <p><strong>Descripción del proyecto:</strong> En mi tiempo libre, disfruto jugando al Football Manager 2024, y decidí personalizar la skin por defecto, basada en la skin <a href="https://www.fmscout.com/a-opz-elite-fm24-skin.html" title="Proyecto Base de la skin">OpzElite</a>. Al usarla, observé algunos aspectos que quería mejorar, así que decidí editarla. Además, también creé imágenes personalizadas para ciertos futbolistas.</p>
             
             <p><strong>Mi rol:</strong> Trabajé junto a un amigo en la edición de esta skin, utilizando <strong>Visual Studio Code</strong> y <strong>XML</strong>. Mi responsabilidad fue:</p>
             <ul>
@@ -54,14 +54,14 @@
                     <ul>
                         <li>Cambiar los colores de los mensajes del buzón para diferenciar claramente los correos leídos de los no leídos.</li>
                         <li>Cambiar los colores de las valoraciones: rojo para las valoraciones bajas diferentes tonos de verde para las mejores.</li>
-                        <li>Cambiar los colores de riesgo general: granate para muy alto, rojo para alto y ambar para considerable.</li>
+                        <!--<li>Cambiar los colores de riesgo general: granate para muy alto, rojo para alto y ambar para considerable.</li>-->
                         <li>Cambiar los colores de los jugadores cedidos al club/fuera del club para que se diferencien más.</li>
                         <li>Cambiar el color de los jugadores que estan en la preselección.</li>
                     </ul>
                 </li>
                 <li>Añadir algunos campos en determinadas pantallas del juego. Por ejemplo:
                     <ul>
-                        <li>Añadir las estrellas de calidad actual y de potencial en la vista previa del jugador.</li>
+                        <li>Añadir las estrellas de calidad actual y de potencial en la vista previa del jugador en un carrusel dónde se ve la fortaleza de pierna del jugador, el representante, las cualidades del jugador, y las estrellas que es mi añadido.</li>
                         <li>Añadir la reputación del jugador en la caja de "Player Traits" en la vista general del jugador.</li>
                         <li>Añadir en vista general de ojeo la recomendación de fichar a ese jugador.</li>
                     </ul>
@@ -82,8 +82,10 @@
                 <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- modal-lg para hacer más grande el modal -->
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="modificacionModalLabel">Comparación Antes y Después</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h5 class="modal-title" id="modificacionModalLabel">Comparación Antes y Después Skin FM24</h5>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
                         <div class="modal-body">
                             <!-- Carrusel -->
@@ -93,40 +95,44 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <img src="imagenes/skin fm24/buzon_original.png" class="img-fluid" alt="Antes de la modificación">
-                                                <p class="text-center"><strong>Antes:</strong> Descripción de los cambios antes.</p>
+                                                <p class="text-center"><strong>Antes:</strong> El color de los mensajes leidos era blanco, y con determinada iluminación, no se llegaba a distingir bien los leidos del que estabas leyendo.</p>
                                             </div>
                                             <div class="col-md-6">
                                                 <img src="imagenes/skin fm24/buzon_modificado.png" class="img-fluid" alt="Después de la modificación">
-                                                <p class="text-center"><strong>Después:</strong> Descripción de los cambios después.</p>
+                                                <p class="text-center"><strong>Después:</strong> El color de los mensajes leidos se cambio a azul para evitar el problema mencionado anteriormente.</p>
                                             </div>
                                         </div>
                                     </div>
+                                <div class="carousel-inner">
                                     <div class="carousel-item">
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <img src="imagenes/skin fm24/cedidos_antiguo.png" class="img-fluid" alt="Antes de la modificación">
-                                                <p class="text-center"><strong>Antes:</strong> Descripción de los cambios antes.</p>
+                                                <p class="text-center"><strong>Antes:</strong> El color de los jugadores cedidos a otro club y el de los cedidos al club eran distintos tonos de azul, pero dependiendo de la iluminación no se diferenciaban bien.</p>
                                             </div>
                                             <div class="col-md-6">
                                                 <img src="imagenes/skin fm24/cedidos_modificado.png" class="img-fluid" alt="Después de la modificación">
-                                                <p class="text-center"><strong>Después:</strong> Descripción de los cambios después.</p>
+                                                <p class="text-center"><strong>Después:</strong> El color de los jugadores cedidos a otro equipo se cambio a lila para que se diferenciara bien.</p>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="carousel-inner">
                                     <div class="carousel-item">
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <img src="imagenes/skin fm24/entrenamiento_antiguo.png" class="img-fluid" alt="Antes de la modificación">
-                                                <p class="text-center"><strong>Antes:</strong> Descripción de los cambios antes.</p>
+                                                <p class="text-center"><strong>Antes:</strong> Las valoraciones de entrenamiento las mejores eran en rojo, y de alli bajaba en diferentes tonos de rojo.</p>
                                             </div>
                                             <div class="col-md-6">
                                                 <img src="imagenes/skin fm24/entrenamiento_modificado.png" class="img-fluid" alt="Después de la modificación">
-                                                <p class="text-center"><strong>Después:</strong> Descripción de los cambios después.</p>
+                                                <p class="text-center"><strong>Después:</strong> Las valoraciones de entrenamiento las mejores han pasado a ser verde, y en diferentes tonos de verde.</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
+                                </div>
+                                    <!--<div class="carousel-inner">
+                                        <div class="carousel-item">
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <img src="imagenes/skin fm24/medico_antiguo.png" class="img-fluid" alt="Antes de la modificación">
@@ -138,45 +144,45 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>-->
                                     <div class="carousel-inner">
-                                        <div class="carousel-item active">
+                                        <div class="carousel-item">
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <img src="imagenes/skin fm24/ojeo_original.png" class="img-fluid" alt="Antes de la modificación">
-                                                    <p class="text-center"><strong>Antes:</strong> Descripción de los cambios antes.</p>
+                                                    <p class="text-center"><strong>Antes:</strong> En esta pantalla no salen la recomendación por fichar al jugador.</p>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <img src="imagenes/skin fm24/ojeo_modificado.png" class="img-fluid" alt="Después de la modificación">
-                                                    <p class="text-center"><strong>Después:</strong> Descripción de los cambios después.</p>
+                                                    <p class="text-center"><strong>Después:</strong> Se ha agregado la recomendación por fichar al jugador en la vista.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-inner">
-                                        <div class="carousel-item active">
+                                        <div class="carousel-item">
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <img src="imagenes/skin fm24/preseleccion_original.png" class="img-fluid" alt="Antes de la modificación">
-                                                    <p class="text-center"><strong>Antes:</strong> Descripción de los cambios antes.</p>
+                                                    <p class="text-center"><strong>Antes:</strong> El color de los jugadores de la preselección era rojo.</p>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <img src="imagenes/skin fm24/preseleccion_modificada.png" class="img-fluid" alt="Después de la modificación">
-                                                    <p class="text-center"><strong>Después:</strong> Descripción de los cambios después.</p>
+                                                    <p class="text-center"><strong>Después:</strong> Se ha cambiado el color de los jugadores de la preselección a un amarillo para parecerse más a la skin original del juego.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-inner">
-                                        <div class="carousel-item active">
+                                        <div class="carousel-item">
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <img src="imagenes/skin fm24/vista_jugador_original.png" class="img-fluid" alt="Antes de la modificación">
-                                                    <p class="text-center"><strong>Antes:</strong> Descripción de los cambios antes.</p>
+                                                    <p class="text-center"><strong>Antes:</strong> Los colores de los atributos eran de distintos tonos de rojo.</p>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <img src="imagenes/skin fm24/vista_jugador_modificada.png" class="img-fluid" alt="Después de la modificación">
-                                                    <p class="text-center"><strong>Después:</strong> Descripción de los cambios después.</p>
+                                                    <p class="text-center"><strong>Después:</strong> Los colores de los atributos del jugador han pasado a ser como los de la skin original del juego y además en el "Player Traits" se ha añadido la reputación que tiene el jugador.</p>
                                                 </div>
                                             </div>
                                         </div>
