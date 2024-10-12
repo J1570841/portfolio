@@ -1,6 +1,6 @@
 // Enlaces predefinidos para Gmail y Outlook
-const gmailLink = "https://mail.google.com/mail/?view=cm&fs=1&to=tu_correo@dominio.com&su=Asunto&body=Escribe%20tu%20mensaje%20aquí";
-const outlookLink = "https://outlook.live.com/mail/0/deeplink/compose?to=tu_correo@dominio.com&subject=Asunto&body=Escribe%20tu%20mensaje%20aquí";
+const gmailLink = "https://mail.google.com/mail/?view=cm&fs=1&to=jan.codinagarcia@hotmail.es&su=Contacto%20Portfolio&body=Escribe%20tu%20mensaje%20aquí";
+const outlookLink = "https://outlook.live.com/mail/0/deeplink/compose?to=jan.codinagarcia@hotmail.es&subject=Contacto%20Portfolio&body=Escribe%20tu%20mensaje%20aquí";
 
 let selectedEmailService = '';
 
