@@ -871,3 +871,182 @@ body.dark-mode .tooltip-skills {
     height: 700px;
     object-fit: scale-down; /* Asegura que la imagen cubra todo el espacio sin deformarse */
 }
+
+.ProyectosPrincipales {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.ProyectosPrincipales h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.ProyectosPrincipales p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #666;
+    height: 150px;
+}
+
+.proyectos-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.proyecto {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: scale(1.05);
+}
+
+.proyecto img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: scale-down;
+}
+
+.proyecto h3 {
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.proyecto p {
+    padding: 0 1rem 1rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    padding: 0.75rem;
+    margin: 1rem;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Modo oscuro */
+body.dark-mode .ProyectosPrincipales {
+    background-color: #1E1E1E; /* Fondo de la sección en gris oscuro */
+    color: #E0E0E0; /* Texto claro */
+}
+
+body.dark-mode .ProyectosPrincipales h2 {
+    color: #ffffff; /* Título en blanco */
+}
+
+body.dark-mode .ProyectosPrincipales p {
+    color: #BBBBBB; /* Texto con menos contraste, gris claro */
+}
+
+body.dark-mode .proyectos-grid {
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+body.dark-mode .proyecto {
+    background-color: #2C2C2C; /* Fondo de las tarjetas más oscuro */
+    border: 1px solid #444; /* Borde en un tono gris oscuro */
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-mode .proyecto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Añadir una sombra sutil para destacar */
+}
+
+body.dark-mode .proyecto h3 {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #FFFFFF; /* Título en blanco */
+    margin: 0;
+}
+
+body.dark-mode .proyecto p {
+    padding: 0 1rem 1rem;
+    font-size: 1rem;
+    color: #CCCCCC; /* Texto en gris claro */
+}
+
+body.dark-mode .btn {
+    display: block;
+    text-align: center;
+    padding: 0.75rem;
+    margin: 1rem;
+    background-color: #1E88E5; /* Botón azul más suave */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+body.dark-mode .btn:hover {
+    background-color: #1565C0; /* Hover más oscuro */
+}
+
+/* Estilos para la modal */
+.modalImagenes {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
+    justify-content: center;
+    align-items: center;
+}
+
+.modalImagenes-content {
+    max-width: 90%; /* Limita el tamaño de la imagen */
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    display: block;
+    margin: auto;
+}
+
+.cerrarImagenes {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.cerrarImagenes:hover,
+.cerrarImagenes:focus {
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+}

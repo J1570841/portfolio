@@ -10,7 +10,7 @@
 <body>
     <header>
         <h1>Jan Codina</h1>
-        <h2>Ingeniero Informático, Mención Software</h2>
+        <h2>Ingeniero Informático, Mención Ingenieria del Software</h2>
     </header>
     <main>
         <nav class="navbar_pers">
@@ -294,8 +294,32 @@
         <section class="Proyectos Principales">
             <h2>Proyectos Principales</h2>
             <p>En esta sección se muestran los principales proyectos en los que he trabajado, para ver todos los proyectos visite la <a href="#" onclick="abrirProyectos()">página de proyectos</a>.</p>
-
+            <div class="proyectos-grid">
+                <div class="proyecto">
+                    <img src="imagenes/proyectos principales/calendario_fichajes.PNG" alt="Fichajes" onclick="abrirModal(this)">
+                    <h3>Fichajes</h3>
+                    <p>Desarrollo de una plataforma web para los fichajes de los empleados de Gometrics.</p>
+                    <a href="web.html#fichajes" class="btn">Ver Proyecto</a>
+                </div>
+                <div class="proyecto">
+                    <img src="" alt="App DR72">
+                    <h3>App DR72</h3>
+                    <p>Desarrollo de aplicación Android para conectar con el manómetro DR72 y ver sus datos en el móbil.</p>
+                    <a href="android.html#appdr72" class="btn">Ver Proyecto</a>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/proyectos principales/logo_bookPixel.jpg" alt="BookPixel" onclick="abrirModal(this)">
+                    <h3>BookPixel</h3>
+                    <p>Desarrollo de aplicación Android para buscar libros y videojuegos para ver su información y marcarlos como comprados.</p>
+                    <a href="android.html#bookpixel" class="btn">Ver Proyecto</a>
+                </div>
+            </div>
         </section>
+
+        <div id="modalImagenes" class="modalImagenes">
+            <span class="cerrarImagenes" onclick="cerrarModal()">&times;</span>
+            <img class="modalImagenes-content" id="imgModal">
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 Jan Codina</p>
@@ -310,6 +334,7 @@
     <script src="jscripts/email.js"></script>
     <script src="jscripts/cards.js"></script>
     <script src="jscripts/modalEmail.js"></script>
+    <script src="jscripts/modalImagenes.js"></script>
     <script>
         function abrirProyectos() {
             var proyectosLink = document.getElementById("proyectos-link");
