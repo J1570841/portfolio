@@ -72,6 +72,82 @@
             
             <!--<p><strong>Capturas de pantalla:</strong></p>
             <a href="imagenes.html?project=foodfeed">Ver imágenes del proyecto FoodFeed</a>-->
+            <!-- Botón para abrir la modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#foodFeedModal">
+                Ver Capturas de Pantalla
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="foodFeedModal" tabindex="-1" role="dialog" aria-labelledby="foodFeedModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="foodFeedModalLabel">Capturas de Pantalla - FoodFeed</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" onclick="pauseVideo()">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="carouselfoodFeed" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <figure>
+                                            <img src="imagenes/FoodFeed/Home Page.jpg" class="d-block w-100" alt="Pantalla inicio">
+                                            <figcaption>Pantalla de inicio, dónde se puede ver el día actual, los nutrientes consumidos y una lista de los alimentos consumidos.</figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <figure>
+                                            <img src="imagenes/FoodFeed/Statistics.jpg" class="d-block w-100" alt="Pantalla estadísticas">
+                                            <figcaption>Pantalla de estadísticas, dónde puedes ver el total de nutrientes consumidos y por día del último dia, semana, mes o año.</figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <figure>
+                                            <img src="imagenes/FoodFeed/calendario.png" class="d-block w-100" alt="Pantalla calendario">
+                                            <figcaption>Pantalla para seleccionar un día para ver la información de ese día en particular.</figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <figure>
+                                            <img src="imagenes/FoodFeed/Dia seleccionado via calendario.jpg" class="d-block w-100" alt="Pantalla de información del dia filtrado">
+                                            <figcaption>Pantalla parecida a la de inicio, pero con la información del día filtrado desde la pantalla de calendario.</figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <figure>
+                                            <img src="imagenes/FoodFeed/Buscador.jpg" class="d-block w-100" alt="Pantalla de búsqueda por texto">
+                                            <figcaption>Pantalla para búsqueda por texto de los alimentos, los últimos buscados son los que aparecen por defecto.</figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <figure>
+                                            <img src="imagenes/FoodFeed/Info alimento.jpg" class="d-block w-100" alt="Pantalla de información del alimento">
+                                            <figcaption>Pantalla para ver los nutrientes que tiene el alimento y añadir cuantos has consumido.</figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <figure>
+                                            <video id="videoFoodFeed" width="640" height="360" controls poster="imagenes/FoodFeed/ic_trackerapp_launcher.png">
+                                                <source src="videos/FoodFeed/FoodFeed.mp4" type="video/mp4">
+                                                Tu navegador no soporta la etiqueta de video.
+                                            </video>
+                                            <figcaption>En este vídeo se puede ver el banner promocional que se hizo para la aplicación.</figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselfoodFeed" role="button" data-slide="prev" onclick="pauseVideo()">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Anterior</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselfoodFeed" role="button" data-slide="next" onclick="pauseVideo()">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Siguiente</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <p><strong>Enlace al repositorio:</strong> El código está almacenado en un repositorio privado. Si se desea acceder al código, puedo compartirlo durante una entrevista.</p>
             <p><strong>Equipo:</strong> Trabajo en equipo con otros 7 compañeros, divididos en 2 backend, 2 IA y 4 frontend.</p>
@@ -356,5 +432,6 @@
 
     <script src="jscripts/themeToggle.js"></script>
     <script src="jscripts/modalEmail.js"></script>
+    <script src="jscripts/modalFoodFeed.js"></script>
 </body>
 </html>

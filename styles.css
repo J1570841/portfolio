@@ -872,6 +872,16 @@ body.dark-mode .tooltip-skills {
     object-fit: scale-down; /* Asegura que la imagen cubra todo el espacio sin deformarse */
 }
 
+#carouselfoodFeed .carousel-item img {
+    height: 700px;
+    object-fit: scale-down; /* Asegura que la imagen cubra todo el espacio sin deformarse */
+}
+
+#carouselfoodFeed .carousel-item video {
+    width: 450px;
+    object-fit: scale-down; /* Asegura que la imagen cubra todo el espacio sin deformarse */
+}
+
 .ProyectosPrincipales {
     padding: 2rem;
     background-color: #f4f4f4;
