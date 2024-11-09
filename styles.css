@@ -62,7 +62,7 @@ header {
     background-color: #f8f8f8; /* Color de fondo opcional */
     border-bottom: 1px solid rgba(0, 0, 0, 0.2); /* Línea superior sutil */
     margin-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .navbar_pers {
@@ -449,6 +449,7 @@ body.dark-mode a:hover {
     align-items: center;
     gap: 10px;
     margin-top: 20px;
+    justify-content: center;
 }
 
 .email-box {
@@ -888,7 +889,7 @@ body.dark-mode .tooltip-skills {
 }
 
 .ProyectosPrincipales {
-    padding: 2rem;
+    padding: 10px 20px 0 20px;
     background-color: #f4f4f4;
     text-align: center;
 }
@@ -902,7 +903,6 @@ body.dark-mode .tooltip-skills {
     font-size: 1rem;
     margin-bottom: 2rem;
     color: #666;
-    height: 150px;
 }
 
 .proyectos-grid {
@@ -1069,7 +1069,7 @@ body.dark-mode .btn:hover {
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
+    width: 70px;
     height: 38px;
   }
 
@@ -1125,6 +1125,7 @@ body.dark-mode .btn:hover {
     bottom: 4px;
     background-color: white;
     transition: 0.4s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   }
 
   input:checked + .slider {
@@ -1132,7 +1133,7 @@ body.dark-mode .btn:hover {
   }
 
   input:checked + .slider:before {
-    transform: translateX(26px);
+    transform: translateX(30px);
   }
 
   input:checked + .slider .sun {
@@ -1143,4 +1144,19 @@ body.dark-mode .btn:hover {
   input:checked + .slider .moon {
     opacity: 0;
     right: 5px;
+  }
+
+  .perfil {
+    display: flex;
+    align-items: flex-start; /* Alinea el texto al inicio de la imagen */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+  }
+
+  .perfil-texto p {
+    margin-block-start: auto;
+    text-align: justify;
+  }
+
+  main {
+    padding: 0 20px 0 20px;
   }

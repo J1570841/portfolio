@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Jan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css" rel="stylesheet">
 </head>
@@ -12,38 +17,42 @@
         <h1>Jan Codina</h1>
         <h2>Ingeniero Informático, Mención Ingenieria del Software</h2>
     </header>
+    <nav class="navbar_pers">
+        <ul style="display: flex; align-items: center;">
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="#" class="dropdown-toggle" id="proyectos-link">Proyectos</a>
+                <ul class="dropdown-pers">
+                    <li><a href="android.html">Desarrollo Android</a></li>
+                    <li><a href="web.html">Desarrollo Web</a></li>
+                    <li><a href="python.html">Proyectos en Python</a></li>
+                    <li><a href="ia.html">Inteligencia Artificial</a></li>
+                    <li><a href="otros.html">Otros</a></li>
+                </ul>
+            </li>
+            <!--<li><a href="contact.html">Contactar</a></li>-->
+            <li><a href="sobre-mi.html">Sobre Mí</a></li>
+            <li><label class="switch">
+                <input type="checkbox" id="mode-toggle" aria-label="Cambiar a modo oscuro">
+                <span class="slider">
+                    <span class="icon sun">☀️</span>
+                    <span class="icon moon">🌙</span>
+                </span>
+                </label>
+            </li>
+        </ul>
+    </nav>
     <main>
-        <nav class="navbar_pers">
-            <ul style="display: flex; align-items: center;">
-                <li><a href="index.html">Inicio</a></li>
-                <li>
-                    <a href="#" class="dropdown-toggle" id="proyectos-link">Proyectos</a>
-                    <ul class="dropdown-pers">
-                        <li><a href="android.html">Desarrollo Android</a></li>
-                        <li><a href="web.html">Desarrollo Web</a></li>
-                        <li><a href="python.html">Proyectos en Python</a></li>
-                        <li><a href="ia.html">Inteligencia Artificial</a></li>
-                        <li><a href="otros.html">Otros</a></li>
-                    </ul>
-                </li>
-                <!--<li><a href="contact.html">Contactar</a></li>-->
-                <li><a href="sobre-mi.html">Sobre Mí</a></li>
-                <li><label class="switch">
-                    <input type="checkbox" id="mode-toggle" aria-label="Cambiar a modo oscuro">
-                    <span class="slider">
-                        <span class="icon sun">☀️</span>
-                        <span class="icon moon">🌙</span>
-                    </span>
-                  </label>
-                </li>
-            </ul>
-        </nav>
         <!--<button class="mode-toggle" id="mode-toggle" aria-label="Cambiar a modo oscuro">Cambiar a Modo Oscuro</button>-->
         <section class="about">
             <h2>Sobre Mí</h2>
-            <p>Soy graduado en Ingeniería Informática por la UAB, especializado en Ingeniería del Software. Me considero una persona proactiva y apasionada por la programación, siempre enfocada en alcanzar resultados de alta calidad. Me encanta asumir nuevos retos, independientemente de la tecnología o el lenguaje, y estoy dispuesto a aprender cualquier herramienta que sea necesaria. A lo largo de mi experiencia, he desarrollado proyectos que abarcan desde aplicaciones android hasta páginas web, siempre con el objetivo de optimizar el rendimiento y la calidad del código. Mi motivación diaria es mejorar y seguir aprendiendo.</p>
-            <p>Si quieres más información sobre mí, visita <a href="sobre-mi.html#about">sobre mí</a>.</p>
-            <img src="" alt="Jan">
+            <div class="perfil">
+                <img src="imagenes/perfil/imagen.jpg" alt="Jan" height="200px">
+                <div class="perfil-texto">
+                    <p>Soy graduado en Ingeniería Informática por la UAB, especializado en Ingeniería del Software. Me considero una persona proactiva y apasionada por la programación, siempre enfocada en alcanzar resultados de alta calidad. Me encanta asumir nuevos retos, independientemente de la tecnología o el lenguaje, y estoy dispuesto a aprender cualquier herramienta que sea necesaria. A lo largo de mi experiencia, he desarrollado proyectos que abarcan desde aplicaciones android hasta páginas web, siempre con el objetivo de optimizar el rendimiento y la calidad del código. Mi motivación diaria es mejorar y seguir aprendiendo.</p>
+                    <p>Si quieres más información sobre mí, visita <a href="sobre-mi.html#about">sobre mí</a>.</p>
+                </div>
+            </div>
             <div class="container">
                 <!--<a href="contact.html">Contactar</a>-->
                 <a href="#" onclick="openModal()">Contactar</a>
@@ -307,24 +316,24 @@
             </div>
         </section>
 
-        <section class="Proyectos Principales">
+        <section class="ProyectosPrincipales">
             <h2>Proyectos Principales</h2>
             <p>En esta sección se muestran los principales proyectos en los que he trabajado, para ver todos los proyectos visite la <a href="#" onclick="abrirProyectos()">página de proyectos</a>.</p>
             <div class="proyectos-grid">
                 <div class="proyecto">
-                    <img src="imagenes/proyectos principales/calendario_fichajes.PNG" alt="Fichajes" onclick="abrirModal(this)">
+                    <img src="imagenes/proyectos principales/calendario_fichajes.PNG" alt="Fichajes" onclick="abrirModal(this)" style="cursor: pointer;">
                     <h3>Fichajes</h3>
                     <p>Desarrollo de una plataforma web para los fichajes de los empleados de Gometrics.</p>
                     <a href="web.html#fichajes" class="btn">Ver Proyecto</a>
                 </div>
                 <div class="proyecto">
-                    <img src="imagenes/appDr72/appDr72_pantalla_grafico.png" alt="App DR72" onclick="abrirModal(this)">
+                    <img src="imagenes/appDr72/appDr72_pantalla_grafico.png" alt="App DR72" onclick="abrirModal(this)" style="cursor: pointer;">
                     <h3>App DR72</h3>
                     <p>Desarrollo de aplicación Android para conectar con el manómetro DR72 y ver sus datos en el móbil.</p>
                     <a href="android.html#appdr72" class="btn">Ver Proyecto</a>
                 </div>
                 <div class="proyecto">
-                    <img src="imagenes/proyectos principales/logo_bookPixel.jpg" alt="BookPixel" onclick="abrirModal(this)">
+                    <img src="imagenes/proyectos principales/logo_bookPixel.jpg" alt="BookPixel" onclick="abrirModal(this)" style="cursor: pointer;">
                     <h3>BookPixel</h3>
                     <p>Desarrollo de aplicación Android para buscar libros y videojuegos para ver su información y marcarlos como comprados.</p>
                     <a href="android.html#bookpixel" class="btn">Ver Proyecto</a>

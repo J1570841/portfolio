@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos Web</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,32 +17,32 @@
         <h1>Jan Codina</h1>
         <h2>Ingeniero Informático, Mención Ingenieria del Software</h2>
     </header>
+    <nav class="navbar_pers">
+        <ul style="display: flex; align-items: center;">
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="#" class="dropdown-toggle" id="proyectos-link">Proyectos</a>
+                <ul class="dropdown-pers">
+                    <li><a href="android.html">Desarrollo Android</a></li>
+                    <li><a href="web.html">Desarrollo Web</a></li>
+                    <li><a href="python.html">Proyectos en Python</a></li>
+                    <li><a href="ia.html">Inteligencia Artificial</a></li>
+                    <li><a href="otros.html">Otros</a></li>
+                </ul>
+            </li>
+            <!--<li><a href="contact.html">Contactar</a></li>-->
+            <li><a href="sobre-mi.html">Sobre Mí</a></li>
+            <li><label class="switch">
+                <input type="checkbox" id="mode-toggle" aria-label="Cambiar a modo oscuro">
+                <span class="slider">
+                    <span class="icon sun">☀️</span>
+                    <span class="icon moon">🌙</span>
+                </span>
+                </label>
+            </li>
+        </ul>
+    </nav>
     <main>
-        <nav class="navbar_pers">
-            <ul style="display: flex; align-items: center;">
-                <li><a href="index.html">Inicio</a></li>
-                <li>
-                    <a href="#" class="dropdown-toggle" id="proyectos-link">Proyectos</a>
-                    <ul class="dropdown-pers">
-                        <li><a href="android.html">Desarrollo Android</a></li>
-                        <li><a href="web.html">Desarrollo Web</a></li>
-                        <li><a href="python.html">Proyectos en Python</a></li>
-                        <li><a href="ia.html">Inteligencia Artificial</a></li>
-                        <li><a href="otros.html">Otros</a></li>
-                    </ul>
-                </li>
-                <!--<li><a href="contact.html">Contactar</a></li>-->
-                <li><a href="sobre-mi.html">Sobre Mí</a></li>
-                <li><label class="switch">
-                    <input type="checkbox" id="mode-toggle" aria-label="Cambiar a modo oscuro">
-                    <span class="slider">
-                        <span class="icon sun">☀️</span>
-                        <span class="icon moon">🌙</span>
-                    </span>
-                  </label>
-                </li>
-            </ul>
-        </nav>
         <!--<button class="mode-toggle" id="mode-toggle" aria-label="Cambiar a modo oscuro">Cambiar a Modo Oscuro</button>-->
         <section class="intro">
             <p>A continuación, se presentan algunos de los proyectos Web en los que he trabajado, centrados en el desarrollo de páginas web.</p>
