@@ -14,7 +14,7 @@
     </header>
     <main>
         <nav class="navbar_pers">
-            <ul style="display: flex;">
+            <ul style="display: flex; align-items: center;">
                 <li><a href="index.html">Inicio</a></li>
                 <li>
                     <a href="#" class="dropdown-toggle" id="proyectos-link">Proyectos</a>
@@ -28,9 +28,17 @@
                 </li>
                 <!--<li><a href="contact.html">Contactar</a></li>-->
                 <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                <li><label class="switch">
+                    <input type="checkbox" id="mode-toggle" aria-label="Cambiar a modo oscuro">
+                    <span class="slider">
+                        <span class="icon sun">☀️</span>
+                        <span class="icon moon">🌙</span>
+                    </span>
+                  </label>
+                </li>
             </ul>
         </nav>
-        <button class="mode-toggle" id="mode-toggle" aria-label="Cambiar a modo oscuro">Cambiar a Modo Oscuro</button>
+        <!--<button class="mode-toggle" id="mode-toggle" aria-label="Cambiar a modo oscuro">Cambiar a Modo Oscuro</button>-->
         <section class="about">
             <h2>Sobre Mí</h2>
             <p>Soy graduado en Ingeniería Informática por la UAB, especializado en Ingeniería del Software. Me considero una persona proactiva y apasionada por la programación, siempre enfocada en alcanzar resultados de alta calidad. Me encanta asumir nuevos retos, independientemente de la tecnología o el lenguaje, y estoy dispuesto a aprender cualquier herramienta que sea necesaria. A lo largo de mi experiencia, he desarrollado proyectos que abarcan desde aplicaciones android hasta páginas web, siempre con el objetivo de optimizar el rendimiento y la calidad del código. Mi motivación diaria es mejorar y seguir aprendiendo.</p>
@@ -39,7 +47,7 @@
             <div class="container">
                 <!--<a href="contact.html">Contactar</a>-->
                 <a href="#" onclick="openModal()">Contactar</a>
-                <a href="CV.pdf">CV</a>
+                <a href="pdfs/CV.pdf">CV</a>
             </div>
 
             <!-- Modal de confirmación -->
@@ -333,6 +341,7 @@
         <p>&copy; 2024 Jan Codina</p>
         <ul>
             <li><a href="https://www.linkedin.com/in/jan-codina-garcía-31b342271" target="_blank"><i class="fab fa-linkedin" style="font-size: 20px;"></i>LinkedIn</a></li>
+            <li><a href="pdfs/CV.pdf">CV</a></li>
             <li><a href="mailto:jan.codinagarcia@hotmail.es">Email</a></li>
             <li><a href="#" onclick="openModal()">Contactar</a></li>
         </ul>

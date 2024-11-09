@@ -14,10 +14,10 @@
     </header>
     <main>
         <nav class="navbar_pers">
-            <ul style="display: flex;">
+            <ul style="display: flex; align-items: center;">
                 <li><a href="index.html">Inicio</a></li>
                 <li>
-                    <a href="#" class="dropdown-toggle">Proyectos</a>
+                    <a href="#" class="dropdown-toggle" id="proyectos-link">Proyectos</a>
                     <ul class="dropdown-pers">
                         <li><a href="android.html">Desarrollo Android</a></li>
                         <li><a href="web.html">Desarrollo Web</a></li>
@@ -28,9 +28,17 @@
                 </li>
                 <!--<li><a href="contact.html">Contactar</a></li>-->
                 <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                <li><label class="switch">
+                    <input type="checkbox" id="mode-toggle" aria-label="Cambiar a modo oscuro">
+                    <span class="slider">
+                        <span class="icon sun">☀️</span>
+                        <span class="icon moon">🌙</span>
+                    </span>
+                  </label>
+                </li>
             </ul>
         </nav>
-        <button class="mode-toggle" id="mode-toggle" aria-label="Cambiar a modo oscuro">Cambiar a Modo Oscuro</button>
+        <!--<button class="mode-toggle" id="mode-toggle" aria-label="Cambiar a modo oscuro">Cambiar a Modo Oscuro</button>-->
         <section class="intro">
             <p>A continuación, se presentan algunos de los proyectos Web en los que he trabajado, centrados en el desarrollo de páginas web.</p>
             
@@ -157,6 +165,7 @@
         <p>&copy; 2024 Jan Codina</p>
         <ul>
             <li><a href="https://www.linkedin.com/in/jan-codina-garcía-31b342271" target="_blank"><i class="fab fa-linkedin" style="font-size: 20px;"></i>LinkedIn</a></li>
+            <li><a href="pdfs/CV.pdf">CV</a></li>
             <li><a href="mailto:jan.codinagarcia@hotmail.es">Email</a></li>
             <li><a href="#" onclick="openModal()">Contactar</a></li>
         </ul>
