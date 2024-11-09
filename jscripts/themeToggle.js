@@ -4,12 +4,24 @@ const modeToggle = document.getElementById('mode-toggle');
 // Función para cargar la preferencia del usuario desde LocalStorage
 function loadThemePreference() {
     const darkMode = localStorage.getItem('dark-mode');
-    if (darkMode === 'enabled') {
-        document.body.classList.add('dark-mode');
-        modeToggle.checked = false; // Marca el checkbox
+    if (darkMode !== null) {
+        if (darkMode === 'enabled') {
+            document.body.classList.add('dark-mode');
+            modeToggle.checked = false; // Marca el checkbox
+        } else {
+            document.body.classList.remove('dark-mode');
+            modeToggle.checked = true; // Desmarca el checkbox
+        }
     } else {
-        document.body.classList.remove('dark-mode');
-        modeToggle.checked = true; // Desmarca el checkbox
+        const prefiereModoOscuro = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        if (prefiereModoOscuro) {
+            document.body.classList.add('dark-mode');
+            modeToggle.checked = false;
+        } else {
+            document.body.classList.remove('dark-mode');
+            modeToggle.checked = true;
+        }
     }
 }
 
@@ -28,5 +40,18 @@ function setThemePreference() {
 // Alternar el modo y guardar la preferencia cuando se hace clic en el toggle
 modeToggle.addEventListener('change', () => {
     document.body.classList.toggle('dark-mode');
+    setThemePreference();
+});
+
+const modoOscuroListener = window.matchMedia('(prefers-color-scheme: dark)');
+modoOscuroListener.addEventListener('change', event => {
+    if (event.matches) {
+        document.body.classList.add('dark-mode');
+        modeToggle.checked = false;
+    } else {
+        document.body.classList.remove('dark-mode');
+        modeToggle.checked = true;
+    }
+    
     setThemePreference();
 });
