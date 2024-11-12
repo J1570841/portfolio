@@ -99,6 +99,10 @@ header {
 }
 
 @media (max-width: 768px) {
+    header {
+        margin-top: 200px;
+    }
+
     .navbar_pers ul {
         flex-direction: row; /* Cambia a fila para que los elementos se organicen en dos columnas */
         flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples filas/columnas */
@@ -391,6 +395,11 @@ body.dark-mode .navbar_pers a {
 body.dark-mode .navbar_pers a:hover {
     background-color: #333; /* Fondo gris oscuro al pasar el ratón */
     color: #fff; /* Texto blanco en hover */
+}
+
+body.dark-mode .navbar_pers li select {
+    background-color: #222;
+    color: #e0e0e0;
 }
 
 body.dark-mode .dropdown-pers {
@@ -1160,3 +1169,56 @@ body.dark-mode .btn:hover {
   main {
     padding: 0 20px 0 20px;
   }
+
+  .language-selector {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 200px;
+    position: relative;
+    background: #fff;
+}
+
+.language-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    width: 100%;
+    z-index: 10;
+}
+
+.language-option {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.language-option span {
+    width: 20px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+.language-selector:hover .language-options {
+    display: block;
+}
+
+body.dark-mode .language-selector {
+    background-color: #222;
+    color: #e0e0e0;
+}
+
+body.dark-mode .language-options {
+    background-color: #222;
+    color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+    .language-selector {
+        width: 100px;
+    }
+}

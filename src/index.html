@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"/>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -32,7 +33,7 @@
             <!--<li><a href="contact.html">Contactar</a></li>-->
             <li><a href="pages/sobre-mi.html" data-i18n="about">Sobre Mí</a></li>
             <li>
-                <ul>
+                <ul style="display: flex;">
                     <li>
                         <label class="switch">
                         <input type="checkbox" id="mode-toggle" data-i18n="cambiar_modo_oscuro" aria-label="Cambiar a modo oscuro">
@@ -43,11 +44,20 @@
                         </label>
                     </li>
                     <li>
-                        <select id="languageSelector">
-                            <option value="en">English</option>
-                            <option value="es">Español</option>
-                            <option value="cat">Català</option>
-                        </select>
+                        <div class="language-selector">
+                            <span id="selected-language">Seleccionar idioma</span>
+                            <div class="language-options">
+                                <div class="language-option" onclick="selectLanguage('en', 'English', 'fi fi-gb')">
+                                    <span class="fi fi-gb"></span> English
+                                </div>
+                                <div class="language-option" onclick="selectLanguage('es', 'Español', 'fi fi-es')">
+                                    <span class="fi fi-es"></span> Español
+                                </div>
+                                <div class="language-option" onclick="selectLanguage('cat', 'Català', 'fi fi-es-ct')">
+                                    <span class="fi fi-es-ct"></span> Català
+                                </div>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </li>
@@ -372,6 +382,7 @@
     <script src="scripts/cards.js"></script>
     <script src="scripts/modalEmail.js"></script>
     <script src="scripts/modalImagenes.js"></script>
+    <script src="scripts/translation.js"></script>
     <script>
         function abrirProyectos() {
             var proyectosLink = document.getElementById("proyectos-link");

@@ -1,13 +1,27 @@
+selectLanguage = function(languageCode, languageName, flagClass) {
+    const selectedLanguageElement = document.getElementById('selected-language');
+    selectedLanguageElement.innerHTML = `<span class="${flagClass}"></span> ${languageName}`;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
-    const languageSelector = document.getElementById("languageSelector");
+    const selectedLanguageElement = document.getElementById("selected-language");
 
     // Función para cargar el JSON de traducción
     async function loadTranslations(language) {
         try {
-            const response = await fetch(`locale/${language}.json`);
+            const response = await fetch(`/assets/locales/${language}.json`);
             const translations = await response.json();
             applyTranslations(translations);
-            languageSelector.value = language; // Actualiza el selector al idioma cargado
+            // Actualizar el idioma visualmente después de cargar las traducciones
+            const languageData = {
+                en: { name: "English", flagUrl: "fi fi-gb" },
+                es: { name: "Español", flagUrl: "fi fi-es" },
+                cat: { name: "Català", flagUrl: "fi fi-es-ct" }
+            };
+            const selectedLanguage = languageData[language];
+            if (selectedLanguage) {
+                selectLanguage(language, selectedLanguage.name, selectedLanguage.flagUrl);
+            }
         } catch (error) {
             console.error("Error al cargar el archivo de traducción:", error);
         }
@@ -26,15 +40,17 @@ document.addEventListener("DOMContentLoaded", () => {
     // Detectar el idioma del sistema y cargarlo
     function detectSystemLanguage() {
         const systemLanguage = navigator.language.slice(0, 2); // Extrae los dos primeros caracteres del idioma del sistema
-        const supportedLanguages = ["en", "es"]; // Lista de idiomas soportados
+        const supportedLanguages = ["en", "es", "cat"]; // Lista de idiomas soportados
         return supportedLanguages.includes(systemLanguage) ? systemLanguage : "es"; // Devuelve el idioma detectado o español como fallback
     }
 
-    // Cambiar idioma al seleccionar una opción
-    languageSelector.addEventListener("change", (event) => {
-        const selectedLanguage = event.target.value;
-        localStorage.setItem("preferredLanguage", selectedLanguage);
-        loadTranslations(selectedLanguage);
+    // Cambiar idioma al seleccionar una opción en el menú
+    document.querySelectorAll(".language-option").forEach(option => {
+        option.addEventListener("click", () => {
+            const languageCode = option.getAttribute("onclick").split("'")[1];
+            localStorage.setItem("preferredLanguage", languageCode);
+            loadTranslations(languageCode);
+        });
     });
 
     // Cargar el idioma guardado, el del sistema o usar un valor predeterminado
