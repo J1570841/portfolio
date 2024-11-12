@@ -490,6 +490,8 @@ body.dark-mode a:hover {
     color: green;
     font-size: 14px;
     display: none;
+    position: fixed;
+    left: 40%;
 }
 
 body.dark-mode .email-box {

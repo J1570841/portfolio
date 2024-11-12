@@ -15,7 +15,7 @@
 <body>
     <header>
         <h1>Jan Codina</h1>
-        <h2>Ingeniero Informático, Mención Ingenieria del Software</h2>
+        <h2 data-i18n="info">Ingeniero Informático, Mención Ingenieria del Software</h2>
     </header>
     <nav class="navbar_pers">
         <ul style="display: flex; align-items: center;">
@@ -45,7 +45,7 @@
                     </li>
                     <li>
                         <div class="language-selector">
-                            <span id="selected-language">Seleccionar idioma</span>
+                            <span id="selected-language" data-i18n="seleccionarIdioma">Seleccionar idioma</span>
                             <div class="language-options">
                                 <div class="language-option" onclick="selectLanguage('en', 'English', 'fi fi-gb')">
                                     <span class="fi fi-gb"></span> English
@@ -70,13 +70,13 @@
             <div class="perfil">
                 <img src="assets/imagenes/perfil/imagen.jpg" alt="Jan" height="200px">
                 <div class="perfil-texto">
-                    <p>Soy graduado en Ingeniería Informática por la UAB, especializado en Ingeniería del Software. Me considero una persona proactiva y apasionada por la programación, siempre enfocada en alcanzar resultados de alta calidad. Me encanta asumir nuevos retos, independientemente de la tecnología o el lenguaje, y estoy dispuesto a aprender cualquier herramienta que sea necesaria. A lo largo de mi experiencia, he desarrollado proyectos que abarcan desde aplicaciones android hasta páginas web, siempre con el objetivo de optimizar el rendimiento y la calidad del código. Mi motivación diaria es mejorar y seguir aprendiendo.</p>
-                    <p>Si quieres más información sobre mí, visita <a href="pages/sobre-mi.html#about">sobre mí</a>.</p>
+                    <p data-i18n="aboutme">Soy graduado en Ingeniería Informática por la UAB, especializado en Ingeniería del Software. Me considero una persona proactiva y apasionada por la programación, siempre enfocada en alcanzar resultados de alta calidad. Me encanta asumir nuevos retos, independientemente de la tecnología o el lenguaje, y estoy dispuesto a aprender cualquier herramienta que sea necesaria. A lo largo de mi experiencia, he desarrollado proyectos que abarcan desde aplicaciones android hasta páginas web, siempre con el objetivo de optimizar el rendimiento y la calidad del código. Mi motivación diaria es mejorar y seguir aprendiendo.</p>
+                    <p data-i18n="moreInfo">Si quieres más información sobre mí, visita <a href="pages/sobre-mi.html#about">sobre mí</a>.</p>
                 </div>
             </div>
             <div class="container">
                 <!--<a href="contact.html">Contactar</a>-->
-                <a href="#" onclick="openModal()">Contactar</a>
+                <a href="#" onclick="openModal()" data-i18n="contactar">Contactar</a>
                 <a href="assets/pdfs/CV.pdf">CV</a>
             </div>
 
@@ -84,42 +84,42 @@
             <div id="email-modal" class="modal-email" style="display: none;">
                 <div class="modal-email-content">
                     <span id="close-modal" class="close" onclick="closeModal()">&times;</span>
-                    <h2>Elige cómo enviar tu correo</h2>
+                    <h2 data-i18n="mail">Elige cómo enviar tu correo</h2>
                     
                     <div class="email-options">
                         <i class="mdi mdi-gmail" style="font-size: 50px; color: #DB4437; cursor:pointer;" title="Enviar con Gmail" onclick="selectService('gmail')"></i>
                         <i class="mdi mdi-microsoft-outlook" style="font-size: 50px; color: #0078D4; cursor:pointer;" title="Enviar con Outlook" onclick="selectService('outlook')"></i>
                     </div>
                     
-                    <button id="send-mail" aria-label="Confirmar envío" onclick="sendEmail()">Confirmar envío</button>
+                    <button id="send-mail" aria-label="Confirmar envío" onclick="sendEmail()" data-i18n="confirmarEnvio">Confirmar envío</button>
                 </div>
             </div>
 
             <div class="container">
                 <div id="email" class="email-box">jan.codinagarcia@hotmail.es</div>
-                <button class="copy-btn" onclick="copyEmail()" aria-label="Copiar email">Copiar</button>
+                <button class="copy-btn" onclick="copyEmail()" aria-label="Copiar email" data-i18n="copiar">Copiar</button>
             </div>
             
-            <div class="success-message" id="success-message">¡Correo copiado al portapapeles!</div>
+            <div class="success-message" id="success-message" data-i18n="mensajeCopiado">¡Correo copiado al portapapeles!</div>
         </section>
 
         <section class="formacion">
-            <h2>Formación</h2>
-            <p>A lo largo de mi formación he estudiado en: </p>
+            <h2 data-i18n="formacion">Formación</h2>
+            <p data-i18n="infoFormacion">A lo largo de mi formación he estudiado en: </p>
             <ul>
                 <li>UAB</li>
                 <li>Cambridge School</li>
                 <li>Servei de Llengües UAB, plataforma Dexway</li>
             </ul>
-            <p>Si quieres más información sobre mi formación, visita <a href="pages/sobre-mi.html#formacion">mi formación completa</a>.</p>
+            <p data-i18n="moreInfoFormacion">Si quieres más información sobre mi formación, visita <a href="pages/sobre-mi.html#formacion">mi formación completa</a>.</p>
         </section>
 
         <section class="habilidades">
-            <h2>Habilidades</h2>
+            <h2 data-i18n="habilidades">Habilidades</h2>
             <div class="habilidades-container">
                 <!-- Columna de Habilidades Técnicas -->
                 <div class="habilidades-tecnicas">
-                    <h3>Habilidades Técnicas</h3>
+                    <h3 data-i18n="habilidadesTecnicas">Habilidades Técnicas</h3>
                     <div class="tecnicas-grid">
                         <!-- Columna Frontend -->
                         <div class="columna">
@@ -131,13 +131,13 @@
                                         <li>CSS</li>
                                         <li>JavaScript</li>
                                     </ul>
-                                    <button class="button-basic">Mostrar Conocimientos Básicos</button>
+                                    <button class="button-basic" data-i18n="conocimientosBasicos">Mostrar Conocimientos Básicos</button>
                                 </div>
                                 <div class="carta_back">
                                     <ul>
                                         <li>TypeScript</li>
                                     </ul>
-                                    <button class="button-basic">Mostrar Conocimientos Completos</button>
+                                    <button class="button-basic" data-i18n="conocimientosCompletos">Mostrar Conocimientos Completos</button>
                                 </div>                                
                             </div>
                         </div>
@@ -150,7 +150,7 @@
                                         <li>PHP</li>
                                         <li>SQL</li>
                                     </ul>
-                                    <button class="button-basic">Mostrar Conocimientos Básicos</button>
+                                    <button class="button-basic" data-i18n="conocimientosBasicos">Mostrar Conocimientos Básicos</button>
                                 </div>
                                 <div class="carta_back">
                                     <ul>
@@ -158,30 +158,30 @@
                                         <li>Firebase</li>
                                         <li>Google Cloud</li>
                                     </ul>
-                                    <button class="button-basic">Mostrar Conocimientos Completos</button>
+                                    <button class="button-basic" data-i18n="conocimientosCompletos">Mostrar Conocimientos Completos</button>
                                 </div>  
                             </div>
                         </div>
                         <!-- Columna Otros Lenguajes -->
                         <div class="columna">
-                            <h4>Otros Lenguajes</h4>
+                            <h4 data-i18n="otrosLenguajes">Otros Lenguajes</h4>
                             <div class="carta">
                                 <div class="carta_front">
                                     <ul>
                                         <li>Java (Android Studio)</li>
-                                        <li>Python (Aplicaciones de escritorio y IA)</li>
-                                        <li>Lua (Scripting embebido)</li>
+                                        <li data-i18n="python">Python (Aplicaciones de escritorio y IA)</li>
+                                        <li data-i18n="lua">Lua (Scripting embebido)</li>
                                     </ul>
-                                    <button class="button-basic">Mostrar Conocimientos Básicos</button>
+                                    <button class="button-basic" data-i18n="conocimientosBasicos">Mostrar Conocimientos Básicos</button>
                                 </div>
                                 <div class="carta_back">
                                     <ul>
-                                        <li>C (Aplicaciones embebidas)</li>
-                                        <li>Dart (Desarrollo móvil)</li>
+                                        <li data-i18n="C">C (Aplicaciones embebidas)</li>
+                                        <li data-i18n="dart">Dart (Desarrollo móvil)</li>
                                         <li>C++</li>
                                         <!--<li>R</li>-->
                                     </ul>
-                                    <button class="button-basic">Mostrar Conocimientos Completos</button>
+                                    <button class="button-basic" data-i18n="conocimientosCompletos">Mostrar Conocimientos Completos</button>
                                 </div>
                             </div>
                         </div>
@@ -202,7 +202,7 @@
                             </ul>
                         </div>
                         <div class="columna ide-list">
-                            <h4>Herramientas</h4>
+                            <h4 data-i18n="herramientas">Herramientas</h4>
                             <ul>
                                 <li>Jupyter Notebook</li>
                                 <li>Sublime Text</li>
@@ -241,7 +241,7 @@
                     </div>
                     <div class="tecnicas-grid">
                         <div class="columna">
-                            <h4>Metodología Ágil</h4>
+                            <h4 data-i18n="metodologia">Metodología Ágil</h4>
                             <ul>
                                 <li>Scrum</li>
                                 <li>Kanban</li>
@@ -249,7 +249,7 @@
                             </ul>
                         </div>
                         <div class="columna ide-list">
-                            <h4>Otras</h4>
+                            <h4 data-i18n="otras">Otras</h4>
                             <ul>
                                 <li>Docker
                                     <ul>
@@ -265,70 +265,70 @@
         
                 <!-- Columna de Habilidades Blandas -->
                 <div class="habilidades-blandas">
-                    <h3>Habilidades Blandas</h3>
+                    <h3 data-i18n="habilidadesBlandas">Habilidades Blandas</h3>
                     <ul>
                         <li class="skill-item">
-                            <span class="skill-name" aria-label="Trabajo en equipo">Trabajo en equipo
+                            <span class="skill-name" aria-label="Trabajo en equipo" data-i18n="trabajoEnEquipo">Trabajo en equipo
                                 <span class="tooltip-skills">Colaboro de manera eficiente con otros para alcanzar objetivos comunes.</span>
                             </span>
                         </li>
                         <li class="skill-item">
-                            <span class="skill-name" aria-label="Adaptabilidad">Adaptabilidad
+                            <span class="skill-name" aria-label="Adaptabilidad" data-i18n="adaptabilidad">Adaptabilidad
                                 <span class="tooltip-skills">Soy capaz de ajustar estrategias y métodos de trabajo en entornos cambiantes.</span>
                             </span>
                         </li>
                         <li class="skill-item">
-                            <span class="skill-name" aria-label="Resolución de problemas">Resolución de problemas
+                            <span class="skill-name" aria-label="Resolución de problemas" data-i18n="resolucionProblemas">Resolución de problemas
                                 <span class="tooltip-skills">Identifico y soluciono problemas de manera efectiva y creativa.</span>
                             </span>
                         </li>
                         <li class="skill-item">
-                            <span class="skill-name" aria-label="Gestión del tiempo">Gestión del tiempo
+                            <span class="skill-name" aria-label="Gestión del tiempo" data-i18n="gestionTiempo">Gestión del tiempo
                                 <span class="tooltip-skills">Organizo y priorizo tareas para cumplir con plazos establecidos.</span>
                             </span>
                         </li>
                         <li class="skill-item">
-                            <span class="skill-name" aria-label="Flexibilidad">Flexibilidad
+                            <span class="skill-name" aria-label="Flexibilidad" data-i18n="flexibilidad">Flexibilidad
                                 <span class="tooltip-skills">Estoy abierto a nuevas ideas y dispuesto a cambiar de enfoque cuando sea necesario.</span>
                             </span>
                         </li>
                         <li class="skill-item">
-                            <span class="skill-name" aria-label="Capacidad de aprendizaje continuo">Capacidad de aprendizaje continuo
+                            <span class="skill-name" aria-label="Capacidad de aprendizaje continuo" data-i18n="aprendizajeContinuo">Capacidad de aprendizaje continuo
                                 <span class="tooltip-skills">Siempre busco aprender y mejorar, ya sea a través de cursos o experiencias.</span>
                             </span>
                         </li>
                         <li class="skill-item">
-                            <span class="skill-name" aria-label="Capacidad de aprendizaje rápido">Capacidad de aprendizaje rápido
+                            <span class="skill-name" aria-label="Capacidad de aprendizaje rápido" data-i18n="aprendizajeRapido">Capacidad de aprendizaje rápido
                                 <span class="tooltip-skills">Puedo dominar rápidamente nuevas tecnologías y conceptos.</span>
                             </span>
                         </li>
                         <li class="skill-item">
-                            <span class="skill-name" aria-label="Atención al detalle">Atención al detalle
+                            <span class="skill-name" aria-label="Atención al detalle" data-i18n="atencionDetalle">Atención al detalle
                                 <span class="tooltip-skills">Me aseguro de que todos los aspectos del proyecto estén correctamente ejecutados.</span>
                             </span>
                         </li>
                         <li class="skill-item">
-                            <span class="skill-name" aria-label="Pensamiento crítico">Pensamiento crítico
+                            <span class="skill-name" aria-label="Pensamiento crítico" data-i18n="pensamientoCritico">Pensamiento crítico
                                 <span class="tooltip-skills">Evalúo y analizo información antes de tomar decisiones importantes.</span>
                             </span>
                         </li>
                         <li class="skill-item">
-                            <span class="skill-name" aria-label="Orientación a resultados">Orientación a resultados
+                            <span class="skill-name" aria-label="Orientación a resultados" data-i18n="orientacionResultados">Orientación a resultados
                                 <span class="tooltip-skills">Me enfoco en alcanzar metas y objetivos a largo plazo.</span>
                             </span>
                         </li>
-                        <li class="skill-item" aria-label="Resiliencia">
-                            <span class="skill-name">Resiliencia
+                        <li class="skill-item">
+                            <span class="skill-name" aria-label="Resiliencia" data-i18n="resiliencia">Resiliencia
                                 <span class="tooltip-skills">Mantengo un enfoque positivo y sigo adelante, incluso frente a desafíos.</span>
                             </span>
                         </li>
                         <li class="skill-item">
-                            <span class="skill-name" aria-label="Curiosidad">Curiosidad
+                            <span class="skill-name" aria-label="Curiosidad" data-i18n="curiosidad">Curiosidad
                                 <span class="tooltip-skills">Siempre tengo el deseo de explorar nuevos campos y mejorar mis habilidades.</span>
                             </span>
                         </li>
                         <li class="skill-item">
-                            <span class="skill-name" aria-label="Capacidad para recibir críticas">Capacidad para recibir críticas
+                            <span class="skill-name" aria-label="Capacidad para recibir críticas" data-i18n="criticas">Capacidad para recibir críticas
                                 <span class="tooltip-skills">Soy receptivo a la retroalimentación constructiva y la utilizo para mejorar el desempeño.</span>
                             </span>
                         </li>
@@ -338,26 +338,26 @@
         </section>
 
         <section class="ProyectosPrincipales">
-            <h2>Proyectos Principales</h2>
-            <p>En esta sección se muestran los principales proyectos en los que he trabajado, para ver todos los proyectos visite la <a href="#" onclick="abrirProyectos()">página de proyectos</a>.</p>
+            <h2 data-i18n="proyectosPrincipales">Proyectos Principales</h2>
+            <p data-i18n="infoProyectosPrincipales">En esta sección se muestran los principales proyectos en los que he trabajado, para ver todos los proyectos visite la <a href="#" onclick="abrirProyectos()">página de proyectos</a>.</p>
             <div class="proyectos-grid">
                 <div class="proyecto">
                     <img src="assets/imagenes/proyectos principales/calendario_fichajes.PNG" alt="Fichajes" onclick="abrirModal(this)" style="cursor: pointer;">
                     <h3>Fichajes</h3>
-                    <p>Desarrollo de una plataforma web para los fichajes de los empleados de Gometrics.</p>
-                    <a href="pages/web.html#fichajes" class="btn">Ver Proyecto</a>
+                    <p data-i18n="infoPPFichajes">Desarrollo de una plataforma web para los fichajes de los empleados de Gometrics.</p>
+                    <a href="pages/web.html#fichajes" class="btn" data-i18n="verProyecto">Ver Proyecto</a>
                 </div>
                 <div class="proyecto">
                     <img src="assets/imagenes/appDr72/appDr72_pantalla_grafico.png" alt="App DR72" onclick="abrirModal(this)" style="cursor: pointer;">
                     <h3>App DR72</h3>
-                    <p>Desarrollo de aplicación Android para conectar con el manómetro DR72 y ver sus datos en el móbil.</p>
-                    <a href="pages/android.html#appdr72" class="btn">Ver Proyecto</a>
+                    <p data-i18n="infoPPDR72">Desarrollo de aplicación Android para conectar con el manómetro DR72 y ver sus datos en el móbil.</p>
+                    <a href="pages/android.html#appdr72" class="btn" data-i18n="verProyecto">Ver Proyecto</a>
                 </div>
                 <div class="proyecto">
                     <img src="assets/imagenes/proyectos principales/logo_bookPixel.jpg" alt="BookPixel" onclick="abrirModal(this)" style="cursor: pointer;">
                     <h3>BookPixel</h3>
-                    <p>Desarrollo de aplicación Android para buscar libros y videojuegos para ver su información y marcarlos como comprados.</p>
-                    <a href="pages/android.html#bookpixel" class="btn">Ver Proyecto</a>
+                    <p data-i18n="infoPPBookPixel">Desarrollo de aplicación Android para buscar libros y videojuegos para ver su información y marcarlos como comprados.</p>
+                    <a href="pages/android.html#bookpixel" class="btn" data-i18n="verProyecto">Ver Proyecto</a>
                 </div>
             </div>
         </section>
@@ -373,7 +373,7 @@
             <li><a href="https://www.linkedin.com/in/jan-codina-garcía-31b342271" target="_blank"><i class="fab fa-linkedin" style="font-size: 20px;"></i>LinkedIn</a></li>
             <li><a href="assets/pdfs/CV.pdf">CV</a></li>
             <li><a href="mailto:jan.codinagarcia@hotmail.es">Email</a></li>
-            <li><a href="#" onclick="openModal()">Contactar</a></li>
+            <li><a href="#" onclick="openModal()" data-i18n="contactar">Contactar</a></li>
         </ul>
     </footer>
 
