@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Otros Proyectos</title>    
+    <title data-i18n="tituloOtros">Otros Proyectos</title>    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
@@ -15,23 +15,23 @@
 <body>
     <header>
         <h1>Jan Codina</h1>
-        <h2>Ingeniero Informático, Mención Ingenieria del Software</h2>
+        <h2 data-i18n="info">Ingeniero Informático, Mención Ingenieria del Software</h2>
     </header>
     <nav class="navbar_pers">
         <ul style="display: flex; align-items: center;">
-            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../index.html" data-i18n="inicio">Inicio</a></li>
             <li>
-                <a href="#" class="dropdown-toggle" id="proyectos-link">Proyectos</a>
+                <a href="#" class="dropdown-toggle" id="proyectos-link" data-i18n="proyectos">Proyectos</a>
                 <ul class="dropdown-pers">
-                    <li><a href="android.html">Desarrollo Android</a></li>
-                    <li><a href="web.html">Desarrollo Web</a></li>
-                    <li><a href="python.html">Proyectos en Python</a></li>
-                    <li><a href="ia.html">Inteligencia Artificial</a></li>
-                    <li><a href="otros.html">Otros</a></li>
+                    <li><a href="android.html" data-i18n="desarrollo_android">Desarrollo Android</a></li>
+                    <li><a href="web.html" data-i18n="desarrollo_web">Desarrollo Web</a></li>
+                    <li><a href="python.html" data-i18n="proyectos_python">Proyectos en Python</a></li>
+                    <li><a href="ia.html" data-i18n="inteligencia_artificial">Inteligencia Artificial</a></li>
+                    <li><a href="otros.html" data-i18n="otros">Otros</a></li>
                 </ul>
             </li>
             <!--<li><a href="contact.html">Contactar</a></li>-->
-            <li><a href="sobre-mi.html">Sobre Mí</a></li>
+            <li><a href="sobre-mi.html" data-i18n="about">Sobre Mí</a></li>
             <li>
                 <ul style="display: flex;">
                     <li>
@@ -45,7 +45,7 @@
                     </li>
                     <li>
                         <div class="language-selector">
-                            <span id="selected-language">Seleccionar idioma</span>
+                            <span id="selected-language" data-i18n="seleccionarIdioma">Seleccionar idioma</span>
                             <div class="language-options">
                                 <div class="language-option" onclick="selectLanguage('en', 'English', 'fi fi-gb')">
                                     <span class="fi fi-gb"></span> English
@@ -66,46 +66,46 @@
     <main>
         <!--<button class="mode-toggle" id="mode-toggle" aria-label="Cambiar a modo oscuro">Cambiar a Modo Oscuro</button>-->
         <section class="intro">
-            <p>A continuación, presento otros tipos de proyectos en los que he trabajado en mi tiempo libre.</p>
+            <p data-i18n="introOtros">A continuación, presento otros tipos de proyectos en los que he trabajado en mi tiempo libre.</p>
             
             <!-- Índice para navegar a los proyectos -->
             <ul class="index">
                 <li><a href="#fm24">Skin FM24</a></li>
             </ul>
         </section>
-        <h1>Otros Proyectos</h1>
+        <h1 data-i18n="tituloOtros">Otros Proyectos</h1>
         <section class="fm24" id="fm24">
             <h2>Skin FM24</h2>
             
-            <p><strong>Descripción del proyecto:</strong> En mi tiempo libre, disfruto jugando al Football Manager 2024, y decidí personalizar la skin por defecto, basada en la skin <a href="https://www.fmscout.com/a-opz-elite-fm24-skin.html" title="Proyecto Base de la skin">OpzElite</a>. Al usarla, observé algunos aspectos que quería mejorar, así que decidí editarla. Además, también creé imágenes personalizadas para ciertos futbolistas.</p>
+            <p data-i18n="descripcionFM24"><strong>Descripción del proyecto:</strong> En mi tiempo libre, disfruto jugando al Football Manager 2024, y decidí personalizar la skin por defecto, basada en la skin <a href="https://www.fmscout.com/a-opz-elite-fm24-skin.html" title="Proyecto Base de la skin">OpzElite</a>. Al usarla, observé algunos aspectos que quería mejorar, así que decidí editarla. Además, también creé imágenes personalizadas para ciertos futbolistas.</p>
             
-            <p><strong>Mi rol:</strong> Trabajé junto a un amigo en la edición de esta skin, utilizando <strong>Visual Studio Code</strong> y <strong>XML</strong>. Mi responsabilidad fue:</p>
+            <p data-i18n="rolFM24"><strong>Mi rol:</strong> Trabajé junto a un amigo en la edición de esta skin, utilizando <strong>Visual Studio Code</strong> y <strong>XML</strong>. Mi responsabilidad fue:</p>
             <ul>
-                <li>Cambiar los colores de algunas partes por otros más intuitivos. Por ejemplo:
+                <li data-i18n="cambiar_colores.introduccion">Cambiar los colores de algunas partes por otros más intuitivos. Por ejemplo:
                     <ul>
-                        <li>Cambiar los colores de los mensajes del buzón para diferenciar claramente los correos leídos de los no leídos.</li>
-                        <li>Cambiar los colores de las valoraciones: rojo para las valoraciones bajas diferentes tonos de verde para las mejores.</li>
+                        <li data-i18n="cambiar_colores.mensajes_buzon">Cambiar los colores de los mensajes del buzón para diferenciar claramente los correos leídos de los no leídos.</li>
+                        <li data-i18n="cambiar_colores.valoraciones">Cambiar los colores de las valoraciones: rojo para las valoraciones bajas diferentes tonos de verde para las mejores.</li>
                         <!--<li>Cambiar los colores de riesgo general: granate para muy alto, rojo para alto y ambar para considerable.</li>-->
-                        <li>Cambiar los colores de los jugadores cedidos al club/fuera del club para que se diferencien más.</li>
-                        <li>Cambiar el color de los jugadores que estan en la preselección.</li>
+                        <li data-i18n="cambiar_colores.jugadores_cedidos">Cambiar los colores de los jugadores cedidos al club/fuera del club para que se diferencien más.</li>
+                        <li data-i18n="cambiar_colores.preseleccion">Cambiar el color de los jugadores que estan en la preselección.</li>
                     </ul>
                 </li>
-                <li>Añadir algunos campos en determinadas pantallas del juego. Por ejemplo:
+                <li data-i18n="añadir_campos.intro">Añadir algunos campos en determinadas pantallas del juego. Por ejemplo:
                     <ul>
-                        <li>Añadir las estrellas de calidad actual y de potencial en la vista previa del jugador en un carrusel dónde se ve la fortaleza de pierna del jugador, el representante, las cualidades del jugador, y las estrellas que es mi añadido.</li>
-                        <li>Añadir la reputación del jugador en la caja de "Player Traits" en la vista general del jugador.</li>
-                        <li>Añadir en vista general de ojeo la recomendación de fichar a ese jugador.</li>
+                        <li data-i18n="añadir_campos.estrellas">Añadir las estrellas de calidad actual y de potencial en la vista previa del jugador en un carrusel dónde se ve la fortaleza de pierna del jugador, el representante, las cualidades del jugador, y las estrellas que es mi añadido.</li>
+                        <li data-i18n="añadir_campos.reputacion">Añadir la reputación del jugador en la caja de "Player Traits" en la vista general del jugador.</li>
+                        <li data-i18n="añadir_campos.recomendacion">Añadir en vista general de ojeo la recomendación de fichar a ese jugador.</li>
                     </ul>
                 </li>
-                <li>Eliminé enlaces a otros mods en la sección de noticias.</li>
-                <li>Buscar en internet imágenes de futbolistas/entrenadores, editarlas para quitar el fondo y adaptarlas a un tamaño adecuado para el juego. Aunque existen packs que ya lo hacen, decidí hacerlo por mi cuenta para incluir únicamente las imágenes de los jugadores que yo quería, debido a limitaciones de espacio en mi PC, ya que estos packs suelen ocupar bastante espacio.</li>
-                <li>Incorporar las imágenes mediante XML al juego.</li>
+                <li data-i18n="tarea3FM24">Eliminé enlaces a otros mods en la sección de noticias.</li>
+                <li data-i18n="tarea4FM24">Buscar en internet imágenes de futbolistas/entrenadores, editarlas para quitar el fondo y adaptarlas a un tamaño adecuado para el juego. Aunque existen packs que ya lo hacen, decidí hacerlo por mi cuenta para incluir únicamente las imágenes de los jugadores que yo quería, debido a limitaciones de espacio en mi PC, ya que estos packs suelen ocupar bastante espacio.</li>
+                <li data-i18n="tarea5FM24">Incorporar las imágenes mediante XML al juego.</li>
             </ul>
 
-            <p><strong>Imágenes antes y después de mis modificaciones:</strong></p>
+            <p data-i18n="imagenesFM24"><strong>Imágenes antes y después de mis modificaciones:</strong></p>
 
             <!-- Botón para abrir la modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modificacionModal">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modificacionModal", data-i18n="comparacionAntesDespues">
                 Ver Comparaciones Antes y Después
             </button>
 
@@ -114,7 +114,7 @@
                 <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- modal-lg para hacer más grande el modal -->
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="modificacionModalLabel">Comparación Antes y Después Skin FM24</h5>
+                            <h5 class="modal-title" id="modificacionModalLabel" data-i18n="tituloComparacionFM24">Comparación Antes y Después Skin FM24</h5>
                             <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -127,11 +127,11 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <img src="../assets/imagenes/skin fm24/buzon_original.png" class="img-fluid" alt="Antes de la modificación">
-                                                <p class="text-center"><strong>Antes:</strong> El color de los mensajes leidos era blanco, y con determinada iluminación, no se llegaba a distingir bien los leidos del que estabas leyendo.</p>
+                                                <p class="text-center" data-i18n="imagen1AntesFM24"><strong>Antes:</strong> El color de los mensajes leidos era blanco, y con determinada iluminación, no se llegaba a distingir bien los leidos del que estabas leyendo.</p>
                                             </div>
                                             <div class="col-md-6">
                                                 <img src="../assets/imagenes/skin fm24/buzon_modificado.png" class="img-fluid" alt="Después de la modificación">
-                                                <p class="text-center"><strong>Después:</strong> El color de los mensajes leidos se cambio a azul para evitar el problema mencionado anteriormente.</p>
+                                                <p class="text-center" data-i18n="imagen1DespuesFM24"><strong>Después:</strong> El color de los mensajes leidos se cambio a azul para evitar el problema mencionado anteriormente.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -139,11 +139,11 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <img src="../assets/imagenes/skin fm24/cedidos_antiguo.png" class="img-fluid" alt="Antes de la modificación">
-                                                <p class="text-center"><strong>Antes:</strong> El color de los jugadores cedidos a otro club y el de los cedidos al club eran distintos tonos de azul, pero dependiendo de la iluminación no se diferenciaban bien.</p>
+                                                <p class="text-center" data-i18n="imagen2AntesFM24"><strong>Antes:</strong> El color de los jugadores cedidos a otro club y el de los cedidos al club eran distintos tonos de azul, pero dependiendo de la iluminación no se diferenciaban bien.</p>
                                             </div>
                                             <div class="col-md-6">
                                                 <img src="../assets/imagenes/skin fm24/cedidos_modificado.png" class="img-fluid" alt="Después de la modificación">
-                                                <p class="text-center"><strong>Después:</strong> El color de los jugadores cedidos a otro equipo se cambio a lila para que se diferenciara bien.</p>
+                                                <p class="text-center" data-i18n="imagen2DespuesFM24"><strong>Después:</strong> El color de los jugadores cedidos a otro equipo se cambio a lila para que se diferenciara bien.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -151,11 +151,11 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <img src="../assets/imagenes/skin fm24/entrenamiento_antiguo.png" class="img-fluid" alt="Antes de la modificación">
-                                                <p class="text-center"><strong>Antes:</strong> Las valoraciones de entrenamiento las mejores eran en rojo, y de alli bajaba en diferentes tonos de rojo.</p>
+                                                <p class="text-center" data-i18n="imagen3AntesFM24"><strong>Antes:</strong> Las valoraciones de entrenamiento las mejores eran en rojo, y de alli bajaba en diferentes tonos de rojo.</p>
                                             </div>
                                             <div class="col-md-6">
                                                 <img src="../assets/imagenes/skin fm24/entrenamiento_modificado.png" class="img-fluid" alt="Después de la modificación">
-                                                <p class="text-center"><strong>Después:</strong> Las valoraciones de entrenamiento las mejores han pasado a ser verde, y en diferentes tonos de verde.</p>
+                                                <p class="text-center" data-i18n="imagen3DespuesFM24"><strong>Después:</strong> Las valoraciones de entrenamiento las mejores han pasado a ser verde, y en diferentes tonos de verde.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -177,11 +177,11 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <img src="../assets/imagenes/skin fm24/ojeo_original.png" class="img-fluid" alt="Antes de la modificación">
-                                                <p class="text-center"><strong>Antes:</strong> En esta pantalla no salen la recomendación por fichar al jugador.</p>
+                                                <p class="text-center" data-i18n="imagen4AntesFM24"><strong>Antes:</strong> En esta pantalla no salen la recomendación por fichar al jugador.</p>
                                             </div>
                                             <div class="col-md-6">
                                                 <img src="../assets/imagenes/skin fm24/ojeo_modificado.png" class="img-fluid" alt="Después de la modificación">
-                                                <p class="text-center"><strong>Después:</strong> Se ha agregado la recomendación por fichar al jugador en la vista.</p>
+                                                <p class="text-center" data-i18n="imagen4DespuesFM24"><strong>Después:</strong> Se ha agregado la recomendación por fichar al jugador en la vista.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -189,11 +189,11 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <img src="../assets/imagenes/skin fm24/preseleccion_original.png" class="img-fluid" alt="Antes de la modificación">
-                                                <p class="text-center"><strong>Antes:</strong> El color de los jugadores de la preselección era rojo.</p>
+                                                <p class="text-center" data-i18n="imagen5AntesFM24"><strong>Antes:</strong> El color de los jugadores de la preselección era rojo.</p>
                                             </div>
                                             <div class="col-md-6">
                                                 <img src="../assets/imagenes/skin fm24/preseleccion_modificada.png" class="img-fluid" alt="Después de la modificación">
-                                                <p class="text-center"><strong>Después:</strong> Se ha cambiado el color de los jugadores de la preselección a un amarillo para parecerse más a la skin original del juego.</p>
+                                                <p class="text-center" data-i18n="imagen5DespuesFM24"><strong>Después:</strong> Se ha cambiado el color de los jugadores de la preselección a un amarillo para parecerse más a la skin original del juego.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -201,11 +201,11 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <img src="../assets/imagenes/skin fm24/vista_jugador_original.png" class="img-fluid" alt="Antes de la modificación">
-                                                <p class="text-center"><strong>Antes:</strong> Los colores de los atributos eran de distintos tonos de rojo.</p>
+                                                <p class="text-center" data-i18n="imagen6AntesFM24"><strong>Antes:</strong> Los colores de los atributos eran de distintos tonos de rojo.</p>
                                             </div>
                                             <div class="col-md-6">
                                                 <img src="../assets/imagenes/skin fm24/vista_jugador_modificada.png" class="img-fluid" alt="Después de la modificación">
-                                                <p class="text-center"><strong>Después:</strong> Los colores de los atributos del jugador han pasado a ser como los de la skin original del juego y además en el "Player Traits" se ha añadido la reputación que tiene el jugador.</p>
+                                                <p class="text-center" data-i18n="imagenes6DespuesFM24"><strong>Después:</strong> Los colores de los atributos del jugador han pasado a ser como los de la skin original del juego y además en el "Player Traits" se ha añadido la reputación que tiene el jugador.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -213,11 +213,11 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <img src="../assets/imagenes/skin fm24/noticias_original.png" class="img-fluid" alt="Antes de la modificación">
-                                                <p class="text-center"><strong>Antes:</strong> En medio de las noticias hay una fila de otros mods como faces y logos.</p>
+                                                <p class="text-center" data-i18n="imagen7AntesFM24"><strong>Antes:</strong> En medio de las noticias hay una fila de otros mods como faces y logos.</p>
                                             </div>
                                             <div class="col-md-6">
                                                 <img src="../assets/imagenes/skin fm24/noticias_modificado.png" class="img-fluid" alt="Después de la modificación">
-                                                <p class="text-center"><strong>Después:</strong> Ya no hay esa fila en medio y se ven todas las noticias juntas.</p>
+                                                <p class="text-center" data-i18n="imagen7DespuesFM24"><strong>Después:</strong> Ya no hay esa fila en medio y se ven todas las noticias juntas.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -225,43 +225,43 @@
                                 <!-- Controles del carrusel -->
                                 <a class="carousel-control-prev" href="#carouselModificacion" role="button" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Anterior</span>
+                                    <span class="sr-only" data-i18n="anterior">Anterior</span>
                                 </a>
                                 <a class="carousel-control-next" href="#carouselModificacion" role="button" data-bs-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Siguiente</span>
+                                    <span class="sr-only" data-i18n="siguiente">Siguiente</span>
                                 </a>
                             </div>
                             <div class="mt-3">
-                                <p><strong>Nota:</strong> La comparación de imágenes muestra el estado antes y después de la modificación.</p>
+                                <p data-i18n="notaFM24"><strong>Nota:</strong> La comparación de imágenes muestra el estado antes y después de la modificación.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <p><strong>Tecnologías utilizadas:</strong></p>
+            <p><strong data-i18n="tecnologias">Tecnologías usadas:</strong></p>
             <ul>
-                <li><strong>Lenguaje:</strong> XML</li>
-                <li><strong>Plataforma:</strong> Visual Studio Code</li>
-                <li><strong>Colaboración:</strong> Git para control de versiones.</li>
+                <li data-i18n="lenguajeFM24"><strong>Lenguaje:</strong> XML</li>
+                <li data-i18n="plataformaFM24"><strong>Plataforma:</strong> Visual Studio Code</li>
+                <li data-i18n="colaboracionFM24"><strong>Colaboración:</strong> Git para control de versiones.</li>
             </ul>
 
-            <p><strong>Enlace al repositorio:</strong> El código está almacenado en un <a href="https://github.com/J1570841/SkinFM24" title="Repositorio privado del código de la skin FM24">repositorio privado</a>. Puedes solicitar acceso a él si deseas ver el código.</p>
-            <p><strong>Equipo:</strong> Trabajo en equipo con otro compañero.</p>
+            <p data-i18n="repoFM24"><strong>Enlace al repositorio:</strong> El código está almacenado en un <a href="https://github.com/J1570841/SkinFM24" title="Repositorio privado del código de la skin FM24">repositorio privado</a>. Puedes solicitar acceso a él si deseas ver el código.</p>
+            <p data-i18n="equipoFM24"><strong>Equipo:</strong> Trabajo en equipo con otro compañero.</p>
         </section>
 
         <div id="email-modal" class="modal-email" style="display: none;">
             <div class="modal-email-content">
                 <span id="close-modal" class="close" onclick="closeModal()">&times;</span>
-                <h2>Elige cómo enviar tu correo</h2>
+                <h2 data-i18n="mail">Elige cómo enviar tu correo</h2>
                 
                 <div class="email-options">
                     <i class="mdi mdi-gmail" style="font-size: 50px; color: #DB4437; cursor:pointer;" title="Enviar con Gmail" onclick="selectService('gmail')"></i>
                     <i class="mdi mdi-microsoft-outlook" style="font-size: 50px; color: #0078D4; cursor:pointer;" title="Enviar con Outlook" onclick="selectService('outlook')"></i>
                 </div>
                 
-                <button id="send-mail" aria-label="Confirmar envío" onclick="sendEmail()">Confirmar envío</button>
+                <button id="send-mail" aria-label="Confirmar envío" onclick="sendEmail()" data-i18n="confirmarEnvio">Confirmar envío</button>
             </div>
         </div>
     </main>
@@ -271,7 +271,7 @@
             <li><a href="https://www.linkedin.com/in/jan-codina-garcía-31b342271" target="_blank"><i class="fab fa-linkedin" style="font-size: 20px;"></i>LinkedIn</a></li>
             <li><a href="../assets/pdfs/CV.pdf">CV</a></li>
             <li><a href="mailto:jan.codinagarcia@hotmail.es">Email</a></li>
-            <li><a href="#" onclick="openModal()">Contactar</a></li>
+            <li><a href="#" onclick="openModal()" data-i18n="contactar">Contactar</a></li>
         </ul>
     </footer>
 

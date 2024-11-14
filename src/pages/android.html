@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos Android</title>
+    <title data-i18n="tituloAndroid">Proyectos Android</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
@@ -15,23 +15,23 @@
 <body>
     <header>
         <h1>Jan Codina</h1>
-        <h2>Ingeniero Informático, Mención Ingenieria del Software</h2>
+        <h2 data-i18n="info">Ingeniero Informático, Mención Ingenieria del Software</h2>
     </header>
     <nav class="navbar_pers">
         <ul style="display: flex; align-items: center;">
-            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../index.html" data-i18n="inicio">Inicio</a></li>
             <li>
-                <a href="#" class="dropdown-toggle" id="proyectos-link">Proyectos</a>
+                <a href="#" class="dropdown-toggle" id="proyectos-link" data-i18n="proyectos">Proyectos</a>
                 <ul class="dropdown-pers">
-                    <li><a href="android.html">Desarrollo Android</a></li>
-                    <li><a href="web.html">Desarrollo Web</a></li>
-                    <li><a href="python.html">Proyectos en Python</a></li>
-                    <li><a href="ia.html">Inteligencia Artificial</a></li>
-                    <li><a href="otros.html">Otros</a></li>
+                    <li><a href="android.html" data-i18n="desarrollo_android">Desarrollo Android</a></li>
+                    <li><a href="web.html" data-i18n="desarrollo_web">Desarrollo Web</a></li>
+                    <li><a href="python.html" data-i18n="proyectos_python">Proyectos en Python</a></li>
+                    <li><a href="ia.html" data-i18n="inteligencia_artificial">Inteligencia Artificial</a></li>
+                    <li><a href="otros.html" data-i18n="otros">Otros</a></li>
                 </ul>
             </li>
             <!--<li><a href="contact.html">Contactar</a></li>-->
-            <li><a href="sobre-mi.html">Sobre Mí</a></li>
+            <li><a href="sobre-mi.html" data-i18n="about">Sobre Mí</a></li>
             <li>
                 <ul style="display: flex;">
                     <li>
@@ -45,7 +45,7 @@
                     </li>
                     <li>
                         <div class="language-selector">
-                            <span id="selected-language">Seleccionar idioma</span>
+                            <span id="selected-language" data-i18n="seleccionarIdioma">Seleccionar idioma</span>
                             <div class="language-options">
                                 <div class="language-option" onclick="selectLanguage('en', 'English', 'fi fi-gb')">
                                     <span class="fi fi-gb"></span> English
@@ -66,7 +66,7 @@
     <main>
         <!--<button class="mode-toggle" id="mode-toggle" aria-label="Cambiar a modo oscuro">Cambiar a Modo Oscuro</button>-->
         <section class="intro">
-            <p>A continuación, se presentan algunos de los proyectos Android en los que he trabajado, centrados en el desarrollo de aplicaciones móviles utilizando tecnologías como Java, Firebase y APIs de terceros.</p>
+            <p data-i18n="presentacionAndroid">A continuación, se presentan algunos de los proyectos Android en los que he trabajado, centrados en el desarrollo de aplicaciones móviles utilizando tecnologías como Java, Firebase y APIs de terceros.</p>
             
             <!-- Índice para navegar a los proyectos -->
             <ul class="index">
@@ -75,33 +75,33 @@
                 <li><a href="#appdr72">App DR72</a></li>
             </ul>
         </section>
-        <h1>Proyectos Android</h1>
+        <h1 data-i18n="tituloAndroid">Proyectos Android</h1>
         <section class="FoodFeed" id="foodfeed">
             <h2>FoodFeed</h2>
             
-            <p><strong>Descripción del proyecto:</strong> En una asignatura universitaria, participé en un proyecto en equipo para desarrollar una aplicación Android que, a través de inteligencia artificial, permite a los usuarios identificar alimentos mediante imágenes y obtener información nutricional, como calorías, proteínas, grasas y carbohidratos, utilizando APIs de terceros.</p>
+            <p data-i18n="descripcionFoodFeed"><strong>Descripción del proyecto:</strong> En una asignatura universitaria, participé en un proyecto en equipo para desarrollar una aplicación Android que, a través de inteligencia artificial, permite a los usuarios identificar alimentos mediante imágenes y obtener información nutricional, como calorías, proteínas, grasas y carbohidratos, utilizando APIs de terceros.</p>
             
-            <p><strong>Mi rol:</strong> Trabajé junto a tres compañeros en la implementación del frontend de la aplicación, utilizando <strong>Android Studio</strong> y <strong>Java</strong>. Nos encargamos de:</p>
+            <p data-i18n="rolFoodFeed"><strong>Mi rol:</strong> Trabajé junto a tres compañeros en la implementación del frontend de la aplicación, utilizando <strong>Android Studio</strong> y <strong>Java</strong>. Nos encargamos de:</p>
             
             <ul>
-                <li>Diseñar e implementar la interfaz de usuario (UI), garantizando que fuera intuitiva y fácil de usar.</li>
-                <li>Desarrollar las distintas pantallas de la aplicación.</li>
-                <li>Integrar la app con componentes de Android, como la cámara para la toma de fotos de los alimentos.</li>
-                <li>Colaborar en la integración de la aplicación con un backend, utilizando un webserver para almacenar datos en una base de datos y realizar consultas a las APIs que utilizamos.</li>
+                <li data-i18n="tarea1FoodFeed">Diseñar e implementar la interfaz de usuario (UI), garantizando que fuera intuitiva y fácil de usar.</li>
+                <li data-i18n="tarea2FoodFeed">Desarrollar las distintas pantallas de la aplicación.</li>
+                <li data-i18n="tarea3FoodFeed">Integrar la app con componentes de Android, como la cámara para la toma de fotos de los alimentos.</li>
+                <li data-i18n="tarea4FoodFeed">Colaborar en la integración de la aplicación con un backend, utilizando un webserver para almacenar datos en una base de datos y realizar consultas a las APIs que utilizamos.</li>
             </ul>
             
-            <p><strong>Tecnologías utilizadas:</strong></p>
+            <p><strong data-i18n="tecnologias">Tecnologías usadas:</strong></p>
             <ul>
-                <li><strong>Lenguaje:</strong> Java</li>
-                <li><strong>Plataforma:</strong> Android Studio</li>
-                <li><strong>Colaboración:</strong> Git para control de versiones y trabajo en equipo.</li>
-                <li><strong>Gestión de Tareas:</strong> Jira para la planificación y seguimiento de tareas del proyecto.</li>
-                <li><strong>Metodología:</strong> Scrum</li>
-                <li><strong>API:</strong> Food Data Central API</li>
+                <li data-i18n="lenguajeFoodFeed"><strong>Lenguaje:</strong> Java</li>
+                <li data-i18n="plataformaFoodFeed"><strong>Plataforma:</strong> Android Studio</li>
+                <li data-i18n="colaboracionFoodFeed"><strong>Colaboración:</strong> Git para control de versiones y trabajo en equipo.</li>
+                <li data-i18n="gestionTareasFoodFeed"><strong>Gestión de Tareas:</strong> Jira para la planificación y seguimiento de tareas del proyecto.</li>
+                <li data-i18n="metodologiaFoodFeed"><strong>Metodología:</strong> Scrum</li>
+                <li data-i18n="apiFoodFeed"><strong>API:</strong> Food Data Central API</li>
             </ul>
             
             <!-- Botón para abrir la modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#foodFeedModal">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#foodFeedModal" data-i18n="verCapturas">
                 Ver Capturas de Pantalla
             </button>
             <!-- Modal -->
@@ -109,7 +109,7 @@
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="foodFeedModalLabel">Capturas de Pantalla - FoodFeed</h5>
+                            <h5 class="modal-title" id="foodFeedModalLabel" data-i18n="modalTitleFoodFeed">Capturas de Pantalla - FoodFeed</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true" onclick="pauseVideo()">&times;</span>
                             </button>
@@ -120,56 +120,56 @@
                                     <div class="carousel-item active">
                                         <figure>
                                             <img src="../assets/imagenes/FoodFeed/Home Page.jpg" class="d-block w-100" alt="Pantalla inicio">
-                                            <figcaption>Pantalla de inicio, dónde se puede ver el día actual, los nutrientes consumidos y una lista de los alimentos consumidos.</figcaption>
+                                            <figcaption data-i18n="pantallaInicioFoodFeed">Pantalla de inicio, dónde se puede ver el día actual, los nutrientes consumidos y una lista de los alimentos consumidos.</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/FoodFeed/Statistics.jpg" class="d-block w-100" alt="Pantalla estadísticas">
-                                            <figcaption>Pantalla de estadísticas, dónde puedes ver el total de nutrientes consumidos y por día del último dia, semana, mes o año.</figcaption>
+                                            <figcaption data-i18n="pantallaEstadisticasFoodFeed">Pantalla de estadísticas, dónde puedes ver el total de nutrientes consumidos y por día del último dia, semana, mes o año.</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/FoodFeed/calendario.png" class="d-block w-100" alt="Pantalla calendario">
-                                            <figcaption>Pantalla para seleccionar un día para ver la información de ese día en particular.</figcaption>
+                                            <figcaption data-i18n="pantalla3FoodFeed">Pantalla para seleccionar un día para ver la información de ese día en particular.</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/FoodFeed/Dia seleccionado via calendario.jpg" class="d-block w-100" alt="Pantalla de información del dia filtrado">
-                                            <figcaption>Pantalla parecida a la de inicio, pero con la información del día filtrado desde la pantalla de calendario.</figcaption>
+                                            <figcaption data-i18n="pantalla4FoodFeed">Pantalla parecida a la de inicio, pero con la información del día filtrado desde la pantalla de calendario.</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/FoodFeed/Buscador.jpg" class="d-block w-100" alt="Pantalla de búsqueda por texto">
-                                            <figcaption>Pantalla para búsqueda por texto de los alimentos, los últimos buscados son los que aparecen por defecto.</figcaption>
+                                            <figcaption data-i18n="pantalla5FoodFeed">Pantalla para búsqueda por texto de los alimentos, los últimos buscados son los que aparecen por defecto.</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/FoodFeed/Info alimento.jpg" class="d-block w-100" alt="Pantalla de información del alimento">
-                                            <figcaption>Pantalla para ver los nutrientes que tiene el alimento y añadir cuantos has consumido.</figcaption>
+                                            <figcaption data-i18n="pantalla6FoodFeed">Pantalla para ver los nutrientes que tiene el alimento y añadir cuantos has consumido.</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <video id="videoFoodFeed" width="640" height="360" controls poster="../assets/imagenes/FoodFeed/ic_trackerapp_launcher.png">
-                                                <source src="../assets/videos/FoodFeed/FoodFeed.mp4" type="video/mp4">
+                                                <source src="../assets/videos/FoodFeed/FoodFeed.mp4" type="video/mp4" data-i18n="videoError">
                                                 Tu navegador no soporta la etiqueta de video.
                                             </video>
-                                            <figcaption>En este vídeo se puede ver el banner promocional que se hizo para la aplicación.</figcaption>
+                                            <figcaption data-i18n="videoFoodFeed">En este vídeo se puede ver el banner promocional que se hizo para la aplicación.</figcaption>
                                         </figure>
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselfoodFeed" role="button" data-slide="prev" onclick="pauseVideo()">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Anterior</span>
+                                    <span class="sr-only" data-i18n="anterior">Anterior</span>
                                 </a>
                                 <a class="carousel-control-next" href="#carouselfoodFeed" role="button" data-slide="next" onclick="pauseVideo()">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Siguiente</span>
+                                    <span class="sr-only" data-i18n="siguiente">Siguiente</span>
                                 </a>
                             </div>
                         </div>
@@ -177,35 +177,35 @@
                 </div>
             </div>
 
-            <p><strong>Enlace al repositorio:</strong> El código está almacenado en un repositorio privado. Si se desea acceder al código, puedo compartirlo durante una entrevista.</p>
-            <p><strong>Equipo:</strong> Trabajo en equipo con otros 7 compañeros, divididos en 2 backend, 2 IA y 4 frontend.</p>
+            <p data-i18n="repoFoodFeed"><strong>Enlace al repositorio:</strong> El código está almacenado en un repositorio privado. Si se desea acceder al código, puedo compartirlo durante una entrevista.</p>
+            <p data-i18n="equipoFoodFeed"><strong>Equipo:</strong> Trabajo en equipo con otros 7 compañeros, divididos en 2 backend, 2 IA y 4 frontend.</p>
         </section>
         <section class="BookPixel" id="bookpixel">
             <h2>BookPixel</h2>
 
-            <p><strong>Descripción del proyecto:</strong> En una asignatura universitaria, participé en un proyecto en equipo para desarrollar una aplicación Android que, mediante imagen, texto o voz, permite a los usuarios buscar información sobre libros y videojuegos, además de incluir un chatbot. El proyecto hizo uso de APIs de terceros.</p>
+            <p data-i18n="descripcionBookPixel"><strong>Descripción del proyecto:</strong> En una asignatura universitaria, participé en un proyecto en equipo para desarrollar una aplicación Android que, mediante imagen, texto o voz, permite a los usuarios buscar información sobre libros y videojuegos, además de incluir un chatbot. El proyecto hizo uso de APIs de terceros.</p>
 
-            <p><strong>Mi rol:</strong> Trabajé junto a dos compañeros en varias tareas del desarrollo, utilizando <strong>Android Studio</strong>, <strong>Java</strong>, <strong>Node.js</strong>, <strong>Typescript</strong> y <strong>Firebase</strong>. Mis principales contribuciones fueron:</p>
+            <p data-i18n="rolBookPixel"><strong>Mi rol:</strong> Trabajé junto a dos compañeros en varias tareas del desarrollo, utilizando <strong>Android Studio</strong>, <strong>Java</strong>, <strong>Node.js</strong>, <strong>Typescript</strong> y <strong>Firebase</strong>. Mis principales contribuciones fueron:</p>
             
             <ul>
-                <li>Diseñar e implementar las Cloud Functions en Firebase.</li>
-                <li>Desarrollar varias pantallas de la aplicación, incluyendo la pantalla principal, las de búsqueda (imagen, texto, voz), y las pantallas de resultados, información del producto, carrito y post compra, historial, la lista de deseos y ajustes para cambiar el idioma.</li>
-                <li>Añadir soporte de internacionalización (i18n) (español, inglés, alemán, portugués, italiano, catalán, francés, gallego y vasco)</li>
-                <li>Integrar componentes de Android, como la cámara y microfóno para las búsquedas por imagen y voz.</li>
-                <li>Colaborar con la integración entre la aplicación y Firestore y la conexión entre app y las Cloud Functions</li>
-                <li>Investigar, seleccionar e integrar las APIs necesarias.</li>
+                <li data-i18n="tarea1BookPixel">Diseñar e implementar las Cloud Functions en Firebase.</li>
+                <li data-i18n="tarea2BookPixel">Desarrollar varias pantallas de la aplicación, incluyendo la pantalla principal, las de búsqueda (imagen, texto, voz), y las pantallas de resultados, información del producto, carrito y post compra, historial, la lista de deseos y ajustes para cambiar el idioma.</li>
+                <li data-i18n="tarea3BookPixel">Añadir soporte de internacionalización (i18n) (español, inglés, alemán, portugués, italiano, catalán, francés, gallego y vasco)</li>
+                <li data-i18n="tarea4BookPixel">Integrar componentes de Android, como la cámara y microfóno para las búsquedas por imagen y voz.</li>
+                <li data-i18n="tarea5BookPixel">Colaborar con la integración entre la aplicación y Firestore y la conexión entre app y las Cloud Functions</li>
+                <li data-i18n="tarea6BookPixel">Investigar, seleccionar e integrar las APIs necesarias.</li>
             </ul>
 
-            <p><strong>Tecnologías usadas:</strong></p>
+            <p><strong data-i18n="tecnologias">Tecnologías usadas:</strong></p>
             <ul>
-                <li><strong>Lenguajes:</strong> Java para la aplicación y Typescript para las cloud functions</li>
-                <li><strong>Plataformas:</strong> Android Studio, Firebase, Google Cloud y Visual Studio Code</li>
-                <li><strong>Colaboración:</strong> Git para control de versiones y trabajo en equipo.</li>
-                <li><strong>APIs:</strong> Google Books API, RAWG API, Google Traductor API, Google Cloud Vision, Google Cloud Speech API.</li>
+                <li data-i18n="lenguajesBookPixel"><strong>Lenguajes:</strong> Java para la aplicación y Typescript para las cloud functions</li>
+                <li data-i18n="plataformasBookPixel"><strong>Plataformas:</strong> Android Studio, Firebase, Google Cloud y Visual Studio Code</li>
+                <li data-i18n="colaboracionBookPixel"><strong>Colaboración:</strong> Git para control de versiones y trabajo en equipo.</li>
+                <li data-i18n="apisBookPixel"><strong>APIs:</strong> Google Books API, RAWG API, Google Traductor API, Google Cloud Vision, Google Cloud Speech API.</li>
             </ul>
             
             <!-- Botón para abrir la modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bookpixelModal">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bookpixelModal" data-i18n="verCapturas">
                 Ver Capturas de Pantalla
             </button>
             <!-- Modal -->
@@ -213,7 +213,7 @@
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="bookpixelModalLabel">Capturas de Pantalla - BookPixel</h5>
+                            <h5 class="modal-title" id="bookpixelModalLabel" data-i18n="capturasBookPixel">Capturas de Pantalla - BookPixel</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -224,147 +224,147 @@
                                     <div class="carousel-item active">
                                         <figure>
                                             <img src="../assets/imagenes/bookpixel/BookPixel_inicio_claro.png" class="d-block w-100" alt="Pantalla inicio modo claro">
-                                            <figcaption>Pantalla de inicio en modo claro, dónde se puede ver libros y videojuegos que hayas visitado, pero no comprado</figcaption>
+                                            <figcaption data-i18n="pantallaInicioClaroBookPixel">Pantalla de inicio en modo claro, dónde se puede ver libros y videojuegos que hayas visitado, pero no comprado</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/bookpixel/BookPixel_inicio_oscuro.png" class="d-block w-100" alt="Pantalla inicio modo oscuro">
-                                            <figcaption>Pantalla de inicio en modo oscuro, dónde se puede ver libros y videojuegos que hayas visitado, pero no comprado</figcaption>
+                                            <figcaption data-i18n="pantallaInicioOscuroBookPixel">Pantalla de inicio en modo oscuro, dónde se puede ver libros y videojuegos que hayas visitado, pero no comprado</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/bookpixel/BookPixel.png" class="d-block w-100" alt="Pantalla seleccionar tipo búsqueda">
-                                            <figcaption>Pantalla para seleccionar entre búsqueda por texto, audio o imagen</figcaption>
+                                            <figcaption data-i18n="pantalla3BookPixel">Pantalla para seleccionar entre búsqueda por texto, audio o imagen</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/bookpixel/BookPixel_buscar_imagen.png" class="d-block w-100" alt="Pantalla de búsqueda por imagen">
-                                            <figcaption>Pantalla para búsqueda por imagen, dónde se puede elegir si filtrar por libro (título o autor) o videojuego (título) elegiendo imagen de galeria o hacer una foto.</figcaption>
+                                            <figcaption data-i18n="pantalla4BookPixel">Pantalla para búsqueda por imagen, dónde se puede elegir si filtrar por libro (título o autor) o videojuego (título) elegiendo imagen de galeria o hacer una foto.</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/bookpixel/BookPixel_busqueda_por_texto.png" class="d-block w-100" alt="Pantalla de búsqueda por texto">
-                                            <figcaption>Pantalla para búsqueda por texto, dónde se puede elegir filtrar por libro (título o autor y idioma) o por videojuegos (titulo, desarrollador, género o plataformas)</figcaption>
+                                            <figcaption data-i18n="pantalla5BookPixel">Pantalla para búsqueda por texto, dónde se puede elegir filtrar por libro (título o autor y idioma) o por videojuegos (titulo, desarrollador, género o plataformas)</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/bookpixel/BookPixel_busqueda_audio.png" class="d-block w-100" alt="Pantalla de búsqueda por audio">
-                                            <figcaption>Pantalla para búsqueda por audio, dónde se puede elegir filtrar por libro (título o autor) o por videojuegos (titulo o desarrollador)</figcaption>
+                                            <figcaption data-i18n="pantalla6BookPixel">Pantalla para búsqueda por audio, dónde se puede elegir filtrar por libro (título o autor) o por videojuegos (titulo o desarrollador)</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/bookpixel/BookPixel_info_libro.png" class="d-block w-100" alt="Pantalla información del libro">
-                                            <figcaption>Pantalla de información del libro, dónde se puede ver la portada, la editorial, autor, título y la descripción del libro.</figcaption>
+                                            <figcaption data-i18n="pantalla7BookPixel">Pantalla de información del libro, dónde se puede ver la portada, la editorial, autor, título y la descripción del libro.</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/bookpixel/BookPixel_info_videojuego.png" class="d-block w-100" alt="Pantalla información del videojuego">
-                                            <figcaption>Pantalla de información del videojuego, dónde se puede ver el título, clasificación del videojuego (según ESRB), nota en RAWG y en Metacritic, plataformas, géneros, fecha lanzamiento y descripción del videojuego</figcaption>
+                                            <figcaption data-i18n="pantalla8BookPixel">Pantalla de información del videojuego, dónde se puede ver el título, clasificación del videojuego (según ESRB), nota en RAWG y en Metacritic, plataformas, géneros, fecha lanzamiento y descripción del videojuego</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/bookpixel/BookPixel_info_videojuego2.png" class="d-block w-100" alt="Más información del videojuego">
-                                            <figcaption>Pantalla de información del videojuego, es la continuación de la anterior y se puede ver el sitio web oficial, dónde se puede comprar y la opción de añadir el videojuego al carrito</figcaption>
+                                            <figcaption data-i18n="pantalla9BookPixel">Pantalla de información del videojuego, es la continuación de la anterior y se puede ver el sitio web oficial, dónde se puede comprar y la opción de añadir el videojuego al carrito</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/bookpixel/BookPixel_metacritic.png" class="d-block w-100" alt="Información metacritic">
-                                            <figcaption>Pantalla que se llega al pulsar en el botón de metacritic.</figcaption>
+                                            <figcaption data-i18n="pantalla10BookPixel">Pantalla que se llega al pulsar en el botón de metacritic.</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/bookpixel/BookPixel_rawg.png" class="d-block w-100" alt="Gráfico Valoración RAWG">
-                                            <figcaption>Pantalla en la que se ve en un diagrama quesito la valoración que le han hecho los usuarios en RAWG</figcaption>
+                                            <figcaption data-i18n="pantalla11BookPixel">Pantalla en la que se ve en un diagrama quesito la valoración que le han hecho los usuarios en RAWG</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/bookpixel/BookPixel_rawg_2.png" class="d-block w-100" alt="Otro Gráfico Valoración RAWG">
-                                            <figcaption>Pantalla en la que se ve en un diagrama de barras la valoración que le han hecho los usuarios en RAWG</figcaption>
+                                            <figcaption data-i18n="pantalla12BookPixel">Pantalla en la que se ve en un diagrama de barras la valoración que le han hecho los usuarios en RAWG</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/bookpixel/BookPixel_carrito.png" class="d-block w-100" alt="Carrito">
-                                            <figcaption>Pantalla carrito, dónde se puede ver en un listado los libros y videojuegos que se han añadido al carrito, permite seleccionarlos y marcarlos como comprados</figcaption>
+                                            <figcaption data-i18n="pantalla13BookPixel">Pantalla carrito, dónde se puede ver en un listado los libros y videojuegos que se han añadido al carrito, permite seleccionarlos y marcarlos como comprados</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/bookpixel/BookPixel_historial_libros.png" class="d-block w-100" alt="Historial de Libros">
-                                            <figcaption>Pantalla dónde se puede ver un listado de los libros visitados y de los libros comprados</figcaption>
+                                            <figcaption data-i18n="pantalla14BookPixel">Pantalla dónde se puede ver un listado de los libros visitados y de los libros comprados</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/bookpixel/BookPixel_historial_videojuego.png" class="d-block w-100" alt="Historial de videojuegos">
-                                            <figcaption>Pantalla dónde se puede ver un listado de los videojuegos visitados y de los comprados</figcaption>
+                                            <figcaption data-i18n="pantalla15BookPixel">Pantalla dónde se puede ver un listado de los videojuegos visitados y de los comprados</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/bookpixel/BookPixel_cambiar_idioma.png" class="d-block w-100" alt="Cambiar idioma de la app">
-                                            <figcaption>Pantalla dónde se puede cambiar el idioma en el cuál se muestra la aplicación (español, inglés, portugués, italiano, catalán, francés, alemán, gallego o vasco)</figcaption>
+                                            <figcaption data-i18n="pantalla16BookPixel">Pantalla dónde se puede cambiar el idioma en el cuál se muestra la aplicación (español, inglés, portugués, italiano, catalán, francés, alemán, gallego o vasco)</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/bookpixel/BookPixel_wishlist.png" class="d-block w-100" alt="Whishlist Videojuegos">
-                                            <figcaption>Pantalla dónde se pueden ver videojuegos que aún no han salido pero han sido añadidos a preseleción, muestra el título, la fecha de lanzamiento y los días que quedan para el lanzamiento</figcaption>
+                                            <figcaption data-i18n="pantalla17BookPixel">Pantalla dónde se pueden ver videojuegos que aún no han salido pero han sido añadidos a preseleción, muestra el título, la fecha de lanzamiento y los días que quedan para el lanzamiento</figcaption>
                                         </figure>
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselbookpixel" role="button" data-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Anterior</span>
+                                    <span class="sr-only" data-i18n="anterior">Anterior</span>
                                 </a>
                                 <a class="carousel-control-next" href="#carouselbookpixel" role="button" data-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Siguiente</span>
+                                    <span class="sr-only" data-i18n="siguiente">Siguiente</span>
                                 </a>
                             </div>
                             <div>
-                                <p><strong>Nota:</strong> Las pantallas en modo claro y oscuro son casi idénticas, solo que varía la paleta de colores, como se puede ver en la pantalla de inicio.</p>
+                                <p data-i18n="notaBookPixel"><strong>Nota:</strong> Las pantallas en modo claro y oscuro son casi idénticas, solo que varía la paleta de colores, como se puede ver en la pantalla de inicio.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <p><strong>Enlace al repositorio:</strong> El código está almacenado en un repositorio privado. Si se desea acceder al código, puedo compartirlo durante una entrevista.</p>
-            <p><strong>Equipo:</strong> Trabajo en equipo con otros 2 compañeros.</p>
+            <p data-i18n="enlaceBookPixel"><strong>Enlace al repositorio:</strong> El código está almacenado en un repositorio privado. Si se desea acceder al código, puedo compartirlo durante una entrevista.</p>
+            <p data-i18n="equipoBookPixel"><strong>Equipo:</strong> Trabajo en equipo con otros 2 compañeros.</p>
         </section>
         <section class="App DR72" id="appdr72">
             <h2>App DR72</h2>
 
-            <p><strong>Descripción del proyecto:</strong> En <strong>Gometrics</strong>, participé en el desarrollo de una aplicación Android que, a través de conectividad Bluetooth, permite a los usuarios visualizar en formato gráfico y textual los valores que lee el dispositivo <strong>DR72</strong>, creado por la empresa.</p>
+            <p data-i18n="descripcionDR72"><strong>Descripción del proyecto:</strong> En <strong>Gometrics</strong>, participé en el desarrollo de una aplicación Android que, a través de conectividad Bluetooth, permite a los usuarios visualizar en formato gráfico y textual los valores que lee el dispositivo <strong>DR72</strong>, creado por la empresa.</p>
 
-            <p><strong>Mi rol:</strong> Trabajé principalmente de manera individual, con apoyo puntual de los desarrolladores del hardware del DR72 para la implementación de la conectividad Bluetooth. Utilicé <strong>Android Studio</strong> y <strong>Java</strong>. Mi responsabilidad principal fue desarrollar la aplicación completa, desde la interfaz de usuario hasta la comunicación con el dispositivo. Además, desarrollé un servidor web para recibir, almacenar los datos y gestionar la comunicación entre la app y el servidor.</p>
+            <p data-i18n="rolDR72"><strong>Mi rol:</strong> Trabajé principalmente de manera individual, con apoyo puntual de los desarrolladores del hardware del DR72 para la implementación de la conectividad Bluetooth. Utilicé <strong>Android Studio</strong> y <strong>Java</strong>. Mi responsabilidad principal fue desarrollar la aplicación completa, desde la interfaz de usuario hasta la comunicación con el dispositivo. Además, desarrollé un servidor web para recibir, almacenar los datos y gestionar la comunicación entre la app y el servidor.</p>
 
-            <p><strong>Tecnologías usadas:</strong></p>
+            <p><strong data-i18n="tecnologias">Tecnologías usadas:</strong></p>
             <ul>
-                <li><strong>Lenguaje:</strong> Java</li>
-                <li><strong>Plataforma:</strong> Android Studio</li>
-                <li><strong>Colaboración:</strong> Git para control de versiones.</li>
-                <li><strong>Infraestructura adicional:</strong> Webserver para la gestión de datos</li>
+                <li data-i18n="lenguajeDR72"><strong>Lenguaje:</strong> Java</li>
+                <li data-i18n="plataformaDR72"><strong>Plataforma:</strong> Android Studio</li>
+                <li data-i18n="colaboracionDR72"><strong>Colaboración:</strong> Git para control de versiones.</li>
+                <li data-i18n="infraestructuraDR72"><strong>Infraestructura adicional:</strong> Webserver para la gestión de datos</li>
             </ul>
 
-            <p><strong>Enlace al repositorio:</strong> El código está almacenado en un repositorio privado y no puede ser compartido.</p>
-            <a href="https://play.google.com/store/apps/details?id=com.gometrics.appdr72">Enlace para descargar</a>
-            <p><strong>Equipo:</strong> Trabajo individual, con pequeñas colaboraciones por parte de los desarrolladores del Hardware para la parte de conectividad.</p>
+            <p data-i18n="enlaceDR72"><strong>Enlace al repositorio:</strong> El código está almacenado en un repositorio privado y no puede ser compartido.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.gometrics.appdr72" data-i18n="enlaceDescargaDR72">Enlace para descargar</a>
+            <p data-i18n="equipoDR72"><strong>Equipo:</strong> Trabajo individual, con pequeñas colaboraciones por parte de los desarrolladores del Hardware para la parte de conectividad.</p>
 
             <!-- Botón para abrir la modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#appdr72Modal">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#appdr72Modal" data-i18n="verCapturas">
                 Ver Capturas de Pantalla
             </button>
             <!-- Modal -->
@@ -372,7 +372,7 @@
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="appdr72ModalLabel">Capturas de Pantalla - Appdr72</h5>
+                            <h5 class="modal-title" id="appdr72ModalLabel" data-i18n="capturasDR72">Capturas de Pantalla - Appdr72</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -383,51 +383,51 @@
                                     <div class="carousel-item active">
                                         <figure>
                                             <img src="../assets/imagenes/appDr72/appDr72_1_claro.png" class="d-block w-100" alt="Pantalla Inicio">
-                                            <figcaption>Pantalla de inicio en modo claro</figcaption>
+                                            <figcaption data-i18n="pantalla1DR72">Pantalla de inicio en modo claro</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/appDr72/appDr72_2.png" class="d-block w-100" alt="Buscador de dispositivos BLE">
-                                            <figcaption>Pantalla para buscar y conectar con el dispositivo DR72</figcaption>
+                                            <figcaption data-i18n="pantalla2DR72">Pantalla para buscar y conectar con el dispositivo DR72</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/appDr72/appDr72_1_oscuro.png" class="d-block w-100" alt="Pantalla Inicio Modo Oscuro">
-                                            <figcaption>Pantalla de inicio en modo oscuro</figcaption>
+                                            <figcaption data-i18n="pantalla3DR72">Pantalla de inicio en modo oscuro</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/appDr72/appDr72_3_oscuro.png" class="d-block w-100" alt="Pantalla consultar datos Modo Oscuro">
-                                            <figcaption>Pantalla para consultar datos de anteriores conexiones, permite buscar por cualquier fecha o por una en concreto</figcaption>
+                                            <figcaption data-i18n="pantalla4DR72">Pantalla para consultar datos de anteriores conexiones, permite buscar por cualquier fecha o por una en concreto</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/appDr72/appDr72_pantalla_datos.png" class="d-block w-100" alt="Pantalla de ver datos del DR72">
-                                            <figcaption>Pantalla donde se pueden ver los datos que va leyendo el DR72</figcaption>
+                                            <figcaption data-i18n="pantalla5DR72">Pantalla donde se pueden ver los datos que va leyendo el DR72</figcaption>
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure>
                                             <img src="../assets/imagenes/appDr72/appDr72_pantalla_grafico.png" class="d-block w-100" alt="Pantalla gráfica de ver datos del DR72">
-                                            <figcaption>Pantalla donde se pueden ver los datos que va leyendo el DR72 en formato gráfico</figcaption>
+                                            <figcaption data-i18n="pantalla6DR72">Pantalla donde se pueden ver los datos que va leyendo el DR72 en formato gráfico</figcaption>
                                         </figure>
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselappdr72" role="button" data-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Anterior</span>
+                                    <span class="sr-only" data-i18n="anterior">Anterior</span>
                                 </a>
                                 <a class="carousel-control-next" href="#carouselappdr72" role="button" data-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Siguiente</span>
+                                    <span class="sr-only" data-i18n="siguiente">Siguiente</span>
                                 </a>
                             </div>
                             <div>
-                                <p><strong>Nota:</strong> Las pantallas en modo claro y oscuro son casi idénticas, solo que varía la paleta de colores, como se puede ver en la pantalla de inicio.</p>
+                                <p data-i18n="notaDR72"><strong>Nota:</strong> Las pantallas en modo claro y oscuro son casi idénticas, solo que varía la paleta de colores, como se puede ver en la pantalla de inicio.</p>
                             </div>
                         </div>
                     </div>
@@ -438,14 +438,14 @@
         <div id="email-modal" class="modal-email" style="display: none;">
             <div class="modal-email-content">
                 <span id="close-modal" class="close" onclick="closeModal()">&times;</span>
-                <h2>Elige cómo enviar tu correo</h2>
+                <h2 data-i18n="mail">Elige cómo enviar tu correo</h2>
                 
                 <div class="email-options">
                     <i class="mdi mdi-gmail" style="font-size: 50px; color: #DB4437; cursor:pointer;" title="Enviar con Gmail" onclick="selectService('gmail')"></i>
                     <i class="mdi mdi-microsoft-outlook" style="font-size: 50px; color: #0078D4; cursor:pointer;" title="Enviar con Outlook" onclick="selectService('outlook')"></i>
                 </div>
                 
-                <button id="send-mail" aria-label="Confirmar envío" onclick="sendEmail()">Confirmar envío</button>
+                <button id="send-mail" aria-label="Confirmar envío" onclick="sendEmail()" data-i18n="confirmarEnvio">Confirmar envío</button>
             </div>
         </div>
     </main>
@@ -455,7 +455,7 @@
             <li><a href="https://www.linkedin.com/in/jan-codina-garcía-31b342271" target="_blank"><i class="fab fa-linkedin" style="font-size: 20px;"></i>LinkedIn</a></li>
             <li><a href="../assets/pdfs/CV.pdf">CV</a></li>
             <li><a href="mailto:jan.codinagarcia@hotmail.es">Email</a></li>
-            <li><a href="#" onclick="openModal()">Contactar</a></li>
+            <li><a href="#" onclick="openModal()" data-i18n="contactar">Contactar</a></li>
         </ul>
     </footer>
 

@@ -275,13 +275,13 @@ html {
     object-fit: cover; /* Para mantener la relación de aspecto */
 }
 
-.tooltip {
+.tooltip-beamex {
     position: relative;
     display: inline-block;
     cursor: pointer;
 }
 
-.tooltip .tooltiptext {
+.tooltip-beamex .tooltiptext {
     visibility: hidden;
     width: 220px;
     background-color: #555;
@@ -298,7 +298,7 @@ html {
     transition: opacity 0.3s;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip-beamex:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
 }
