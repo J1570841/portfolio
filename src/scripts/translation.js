@@ -29,13 +29,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Función para aplicar las traducciones a los elementos HTML
     function applyTranslations(translations) {
-        document.querySelectorAll("[data-i18n]").forEach(element => {
-            const key = element.getAttribute("data-i18n");
-            if (translations[key]) {
-                element.innerHTML = translations[key];
-            }
-        });
-    }
+    document.querySelectorAll("[data-i18n]").forEach(element => {
+        const key = element.getAttribute("data-i18n");
+
+        // Divide la clave jerárquica por puntos para acceder a las propiedades anidadas
+        const keys = key.split(".");
+        let translation = translations;
+
+        // Recorre las claves en el objeto `translations` para encontrar el valor correcto
+        for (const part of keys) {
+            translation = translation[part];
+            if (!translation) break;  // Si no existe, termina el bucle
+        }
+
+        // Si se encontró una traducción válida, reemplaza el contenido del elemento
+        if (translation) {
+            element.innerHTML = translation;
+        }
+    });
+}
+
 
     // Detectar el idioma del sistema y cargarlo
     function detectSystemLanguage() {
