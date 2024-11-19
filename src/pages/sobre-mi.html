@@ -15,23 +15,23 @@
 <body>
     <header>
         <h1>Jan Codina</h1>
-        <h2>Ingeniero Informático, Mención Ingenieria del Software</h2>
+        <h2 data-i18n="info">Ingeniero Informático, Mención Ingenieria del Software</h2>
     </header>
     <nav class="navbar_pers">
         <ul style="display: flex; align-items: center;">
-            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../index.html" data-i18n="inicio">Inicio</a></li>
             <li>
-                <a href="#" class="dropdown-toggle" id="proyectos-link">Proyectos</a>
+                <a href="#" class="dropdown-toggle" id="proyectos-link" data-i18n="proyectos">Proyectos</a>
                 <ul class="dropdown-pers">
-                    <li><a href="android.html">Desarrollo Android</a></li>
-                    <li><a href="web.html">Desarrollo Web</a></li>
-                    <li><a href="python.html">Proyectos en Python</a></li>
-                    <li><a href="ia.html">Inteligencia Artificial</a></li>
-                    <li><a href="otros.html">Otros</a></li>
+                    <li><a href="android.html" data-i18n="desarrollo_android">Desarrollo Android</a></li>
+                    <li><a href="web.html" data-i18n="desarrollo_web">Desarrollo Web</a></li>
+                    <li><a href="python.html" data-i18n="proyectos_python">Proyectos en Python</a></li>
+                    <li><a href="ia.html" data-i18n="inteligencia_artificial">Inteligencia Artificial</a></li>
+                    <li><a href="otros.html" data-i18n="otros">Otros</a></li>
                 </ul>
             </li>
             <!--<li><a href="contact.html">Contactar</a></li>-->
-            <li><a href="sobre-mi.html">Sobre Mí</a></li>
+            <li><a href="sobre-mi.html" data-i18n="about">Sobre Mí</a></li>
             <li>
                 <ul style="display: flex;">
                     <li>
@@ -45,7 +45,7 @@
                     </li>
                     <li>
                         <div class="language-selector">
-                            <span id="selected-language">Seleccionar idioma</span>
+                            <span id="selected-language" data-i18n="seleccionarIdioma">Seleccionar idioma</span>
                             <div class="language-options">
                                 <div class="language-option" onclick="selectLanguage('en', 'English', 'fi fi-gb')">
                                     <span class="fi fi-gb"></span> English
@@ -68,84 +68,84 @@
         <button class="mode-toggle" id="mode-toggle" aria-label="Cambiar a modo oscuro">Cambiar a Modo Oscuro</button>
         <section class="intro">
             <ul class="index">
-                <li><a href="#about">Sobre Mí</a></li>
-                <li><a href="#formacion">Formación Completa</a></li>
-                <li><a href="#experiencia">Experiencia Profesional</a></li>
+                <li><a href="#about" data-i18n="about">Sobre Mí</a></li>
+                <li><a href="#formacion" data-i18n="formacionCompleta">Mi Formación Completa</a></li>
+                <li><a href="#experiencia" data-i18n="experiencia">Experiencia Profesional</a></li>
             </ul>
         </section>
         <section class="about" id="about">
-            <h2>Sobre Mí</h2>
+            <h2 data-i18n="about">Sobre Mí</h2>
             <div class="perfil">
                 <img src="../assets/imagenes/perfil/imagen.jpg" alt="Jan" height="200px">
                 <div class="perfil-texto">
-                    <p>Soy graduado en Ingeniería Informática por la UAB, especializado en Ingeniería del Software. Me considero una persona proactiva y apasionada por la programación, siempre enfocada en alcanzar resultados de alta calidad. Me encanta asumir nuevos retos, independientemente de la tecnología o el lenguaje, y estoy dispuesto a aprender cualquier herramienta que sea necesaria. A lo largo de mi experiencia, he desarrollado proyectos que abarcan desde aplicaciones android hasta páginas web, siempre con el objetivo de optimizar el rendimiento y la calidad del código. Mi motivación diaria es mejorar y seguir aprendiendo.</p> 
-                    <p>Si te gustaría colaborar o tienes alguna pregunta, no dudes en <a href="#" onclick="openModal()">ponerte en contacto conmigo</a>!</p>
+                    <p data-i18n="aboutme">Soy graduado en Ingeniería Informática por la UAB, especializado en Ingeniería del Software. Me considero una persona proactiva y apasionada por la programación, siempre enfocada en alcanzar resultados de alta calidad. Me encanta asumir nuevos retos, independientemente de la tecnología o el lenguaje, y estoy dispuesto a aprender cualquier herramienta que sea necesaria. A lo largo de mi experiencia, he desarrollado proyectos que abarcan desde aplicaciones android hasta páginas web, siempre con el objetivo de optimizar el rendimiento y la calidad del código. Mi motivación diaria es mejorar y seguir aprendiendo.</p> 
+                    <p data-i18n="colaborarConmigo">Si te gustaría colaborar o tienes alguna pregunta, no dudes en <a href="#" onclick="openModal()">ponerte en contacto conmigo</a>!</p>
                 </div>
             </div>
         </section>
         <section id="formacion">
-            <h2>Mi Formación Completa</h2>
+            <h2 data-i18n="formacionCompleta">Mi Formación Completa</h2>
             <ul>
                 <li>
-                    <strong>Grado en Ingenieria Informática, Mención Ingenieria del Software - UAB</strong>
-                    <p>Nota media final: 7.19</p>
-                    <p>Años de estudio: Septiembre 2019 - Julio 2024</p>
-                    <p>Durante mis estudios, he desarrollado diversas aplicaciones Android, como <a href="android.html#foodfeed">FoodFeed</a> y <a href="android.html#bookpixel">BookPixel</a>, así como programas de <a href="ia.html">inteligencia artificial</a>.</p>
+                    <strong data-i18n="grado">Grado en Ingenieria Informática, Mención Ingenieria del Software - UAB</strong>
+                    <p data-i18n="notaMedia">Nota media final: 7.19</p>
+                    <p data-i18n="añosEstudio">Años de estudio: Septiembre 2019 - Julio 2024</p>
+                    <p data-i18n="infoEstudios">Durante mis estudios, he desarrollado diversas aplicaciones Android, como <a href="android.html#foodfeed">FoodFeed</a> y <a href="android.html#bookpixel">BookPixel</a>, así como programas de <a href="ia.html">inteligencia artificial</a>.</p>
                 </li>
             </ul>
-            <h3>Idiomas</h3>
+            <h3 data-i18n="idiomas">Idiomas</h3>
             <ul>
                 <li>
-                    <strong>Cursos de Inglés</strong> - Cambridge School
+                    <div data-i18n="cursoIngles"><strong>Cursos de Inglés</strong> - Cambridge School</div>
                     <ul>
-                        <li>Nivel A2<em>(Septiembre 2016 - Junio 2017)</em></li>
-                        <li>Nivel B1<em>(Septiembre 2017 - Junio 2018)</em></li>
+                        <li data-i18n="cursoInglesA2">Nivel A2<em>(Septiembre 2016 - Junio 2017)</em></li>
+                        <li data-i18n="cursoInglesB1">Nivel B1<em>(Septiembre 2017 - Junio 2018)</em></li>
                     </ul>
                 </li>
                 <li>
-                    <strong>Curso Virtual de Italiano</strong> - Servei de Llengües UAB, plataforma Dexway
-                    <p>Nivel A1/A2 <em>(Abril 2023 - Abril 2024)</em></p>
+                    <div data-i18n="cursoItaliano"><strong>Curso Virtual de Italiano</strong> - Servei de Llengües UAB, plataforma Dexway</div>
+                    <p data-i18n="cursoItalianoA1">Nivel A1/A2 <em>(Abril 2023 - Abril 2024)</em></p>
                 </li>
             </ul>
         </section>
         <section class="experiencia" id="experiencia">
-            <h2>Experiencia Profesional</h2>
+            <h2 data-i18n="experiencia">Experiencia Profesional</h2>
             <ul>
                 <li>
                     <strong>Mango</strong>
-                    <p>Puesto: </p>
+                    <p data-i18n="puesto">Puesto: </p>
                     <ul>
-                        <li>Mozo de Almacén <em>(Julio 2022 - Septiembre 2022)</em></li>
+                        <li data-i18n="puestoMango">Mozo de Almacén <em>(Julio 2022 - Septiembre 2022)</em></li>
                     </ul>
-                    <p>Durante mi tiempo en Mango, participé en el empaquetado de productos de colgado. El trabajo consistía en tres posibles tareas:</p>
+                    <p data-i18n="infoMango">Durante mi tiempo en Mango, participé en el empaquetado de productos de colgado. El trabajo consistía en tres posibles tareas:</p>
                     <ul>
-                        <li>Empaquetar la ropa para su posterior envío.</li>
-                        <li>Comprobar que las perchas no se unieran, para evitar fallos en la cadena de transporte de la fábrica.</li>
-                        <li>Vigilar que la ropa no cayera al suelo en la cadena de transporte de la fábrica.</li>
+                        <li data-i18n="tareaMango1">Empaquetar la ropa para su posterior envío.</li>
+                        <li data-i18n="tareaMango2">Comprobar que las perchas no se unieran, para evitar fallos en la cadena de transporte de la fábrica.</li>
+                        <li data-i18n="tareaMango3">Vigilar que la ropa no cayera al suelo en la cadena de transporte de la fábrica.</li>
                     </ul>
-                    <p>Gracias a estas experiencias, aunque no fue un trabajo directamente relacionado con la informática, adquirí varias aptitudes importantes que considero valiosas, como:</p>
+                    <p data-i18n="aptitudesMango">Gracias a estas experiencias, aunque no fue un trabajo directamente relacionado con la informática, adquirí varias aptitudes importantes que considero valiosas, como:</p>
                     <ul>
-                        <li><strong>Trabajo en equipo</strong>, al colaborar en cadena para el empaquetamiento de productos de colgado.</li>
-                        <li><strong>Adaptabilidad y flexibilidad</strong>, al participar en diferentes fases del proceso de empaquetado de productos.</li>
-                        <li><strong>Atención al detalle</strong>, para asegurar que no ocurrieran errores que afectaran el flujo de trabajo.</li>
-                        <li><strong>Capacidad de aprendizaje rápido</strong>, ya que aprendí rápidamente todos los procesos y protocolos necesarios para desempeñar mis funciones en el equipo</li>
+                        <li data-i18n="aptitudMango1"><strong>Trabajo en equipo</strong>, al colaborar en cadena para el empaquetamiento de productos de colgado.</li>
+                        <li data-i18n="aptitudMango2"><strong>Adaptabilidad y flexibilidad</strong>, al participar en diferentes fases del proceso de empaquetado de productos.</li>
+                        <li data-i18n="aptitudMango3"><strong>Atención al detalle</strong>, para asegurar que no ocurrieran errores que afectaran el flujo de trabajo.</li>
+                        <li data-i18n="aptitudMango4"><strong>Capacidad de aprendizaje rápido</strong>, ya que aprendí rápidamente todos los procesos y protocolos necesarios para desempeñar mis funciones en el equipo</li>
                     </ul>
                 </li>
                 <li>
                     <strong>Gometrics</strong>
-                    <p>Puestos:</p>
+                    <p data-i18n="puestos">Puestos:</p>
                     <ul>
-                        <li>Becario IT <em>(Junio 2023 - Septiembre 2024)</em></li>
-                        <li>Ingeniero Software Junior <em>(Septiembre 2024 - )</em></li>
+                        <li data-i18n="puestoGometrics1">Becario IT <em>(Junio 2023 - Septiembre 2024)</em></li>
+                        <li data-i18n="puestoGometrics2">Ingeniero Software Junior <em>(Septiembre 2024 - )</em></li>
                     </ul>
-                    <p>Durante mi tiempo en Gometrics, participé en diversos proyectos que abarcan diferentes plataformas, incluyendo <a href="web.html">desarrollo web</a>, <a href="android.html#appdr72">aplicaciones Android</a> y <a href="python.html#artist">aplicaciones de escritorio</a>.</p>
-                    <p>Gracias a estas experiencias, he adquirido varias aptitudes importantes, como:</p>
+                    <p data-i18n="infoGometrics">Durante mi tiempo en Gometrics, participé en diversos proyectos que abarcan diferentes plataformas, incluyendo <a href="web.html">desarrollo web</a>, <a href="android.html#appdr72">aplicaciones Android</a> y <a href="python.html#artist">aplicaciones de escritorio</a>.</p>
+                    <p data-i18n="aptitudesGometrics">Gracias a estas experiencias, he adquirido varias aptitudes importantes, como:</p>
                     <ul>
-                        <li><strong>Resolución de problemas</strong>, al enfrentar y resolver desafíos técnicos en proyectos complejos.</li>
-                        <li><strong>Adaptabilidad y flexibilidad</strong>, trabajando en distintos proyectos de diferentes plataformas.</li>
-                        <li><strong>Gestión del tiempo</strong>, para cumplir con los plazos y organizar múltiples tareas dentro de los proyectos.</li>
-                        <li><strong>Orientación a resultados</strong>, manteniéndome enfocado en alcanzar los objetivos y los plazos establecidos.</li>
-                        <li><strong>Pensamiento crítico</strong>, analizando problemas desde distintas perspectivas antes de tomar decisiones.</li>
+                        <li data-i18n="aptitudGometrics1"><strong>Resolución de problemas</strong>, al enfrentar y resolver desafíos técnicos en proyectos complejos.</li>
+                        <li data-i18n="aptitudGometrics2"><strong>Adaptabilidad y flexibilidad</strong>, trabajando en distintos proyectos de diferentes plataformas.</li>
+                        <li data-i18n="aptitudGometrics3"><strong>Gestión del tiempo</strong>, para cumplir con los plazos y organizar múltiples tareas dentro de los proyectos.</li>
+                        <li data-i18n="aptitudGometrics4"><strong>Orientación a resultados</strong>, manteniéndome enfocado en alcanzar los objetivos y los plazos establecidos.</li>
+                        <li data-i18n="aptitudGometrics5"><strong>Pensamiento crítico</strong>, analizando problemas desde distintas perspectivas antes de tomar decisiones.</li>
                     </ul>
                 </li>
             </ul>
@@ -154,14 +154,14 @@
         <div id="email-modal" class="modal-email" style="display: none;">
             <div class="modal-email-content">
                 <span id="close-modal" class="close" onclick="closeModal()">&times;</span>
-                <h2>Elige cómo enviar tu correo</h2>
+                <h2 data-i18n="mail">Elige cómo enviar tu correo</h2>
                 
                 <div class="email-options">
                     <i class="mdi mdi-gmail" style="font-size: 50px; color: #DB4437; cursor:pointer;" title="Enviar con Gmail" onclick="selectService('gmail')"></i>
                     <i class="mdi mdi-microsoft-outlook" style="font-size: 50px; color: #0078D4; cursor:pointer;" title="Enviar con Outlook" onclick="selectService('outlook')"></i>
                 </div>
                 
-                <button id="send-mail" aria-label="Confirmar envío" onclick="sendEmail()">Confirmar envío</button>
+                <button id="send-mail" aria-label="Confirmar envío" onclick="sendEmail()" data-i18n="confirmarEnvio">Confirmar envío</button>
             </div>
         </div>
     </main>
@@ -171,7 +171,7 @@
             <li><a href="https://www.linkedin.com/in/jan-codina-garcía-31b342271" target="_blank"><i class="fab fa-linkedin" style="font-size: 20px;"></i>LinkedIn</a></li>
             <li><a href="../assets/pdfs/CV.pdf">CV</a></li>
             <li><a href="mailto:jan.codinagarcia@hotmail.es">Email</a></li>
-            <li><a href="#" onclick="openModal()">Contactar</a></li>
+            <li><a href="#" onclick="openModal()" data-i18n="contactar">Contactar</a></li>
         </ul>
     </footer>
 
