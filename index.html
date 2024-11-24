@@ -10,7 +10,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"/>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body>
     <header>
@@ -23,15 +23,15 @@
             <li>
                 <a href="#" class="dropdown-toggle" id="proyectos-link" data-i18n="proyectos">Proyectos</a>
                 <ul class="dropdown-pers">
-                    <li><a href="pages/android.html" data-i18n="desarrollo_android">Desarrollo Android</a></li>
-                    <li><a href="pages/web.html" data-i18n="desarrollo_web">Desarrollo Web</a></li>
-                    <li><a href="pages/python.html" data-i18n="proyectos_python">Proyectos en Python</a></li>
-                    <li><a href="pages/ia.html" data-i18n="inteligencia_artificial">Inteligencia Artificial</a></li>
-                    <li><a href="pages/otros.html" data-i18n="otros">Otros</a></li>
+                    <li><a href="src/pages/android.html" data-i18n="desarrollo_android">Desarrollo Android</a></li>
+                    <li><a href="src/pages/web.html" data-i18n="desarrollo_web">Desarrollo Web</a></li>
+                    <li><a href="src/pages/python.html" data-i18n="proyectos_python">Proyectos en Python</a></li>
+                    <li><a href="src/pages/ia.html" data-i18n="inteligencia_artificial">Inteligencia Artificial</a></li>
+                    <li><a href="src/pages/otros.html" data-i18n="otros">Otros</a></li>
                 </ul>
             </li>
             <!--<li><a href="contact.html">Contactar</a></li>-->
-            <li><a href="pages/sobre-mi.html" data-i18n="about">Sobre Mí</a></li>
+            <li><a href="src/pages/sobre-mi.html" data-i18n="about">Sobre Mí</a></li>
             <li>
                 <ul style="display: flex;">
                     <li>
@@ -68,16 +68,16 @@
         <section class="about">
             <h2 data-i18n="about">Sobre Mí</h2>
             <div class="perfil">
-                <img src="assets/imagenes/perfil/imagen.jpg" alt="Jan" height="200px">
+                <img src="src/assets/imagenes/perfil/imagen.jpg" alt="Jan" height="200px">
                 <div class="perfil-texto">
                     <p data-i18n="aboutme">Soy graduado en Ingeniería Informática por la UAB, especializado en Ingeniería del Software. Me considero una persona proactiva y apasionada por la programación, siempre enfocada en alcanzar resultados de alta calidad. Me encanta asumir nuevos retos, independientemente de la tecnología o el lenguaje, y estoy dispuesto a aprender cualquier herramienta que sea necesaria. A lo largo de mi experiencia, he desarrollado proyectos que abarcan desde aplicaciones android hasta páginas web, siempre con el objetivo de optimizar el rendimiento y la calidad del código. Mi motivación diaria es mejorar y seguir aprendiendo.</p>
-                    <p data-i18n="moreInfo">Si quieres más información sobre mí, visita <a href="pages/sobre-mi.html#about">sobre mí</a>.</p>
+                    <p data-i18n="moreInfo">Si quieres más información sobre mí, visita <a href="src/pages/sobre-mi.html#about">sobre mí</a>.</p>
                 </div>
             </div>
             <div class="container">
                 <!--<a href="contact.html">Contactar</a>-->
                 <a href="#" onclick="openModal()" data-i18n="contactar">Contactar</a>
-                <a href="assets/pdfs/CV.pdf">CV</a>
+                <a href="src/assets/pdfs/CV.pdf">CV</a>
             </div>
 
             <!-- Modal de confirmación -->
@@ -342,22 +342,22 @@
             <p data-i18n="infoProyectosPrincipales">En esta sección se muestran los principales proyectos en los que he trabajado, para ver todos los proyectos visite la <a href="#" onclick="abrirProyectos()">página de proyectos</a>.</p>
             <div class="proyectos-grid">
                 <div class="proyecto">
-                    <img src="assets/imagenes/proyectos principales/calendario_fichajes.PNG" alt="Fichajes" onclick="abrirModal(this)" style="cursor: pointer;">
+                    <img src="src/assets/imagenes/proyectos principales/calendario_fichajes.PNG" alt="Fichajes" onclick="abrirModal(this)" style="cursor: pointer;">
                     <h3>Fichajes</h3>
                     <p data-i18n="infoPPFichajes">Desarrollo de una plataforma web para los fichajes de los empleados de Gometrics.</p>
-                    <a href="pages/web.html#fichajes" class="btn" data-i18n="verProyecto">Ver Proyecto</a>
+                    <a href="src/pages/web.html#fichajes" class="btn" data-i18n="verProyecto">Ver Proyecto</a>
                 </div>
                 <div class="proyecto">
-                    <img src="assets/imagenes/appDr72/appDr72_pantalla_grafico.png" alt="App DR72" onclick="abrirModal(this)" style="cursor: pointer;">
+                    <img src="src/assets/imagenes/appDr72/appDr72_pantalla_grafico.png" alt="App DR72" onclick="abrirModal(this)" style="cursor: pointer;">
                     <h3>App DR72</h3>
                     <p data-i18n="infoPPDR72">Desarrollo de aplicación Android para conectar con el manómetro DR72 y ver sus datos en el móbil.</p>
-                    <a href="pages/android.html#appdr72" class="btn" data-i18n="verProyecto">Ver Proyecto</a>
+                    <a href="src/pages/android.html#appdr72" class="btn" data-i18n="verProyecto">Ver Proyecto</a>
                 </div>
                 <div class="proyecto">
-                    <img src="assets/imagenes/proyectos principales/logo_bookPixel.jpg" alt="BookPixel" onclick="abrirModal(this)" style="cursor: pointer;">
+                    <img src="src/assets/imagenes/proyectos principales/logo_bookPixel.jpg" alt="BookPixel" onclick="abrirModal(this)" style="cursor: pointer;">
                     <h3>BookPixel</h3>
                     <p data-i18n="infoPPBookPixel">Desarrollo de aplicación Android para buscar libros y videojuegos para ver su información y marcarlos como comprados.</p>
-                    <a href="pages/android.html#bookpixel" class="btn" data-i18n="verProyecto">Ver Proyecto</a>
+                    <a href="src/pages/android.html#bookpixel" class="btn" data-i18n="verProyecto">Ver Proyecto</a>
                 </div>
             </div>
         </section>
@@ -371,18 +371,18 @@
         <p>&copy; 2024 Jan Codina</p>
         <ul>
             <li><a href="https://www.linkedin.com/in/jan-codina-garcía-31b342271" target="_blank"><i class="fab fa-linkedin" style="font-size: 20px;"></i>LinkedIn</a></li>
-            <li><a href="assets/pdfs/CV.pdf">CV</a></li>
+            <li><a href="src/assets/pdfs/CV.pdf">CV</a></li>
             <li><a href="mailto:jan.codinagarcia@hotmail.es">Email</a></li>
             <li><a href="#" onclick="openModal()" data-i18n="contactar">Contactar</a></li>
         </ul>
     </footer>
 
-    <script src="scripts/themeToggle.js"></script>
-    <script src="scripts/email.js"></script>
-    <script src="scripts/cards.js"></script>
-    <script src="scripts/modalEmail.js"></script>
-    <script src="scripts/modalImagenes.js"></script>
-    <script src="scripts/translation.js"></script>
+    <script src="src/scripts/themeToggle.js"></script>
+    <script src="src/scripts/email.js"></script>
+    <script src="src/scripts/cards.js"></script>
+    <script src="src/scripts/modalEmail.js"></script>
+    <script src="src/scripts/modalImagenes.js"></script>
+    <script src="src/scripts/translation.js"></script>
     <script>
         function abrirProyectos() {
             var proyectosLink = document.getElementById("proyectos-link");
