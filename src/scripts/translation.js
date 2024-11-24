@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Función para cargar el JSON de traducción
     async function loadTranslations(language) {
         try {
-            const response = await fetch(`/assets/locales/${language}.json`);
+            const response = await fetch(`../assets/locales/${language}.json`);
             const translations = await response.json();
             applyTranslations(translations);
             // Actualizar el idioma visualmente después de cargar las traducciones
