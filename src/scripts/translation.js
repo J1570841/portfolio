@@ -18,6 +18,26 @@ document.addEventListener("DOMContentLoaded", () => {
                 es: { name: "Español", flagUrl: "fi fi-es" },
                 cat: { name: "Català", flagUrl: "fi fi-es-ct" }
             };
+            const cvs = {
+                es: "CV.pdf",
+                en: "",
+                cat: "cv catala.pdf"
+            };
+            // Obtén el elemento <a>
+            const link = document.getElementById("cv-link");
+            const linkHome = document.getElementById("cv-link-home");
+
+            // Extraer la ruta actual del href
+            let basePath = link.href.substring(0, link.href.lastIndexOf("/") + 1); // "src/assets/pdfs/"
+            let fileName = cvs[language];
+
+            // Actualizar el href con el nuevo archivo
+            link.href = basePath + fileName;
+
+            if (linkHome !== null) {
+                linkHome.href = basePath + fileName;
+            }
+
             const selectedLanguage = languageData[language];
             if (selectedLanguage) {
                 selectLanguage(language, selectedLanguage.name, selectedLanguage.flagUrl);
@@ -29,25 +49,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Función para aplicar las traducciones a los elementos HTML
     function applyTranslations(translations) {
-    document.querySelectorAll("[data-i18n]").forEach(element => {
-        const key = element.getAttribute("data-i18n");
+        document.querySelectorAll("[data-i18n]").forEach(element => {
+            const key = element.getAttribute("data-i18n");
 
-        // Divide la clave jerárquica por puntos para acceder a las propiedades anidadas
-        const keys = key.split(".");
-        let translation = translations;
+            // Divide la clave jerárquica por puntos para acceder a las propiedades anidadas
+            const keys = key.split(".");
+            let translation = translations;
 
-        // Recorre las claves en el objeto `translations` para encontrar el valor correcto
-        for (const part of keys) {
-            translation = translation[part];
-            if (!translation) break;  // Si no existe, termina el bucle
-        }
+            // Recorre las claves en el objeto `translations` para encontrar el valor correcto
+            for (const part of keys) {
+                translation = translation[part];
+                if (!translation) break;  // Si no existe, termina el bucle
+            }
 
-        // Si se encontró una traducción válida, reemplaza el contenido del elemento
-        if (translation) {
-            element.innerHTML = translation;
-        }
-    });
-}
+            // Si se encontró una traducción válida, reemplaza el contenido del elemento
+            if (translation) {
+                element.innerHTML = translation;
+            }
+        });
+    }
 
 
     // Detectar el idioma del sistema y cargarlo
