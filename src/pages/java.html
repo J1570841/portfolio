@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="tituloJava">Proyectos Java</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"/>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Jan Codina</h1>
+        <h2 data-i18n="info">Ingeniero Informático, Mención Ingenieria del Software</h2>
+    </header>
+    <nav class="navbar_pers">
+        <ul style="display: flex; align-items: center;">
+            <li><a href="../../index.html" data-i18n="inicio">Inicio</a></li>
+            <li>
+                <a href="#" class="dropdown-toggle" id="proyectos-link" data-i18n="proyectos">Proyectos</a>
+                <ul class="dropdown-pers">
+                    <li><a href="android.html" data-i18n="desarrollo_android">Desarrollo Android</a></li>
+                    <li><a href="web.html" data-i18n="desarrollo_web">Desarrollo Web</a></li>
+                    <li><a href="python.html" data-i18n="proyectos_python">Proyectos en Python</a></li>
+                    <li><a href="ia.html" data-i18n="inteligencia_artificial">Inteligencia Artificial</a></li>
+                    <li><a href="java.html" data-i18n="proyectos_java">Proyectos en Java</a></li>
+                    <li><a href="otros.html" data-i18n="otros">Otros</a></li>
+                </ul>
+            </li>
+            <!--<li><a href="contact.html">Contactar</a></li>-->
+            <li><a href="sobre-mi.html" data-i18n="about">Sobre Mí</a></li>
+            <li>
+                <ul style="display: flex;">
+                    <li>
+                        <label class="switch">
+                        <input type="checkbox" id="mode-toggle" data-i18n="cambiar_modo_oscuro" aria-label="Cambiar a modo oscuro">
+                        <span class="slider">
+                            <span class="icon sun">☀️</span>
+                            <span class="icon moon">🌙</span>
+                        </span>
+                        </label>
+                    </li>
+                    <li>
+                        <div class="language-selector">
+                            <span id="selected-language" data-i18n="seleccionarIdioma">Seleccionar idioma</span>
+                            <div class="language-options">
+                                <div class="language-option" onclick="selectLanguage('en', 'English', 'fi fi-gb')">
+                                    <span class="fi fi-gb"></span> English
+                                </div>
+                                <div class="language-option" onclick="selectLanguage('es', 'Español', 'fi fi-es')">
+                                    <span class="fi fi-es"></span> Español
+                                </div>
+                                <div class="language-option" onclick="selectLanguage('cat', 'Català', 'fi fi-es-ct')">
+                                    <span class="fi fi-es-ct"></span> Català
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Jan Codina</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/jan-codina-garcía-31b342271" target="_blank"><i class="fab fa-linkedin" style="font-size: 20px;"></i>LinkedIn</a></li>
+            <li><a id="cv-link" href="../assets/pdfs/CV.pdf">CV</a></li>
+            <li><a href="mailto:jan.codinagarcia@hotmail.es">Email</a></li>
+            <li><a href="#" onclick="openModal()" data-i18n="contactar">Contactar</a></li>
+        </ul>
+    </footer>
+
+    <script src="../scripts/themeToggle.js"></script>
+    <script src="../scripts/modalEmail.js"></script>
+    <script src="../scripts/translation.js"></script>
+</body>
+</html>

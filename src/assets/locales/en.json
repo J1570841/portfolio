@@ -321,5 +321,7 @@
     "colaboracionMRP": "<strong>Collaboration:</strong> Git for version control and team collaboration.",
     "gTareasMRP": "<strong>Task Management:</strong> Jira for project task planning and tracking.",
     "repoMRP": "<strong>Repository link:</strong> The code is stored in a private repository and cannot be shared.",
-    "equipoMRP": "<strong>Team:</strong> Teamwork with another colleague."
+    "equipoMRP": "<strong>Team:</strong> Teamwork with another colleague.",
+    "proyectos_java": "Java Projects",
+    "tituloJava": "Java Projects"
 }
