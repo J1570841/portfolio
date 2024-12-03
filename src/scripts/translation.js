@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
             };
             const cvs = {
                 es: "CV.pdf",
-                en: "",
+                en: "cv angles.pdf",
                 cat: "cv catala.pdf"
             };
             // Obtén el elemento <a>
