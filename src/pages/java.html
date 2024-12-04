@@ -96,6 +96,20 @@
             <p data-i18n="enlaceMigracion"><strong>Enlace al repositorio:</strong> El código está almacenado en un repositorio privado y no puede ser compartido.</p>
             <p data-i18n="equipoMigracion"><strong>Equipo:</strong> Trabajo en equipo con otro compañero.</p>
         </section>
+
+        <div id="email-modal" class="modal-email" style="display: none;">
+            <div class="modal-email-content">
+                <span id="close-modal" class="close" onclick="closeModal()">&times;</span>
+                <h2 data-i18n="mail">Elige cómo enviar tu correo</h2>
+                
+                <div class="email-options">
+                    <i class="mdi mdi-gmail" style="font-size: 50px; color: #DB4437; cursor:pointer;" title="Enviar con Gmail" onclick="selectService('gmail')"></i>
+                    <i class="mdi mdi-microsoft-outlook" style="font-size: 50px; color: #0078D4; cursor:pointer;" title="Enviar con Outlook" onclick="selectService('outlook')"></i>
+                </div>
+                
+                <button id="send-mail" aria-label="Confirmar envío" onclick="sendEmail()" data-i18n="confirmarEnvio">Confirmar envío</button>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 Jan Codina</p>
