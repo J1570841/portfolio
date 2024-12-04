@@ -323,5 +323,19 @@
     "repoMRP": "<strong>Repository link:</strong> The code is stored in a private repository and cannot be shared.",
     "equipoMRP": "<strong>Team:</strong> Teamwork with another colleague.",
     "proyectos_java": "Java Projects",
-    "tituloJava": "Java Projects"
+    "tituloJava": "Java Projects",
+    "introJava": "Below are some of the Java projects I have worked on, focusing on desktop application development.",
+    "migracion": "Migration",
+    "tituloMigracion": "RTM App Migration",
+    "descripcionMigracion": "<strong>Project Description:</strong> At <strong>Gometrics</strong>, I participated in the migration of a desktop application designed for <strong>Raspberry Pi</strong>, updating its technological base from <strong>Java 8</strong> to <strong>Java 11</strong> and rewriting the user interface from <strong>Swing</strong> to <strong>JavaFX</strong>, improving its performance, maintainability, and adaptability to new technologies.",
+    "rolMigracion": "<strong>My Role:</strong> I worked alongside a colleague on the implementation of the application's frontend and backend, using <strong>Java</strong>, <strong>CSS</strong>, and <strong>FXML</strong>. My main tasks were:",
+    "tareaMigracion1": "Rewriting the user interface from Swing to JavaFX",
+    "tareaMigracion2": "Fixing possible errors that arose as a result of the migration",
+    "tareaMigracion3": "Ensuring the correct operation of the application on Raspberry Pi",
+    "lenguajesMigracion": "<strong>Languages:</strong> Java, CSS, FXML",
+    "colaboracionMigracion": "<strong>Collaboration:</strong> Tortoise SVN for version control and teamwork, ensuring continuous integration without conflicts.",
+    "enlaceMigracion": "<strong>Repository Link:</strong> The code is stored in a private repository and cannot be shared.",
+    "equipoMigracion": "<strong>Team:</strong> Teamwork with another colleague.",
+    "sceneBuilder": "Scene Builder (JavaFX UI Designer)",
+    "javaLenguaje": "Java (Android Studio and Desktop Applications)"
 }

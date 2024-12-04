@@ -323,5 +323,19 @@
     "repoMRP": "<strong>Enllaç al repositori:</strong> El codi està emmagatzemat en un repositori privat i no pot ser compartit.",
     "equipoMRP": "<strong>Equip:</strong> Treball en equip amb un altre company.",
     "proyectos_java": "Projectes en Java",
-    "tituloJava": "Projectes Java"
+    "tituloJava": "Projectes Java",
+    "introJava": "A continuació, es presenten alguns dels projectes Java en què he treballat, centrats en el desenvolupament d'aplicacions d'escriptori.",
+    "migracion": "Migració",
+    "tituloMigracion": "Migració App RTM",
+    "descripcionMigracion": "<strong>Descripció del projecte:</strong> A <strong>Gometrics</strong>, vaig participar en la migració d'una aplicació d'escriptori dissenyada per a <strong>Raspberry Pi</strong>, actualitzant la seva base tecnològica de <strong>Java 8</strong> a <strong>Java 11</strong> i reescrivint la interfície d'usuari de <strong>Swing</strong> a <strong>JavaFX</strong>, millorant el seu rendiment, manteniment i adaptabilitat a noves tecnologies.",
+    "rolMigracion": "<strong>El meu rol:</strong> Vaig treballar juntament amb un altre company en la implementació del frontend i el backend de l'aplicació, utilitzant <strong>Java</strong>, <strong>CSS</strong> i <strong>FXML</strong>. Les meves tasques principals van ser:",
+    "tareaMigracion1": "Reescriure la interfície d'usuari de Swing a JavaFX",
+    "tareaMigracion2": "Corregir possibles errors que sorgissin com a resultat de la migració",
+    "tareaMigracion3": "Comprovar el correcte funcionament de l'aplicació en Raspberry Pi",
+    "lenguajesMigracion": "<strong>Llenguatges:</strong> Java, CSS, FXML",
+    "colaboracionMigracion": "<strong>Col·laboració:</strong> Tortoise SVN per al control de versions i treball en equip, assegurant la integració contínua sense conflictes.",
+    "enlaceMigracion": "<strong>Enllaç al repositori:</strong> El codi està emmagatzemat en un repositori privat i no pot ser compartit.",
+    "equipoMigracion": "<strong>Equip:</strong> Treball en equip amb un altre company.",
+    "sceneBuilder": "Scene Builder (Dissenyador UI JavaFX)",
+    "javaLenguaje": "Java (Android Studio i Aplicacions d'escriptori)"
 }
