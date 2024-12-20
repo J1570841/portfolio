@@ -337,5 +337,15 @@
     "enlaceMigracion": "<strong>Enlace al repositorio:</strong> El código está almacenado en un repositorio privado y no puede ser compartido.",
     "equipoMigracion": "<strong>Equipo:</strong> Trabajo en equipo con otro compañero.",
     "sceneBuilder": "Scene Builder (JavaFX Diseñador UI)",
-    "javaLenguaje": "Java (Android Studio y Aplicaciones de escritorio)"
+    "javaLenguaje": "Java (Android Studio y Aplicaciones de escritorio)",
+    "descripcionLogiReception": "<strong>Descripción del proyecto:</strong> En <strong>Gometrics</strong>, participé en el desarrollo de una aplicación Android que permite a los usuarios del departamento de logística de la empresa subir imágenes de los albaranes de entrada y salida a una carpeta de red privada.",
+    "rolLogiReception": "<strong>Mi rol:</strong> Trabajé de manera individual. Utilicé <strong>Android Studio</strong> y <strong>Java</strong>. Mi responsabilidad principal fue desarrollar la aplicación completa, desde la interfaz de usuario hasta la comunicación con la carpeta de red.",
+    "equipoLogiReception": "<strong>Equipo:</strong> Trabajo individual.",
+    "capturasLogiReception": "Capturas de Pantalla - LogiReception",
+    "pantalla2LogiReception": "Pantalla hacer foto para subir a red",
+    "pantalla4LogiReception": "Pantalla cuando hay imágenes que aun no se han subido a la carpeta de red",
+    "pantalla5LogiReception": "Modal para introducir el nombre del cliente (es el nombre con el que se guardara la carpeta en la red)",
+    "pantalla6LogiReception": "Subiendo las imágenes a la carpeta de red",
+    "pantalla7LogiReception": "Error en la subida de las imágenes",
+    "pantalla8LogiReception": "Algunas imágenes subidas y otras con error"
 }

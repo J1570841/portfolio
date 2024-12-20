@@ -899,6 +899,11 @@ body.dark-mode .tooltip-skills {
     object-fit: scale-down; /* Asegura que la imagen cubra todo el espacio sin deformarse */
 }
 
+#carousellogireception .carousel-item img {
+    height: 700px; 
+    object-fit: scale-down; /* Asegura que la imagen cubra todo el espacio sin deformarse */
+}
+
 .ProyectosPrincipales {
     padding: 10px 20px 0 20px;
     background-color: #f4f4f4;

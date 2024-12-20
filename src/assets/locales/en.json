@@ -337,5 +337,15 @@
     "enlaceMigracion": "<strong>Repository Link:</strong> The code is stored in a private repository and cannot be shared.",
     "equipoMigracion": "<strong>Team:</strong> Teamwork with another colleague.",
     "sceneBuilder": "Scene Builder (JavaFX UI Designer)",
-    "javaLenguaje": "Java (Android Studio and Desktop Applications)"
+    "javaLenguaje": "Java (Android Studio and Desktop Applications)",
+    "descripcionLogiReception": "<strong>Project Description:</strong> At <strong>Gometrics</strong>, I participated in the development of an Android application that allows users from the company's logistics department to upload images of entry and exit delivery notes to a private network folder.",
+    "rolLogiReception": "<strong>My Role:</strong> I worked individually. I used <strong>Android Studio</strong> and <strong>Java</strong>. My main responsibility was to develop the entire application, from the user interface to communication with the network folder.",
+    "equipoLogiReception": "<strong>Team:</strong> Individual work.",
+    "capturasLogiReception": "Screenshots - LogiReception",
+    "pantalla2LogiReception": "Screen to take a photo for uploading to the network",
+    "pantalla4LogiReception": "Screen showing images that have not yet been uploaded to the network folder",
+    "pantalla5LogiReception": "Modal to enter the client's name (this will be the name under which the folder is saved on the network)",
+    "pantalla6LogiReception": "Uploading images to the network folder",
+    "pantalla7LogiReception": "Error uploading images",
+    "pantalla8LogiReception": "Some images uploaded and others failed"
 }

@@ -337,5 +337,15 @@
     "enlaceMigracion": "<strong>Enllaç al repositori:</strong> El codi està emmagatzemat en un repositori privat i no pot ser compartit.",
     "equipoMigracion": "<strong>Equip:</strong> Treball en equip amb un altre company.",
     "sceneBuilder": "Scene Builder (Dissenyador UI JavaFX)",
-    "javaLenguaje": "Java (Android Studio i Aplicacions d'escriptori)"
+    "javaLenguaje": "Java (Android Studio i Aplicacions d'escriptori)",
+    "descripcionLogiReception": "<strong>Descripció del projecte:</strong> A <strong>Gometrics</strong>, vaig participar en el desenvolupament d'una aplicació Android que permet als usuaris del departament de logística de l'empresa pujar imatges dels albarans d'entrada i sortida a una carpeta de xarxa privada.",
+    "rolLogiReception": "<strong>El meu rol:</strong> Vaig treballar de manera individual. Vaig utilitzar <strong>Android Studio</strong> i <strong>Java</strong>. La meva responsabilitat principal va ser desenvolupar tota l'aplicació, des de la interfície d'usuari fins a la comunicació amb la carpeta de xarxa.",
+    "equipoLogiReception": "<strong>Equip:</strong> Treball individual.",
+    "capturasLogiReception": "Captures de Pantalla - LogiReception",
+    "pantalla2LogiReception": "Pantalla per fer una foto i pujar-la a la xarxa",
+    "pantalla4LogiReception": "Pantalla amb imatges que encara no s'han pujat a la carpeta de xarxa",
+    "pantalla5LogiReception": "Modal per introduir el nom del client (és el nom amb què es guardarà la carpeta a la xarxa)",
+    "pantalla6LogiReception": "Pujant les imatges a la carpeta de xarxa",
+    "pantalla7LogiReception": "Error en la pujada de les imatges",
+    "pantalla8LogiReception": "Algunes imatges pujades i altres amb error"
 }

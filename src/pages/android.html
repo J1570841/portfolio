@@ -74,6 +74,7 @@
                 <li><a href="#foodfeed">FoodFeed</a></li>
                 <li><a href="#bookpixel">BookPixel</a></li>
                 <li><a href="#appdr72">App DR72</a></li>
+                <li><a href="#logiReception">LogiReception</a></li>
             </ul>
         </section>
         <h1 data-i18n="tituloAndroid">Proyectos Android</h1>
@@ -423,6 +424,107 @@
                                     <span class="sr-only" data-i18n="anterior">Anterior</span>
                                 </a>
                                 <a class="carousel-control-next" href="#carouselappdr72" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only" data-i18n="siguiente">Siguiente</span>
+                                </a>
+                            </div>
+                            <div>
+                                <p data-i18n="notaDR72"><strong>Nota:</strong> Las pantallas en modo claro y oscuro son casi idénticas, solo que varía la paleta de colores, como se puede ver en la pantalla de inicio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="LogiReception" id="logiReception">
+            <h2>LogiReception</h2>
+
+            <p data-i18n="descripcionLogiReception"><strong>Descripción del proyecto:</strong> En <strong>Gometrics</strong>, participé en el desarrollo de una aplicación Android que permite a los usuarios del departamento de logística de la empresa subir imágenes de los albaranes de entrada y salida a una carpeta de red privada.</p>
+
+            <p data-i18n="rolLogiReception"><strong>Mi rol:</strong> Trabajé de manera individual. Utilicé <strong>Android Studio</strong> y <strong>Java</strong>. Mi responsabilidad principal fue desarrollar la aplicación completa, desde la interfaz de usuario hasta la comunicación con la carpeta de red.</p>
+
+            <p><strong data-i18n="tecnologias">Tecnologías usadas:</strong></p>
+            <ul>
+                <li data-i18n="lenguajeDR72"><strong>Lenguaje:</strong> Java</li>
+                <li data-i18n="plataformaDR72"><strong>Plataforma:</strong> Android Studio</li>
+                <li data-i18n="colaboracionDR72"><strong>Colaboración:</strong> Git para control de versiones.</li>
+            </ul>
+
+            <p data-i18n="enlaceDR72"><strong>Enlace al repositorio:</strong> El código está almacenado en un repositorio privado y no puede ser compartido.</p>
+            <p data-i18n="equipoLogiReception"><strong>Equipo:</strong> Trabajo individual.</p>
+
+            <!-- Botón para abrir la modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#logiReceptionModal" data-i18n="verCapturas">
+                Ver Capturas de Pantalla
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="logiReceptionModal" tabindex="-1" role="dialog" aria-labelledby="logiReceptionModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="logiReceptionModal" data-i18n="capturasLogiReception">Capturas de Pantalla - LogiReception</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="carousellogireception" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <figure>
+                                            <img src="../assets/imagenes/LogiReception/pantalla inicio modo claro.png" class="d-block w-100" alt="Pantalla Inicio">
+                                            <figcaption data-i18n="pantalla1DR72">Pantalla de inicio en modo claro</figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <figure>
+                                            <img src="../assets/imagenes/LogiReception/pantalla inicio modo oscuro.png" class="d-block w-100" alt="Pantalla Inicio Modo Oscuro">
+                                            <figcaption data-i18n="pantalla3DR72">Pantalla de inicio en modo oscuro</figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <figure>
+                                            <img src="../assets/imagenes/LogiReception/pantalla hacer foto.png" class="d-block w-100" alt="Pantalla hacer foto">
+                                            <figcaption data-i18n="pantalla2LogiReception">Pantalla hacer foto para subir a red</figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <figure>
+                                            <img src="../assets/imagenes/LogiReception/pantalla imagenes por subir.png" class="d-block w-100" alt="Pantalla imagenes por subir">
+                                            <figcaption data-i18n="pantalla4LogiReception">Pantalla cuando hay imágenes que aun no se han subido a la carpeta de red</figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <figure>
+                                            <img src="../assets/imagenes/LogiReception/pantalla seleccionar nombre.png" class="d-block w-100" alt="Introducir nombre cliente">
+                                            <figcaption data-i18n="pantalla5LogiReception">Modal para introducir el nombre del cliente (es el nombre con el que se guardara la carpeta en la red)</figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <figure>
+                                            <img src="../assets/imagenes/LogiReception/Pantalla subiendo imagenes.png" class="d-block w-100" alt="Pantalla subiendo imagenes">
+                                            <figcaption data-i18n="pantalla6LogiReception">Subiendo las imágenes a la carpeta de red</figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <figure>
+                                            <img src="../assets/imagenes/LogiReception/pantalla error subida.png" class="d-block w-100" alt="Error subida">
+                                            <figcaption data-i18n="pantalla7LogiReception">Error en la subida de las imágenes</figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <figure>
+                                            <img src="../assets/imagenes/LogiReception/pantalla algunas subidas.png" class="d-block w-100" alt="Algunas subidas">
+                                            <figcaption data-i18n="pantalla8LogiReception">Algunas imágenes subidas y otras con error</figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carousellogireception" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only" data-i18n="anterior">Anterior</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousellogireception" role="button" data-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="sr-only" data-i18n="siguiente">Siguiente</span>
                                 </a>
