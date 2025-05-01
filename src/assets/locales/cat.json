@@ -347,5 +347,11 @@
     "pantalla5LogiReception": "Modal per introduir el nom del client (és el nom amb què es guardarà la carpeta a la xarxa)",
     "pantalla6LogiReception": "Pujant les imatges a la carpeta de xarxa",
     "pantalla7LogiReception": "Error en la pujada de les imatges",
-    "pantalla8LogiReception": "Algunes imatges pujades i altres amb error"
+    "pantalla8LogiReception": "Algunes imatges pujades i altres amb error",
+    "descripcionBackup": "<strong>Descripció del projecte:</strong> A <strong>Gometrics</strong>, vaig participar en el desenvolupament d’una funcionalitat per a una aplicació d’escriptori per pujar i descarregar dades a una base de dades del servidor.",
+    "rolBackup": "<strong>El meu rol:</strong> Vaig treballar de manera individual utilitzant <strong>Java</strong>. Les meves principals tasques van ser:",
+    "tareaBackup1": "Adaptar la base de dades local per integrar-la amb una base de dades del servidor",
+    "tareaBackup2": "Desenvolupar la funcionalitat de sincronització de dades (pujada i descàrrega)",
+    "tareaBackup3": "Verificar el funcionament correcte mitjançant proves exhaustives",
+    "lenguajesBackup": "<strong>Llenguatges:</strong>Java"
 }

@@ -347,5 +347,11 @@
     "pantalla5LogiReception": "Modal para introducir el nombre del cliente (es el nombre con el que se guardara la carpeta en la red)",
     "pantalla6LogiReception": "Subiendo las imágenes a la carpeta de red",
     "pantalla7LogiReception": "Error en la subida de las imágenes",
-    "pantalla8LogiReception": "Algunas imágenes subidas y otras con error"
+    "pantalla8LogiReception": "Algunas imágenes subidas y otras con error",
+    "descripcionBackup": "<strong>Descripción del proyecto:</strong> En <strong>Gometrics</strong>, participé en la creación de una funcionalidad para una aplicación de escritorio para subir y descargar datos a una base de datos de servidor.",
+    "rolBackup": "<strong>Mi rol:</strong> Trabajé de manera individual, utilizando <strong>Java</strong>. Mis tareas principales fueron:",
+    "tareaBackup1": "Adaptar la base de datos local para su integración con una base de datos de servidor",
+    "tareaBackup2": "Programar la funcionalidad de sincronización de datos (subida y descarga)",
+    "tareaBackup3": "Verificar el correcto funcionamiento mediante pruebas exhaustivas",
+    "lenguajesBackup": "<strong>Lenguajes:</strong>Java"
 }

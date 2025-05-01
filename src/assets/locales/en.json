@@ -347,5 +347,11 @@
     "pantalla5LogiReception": "Modal to enter the client's name (this will be the name under which the folder is saved on the network)",
     "pantalla6LogiReception": "Uploading images to the network folder",
     "pantalla7LogiReception": "Error uploading images",
-    "pantalla8LogiReception": "Some images uploaded and others failed"
+    "pantalla8LogiReception": "Some images uploaded and others failed",
+    "descripcionBackup": "<strong>Project description:</strong> At <strong>Gometrics</strong>, I contributed to developing a feature for a desktop application to upload and download data to and from a server database.",
+    "rolBackup": "<strong>My role:</strong> I worked independently using <strong>Java</strong>. My main tasks were:",
+    "tareaBackup1": "Adapt the local database for integration with a server database",
+    "tareaBackup2": "Develop the data synchronization functionality (upload and download)",
+    "tareaBackup3": "Ensure proper functionality through thorough testing",
+    "lenguajesBackup": "<strong>Languages:</strong>Java"
 }
