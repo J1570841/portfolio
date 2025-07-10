@@ -260,7 +260,7 @@
     "aptitudMango4": "<strong>Capacitat d'aprenentatge ràpid</strong>, ja que vaig aprendre ràpidament tots els processos i protocols necessaris per dur a terme les meves funcions a l'equip.",
     "puestos": "Llocs:",
     "puestoGometrics1": "Becari IT <em>(Juny 2023 - Setembre 2024)</em>",
-    "puestoGometrics2": "Enginyer de Software Junior <em>(Setembre 2024 - )</em>",
+    "puestoGometrics2": "Enginyer de Software Junior <em>(Setembre 2024 - Actualitat)</em>",
     "infoGometrics": "Durant el meu temps a Gometrics, vaig participar en diversos projectes que inclouen diferents plataformes, com ara <a href='web.html'>desenvolupament web</a>, <a href='android.html#appdr72'>aplicacions Android</a> i <a href='python.html#artist'>aplicacions d'escriptori</a>.",
     "aptitudesGometrics": "Gràcies a aquestes experiències, he adquirit diverses habilitats importants, com ara:",
     "aptitudGometrics1": "<strong>Resolució de problemes</strong>, afrontant i resolent desafiaments tècnics en projectes complexos.",
@@ -353,5 +353,8 @@
     "tareaBackup1": "Adaptar la base de dades local per integrar-la amb una base de dades del servidor",
     "tareaBackup2": "Desenvolupar la funcionalitat de sincronització de dades (pujada i descàrrega)",
     "tareaBackup3": "Verificar el funcionament correcte mitjançant proves exhaustives",
-    "lenguajesBackup": "<strong>Llenguatges:</strong>Java"
+    "lenguajesBackup": "<strong>Llenguatges:</strong>Java",
+    "puestoGometrics3": "Tècnic en Validacions Informàtiques <em>(Juny 2025 - Actualitat)</em>",
+    "puestoGometrics4": "Tècnic de Suport TI <em>(Juny 2025 - Actualitat)</em>",
+    "aptitudGometrics6": "<strong>Validació de programari</strong>, comprenent a fons els processos de validació en entorns regulats, com el sector farmacèutic."
 }

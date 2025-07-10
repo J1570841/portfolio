@@ -353,5 +353,8 @@
     "tareaBackup1": "Adaptar la base de datos local para su integración con una base de datos de servidor",
     "tareaBackup2": "Programar la funcionalidad de sincronización de datos (subida y descarga)",
     "tareaBackup3": "Verificar el correcto funcionamiento mediante pruebas exhaustivas",
-    "lenguajesBackup": "<strong>Lenguajes:</strong>Java"
+    "lenguajesBackup": "<strong>Lenguajes:</strong>Java",
+    "puestoGometrics3": "Técnico de Validaciones Informáticas <em>(Junio 2025 - Actualidad)</em>",
+    "puestoGometrics4": "Técnico Soporte TI <em>(Junio 2025 - Actualidad)</em>",
+    "aptitudGometrics6": "<strong>Validación de software</strong>, comprendiendo a fondo los procesos de validación en entornos regulados, como el sector farmacéutico."
 }

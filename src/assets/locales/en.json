@@ -260,7 +260,7 @@
     "aptitudMango4": "<strong>Quick learning ability</strong>, as I quickly learned all the necessary processes and protocols to perform my tasks in the team.",
     "puestos": "Positions:",
     "puestoGometrics1": "IT Intern <em>(June 2023 - September 2024)</em>",
-    "puestoGometrics2": "Junior Software Engineer <em>(September 2024 - )</em>",
+    "puestoGometrics2": "Junior Software Engineer <em>(September 2024 - Present)</em>",
     "infoGometrics": "During my time at Gometrics, I participated in various projects spanning different platforms, including <a href='web.html'>web development</a>, <a href='android.html#appdr72'>Android applications</a>, and <a href='python.html#artist'>desktop applications</a>.",
     "aptitudesGometrics": "Thanks to these experiences, I have acquired several important skills, such as:",
     "aptitudGometrics1": "<strong>Problem-solving</strong>, by tackling and resolving technical challenges in complex projects.",
@@ -353,5 +353,8 @@
     "tareaBackup1": "Adapt the local database for integration with a server database",
     "tareaBackup2": "Develop the data synchronization functionality (upload and download)",
     "tareaBackup3": "Ensure proper functionality through thorough testing",
-    "lenguajesBackup": "<strong>Languages:</strong>Java"
+    "lenguajesBackup": "<strong>Languages:</strong>Java",
+    "puestoGometrics3": "Computer Systems Validation Technician <em>(June 2025 – Present)</em>",
+    "puestoGometrics4": "IT Support Technician <em>(June 2025 – Present)</em>",
+    "aptitudGometrics6": "<strong>Software validation</strong>, gaining a deep understanding of validation processes in regulated environments, such as the pharmaceutical sector."
 }
